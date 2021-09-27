@@ -6,22 +6,76 @@
 
   <!-- styles -->
   <style>
-    .Members-title {
+    /* -- resets -- */
+    body {
+      margin: 0;
+      line-height: 1.2;
+      font-weight: normal;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding: 0;
+      list-style-position: inside;
+    }
+
+    /* -- styles -- */
+    .Page {
+      margin: 40px;
+      max-width: 600px;
+    }
+
+    .Header {
+      margin-bottom: 40px;
+    }
+
+    .Header-title {
+      font-size: 3.0em;
+    }
+
+    .Header-subtitle {
       font-size: 1.2em;
     }
 
+    .Section + .Section {
+      margin-top: 30px;
+    }
+
+    .Section-title {
+      font-size: 1.6em;
+    }
+
+    .Section > * + * {
+      margin-top: 10px;
+    }
   </style>
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>new new games</h1>
-      <h2>play and games in public</h2>
+  <main class="Page">
+    <header class="Header">
+      <h1 class="Header-title">new new games</h1>
+      <h2 class="Header-subtitle">play and games in public spaces</h2>
     </header>
-    
-    <section class="Members">
-      <h1 class="Members-title">members/portfolio</h1>
+
+    <section id="who" class="Section">
+      <h1 class="Section-title">who</h1>
+      <p>ali, darwin, fran, mut, ty</p>
+    </section>
+
+    <section id="what" class="Section">
+      <h1 class="Section-title">what</h1>
+      <p>a series of events blurring the boundaries between games, art, folk games, and videogames. in the spirit of the New Games movement, these events reclaim public space for play and community, weaving pop-up art and videogame installations with the free play of physical and folk games.</p>
+    </section>
+
+    <section id="portfolio" class="Section">
+      <h1 class="Section-title">portfolio</h1>
+      <p>links to our external itch.io profiles</p>
       <ul>
         <li><a href="https://aaaaaugh.itch.io/">ali</a></li>
         <li><a href="https://gurnburial.itch.io/">darwin</a></li>
