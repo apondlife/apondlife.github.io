@@ -22,7 +22,11 @@ ul[class], ol[class] {
 
 /* -- shared -- */
 a, a:hover a:visited {
-  color: inherit;
+  color: cornflowerblue;
+}
+
+a[target] {
+  color: burlywood;
 }
 
 a {
