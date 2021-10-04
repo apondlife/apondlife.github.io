@@ -1,0 +1,98 @@
+/* -- resets -- */
+body {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* -- shared -- */
+a, a:hover a:visited {
+  color: inherit;
+}
+
+a {
+  text-decoration-style: dotted;
+}
+
+a:hover {
+  text-decoration-style: wavy;
+}
+
+a.Link--games {
+  color: #ff00ff;
+}
+
+a.Link--events {
+  color: #00ff00;
+}
+
+/* -- pages -- */
+.Page {
+  margin: 40px;
+  max-width: 600px;
+}
+
+.Header {
+  margin-bottom: 40px;
+}
+
+.Header-title {
+  font-size: 3.0em;
+}
+
+.Header-subtitle {
+  font-size: 1.2em;
+}
+
+.Section + .Section {
+  margin-top: 30px;
+}
+
+.Section-title {
+  font-size: 1.6em;
+}
+
+.Section > * + * {
+  margin-top: 10px;
+}
+
+/* -- pages/games -- */
+.GameList > * + * {
+  margin-top: 20px;
+}
+
+.Game-metadata {
+  font-size: 0.9em;
+}
+
+.Game-body {
+  margin-top: 10px
+}
+
+/* -- pages/events -- */
+.EventList > * + * {
+  margin-top: 20px;
+}
+
+.Event-metadata {
+  font-size: 0.9em;
+}
+
+.Event-body {
+  margin-top: 10px
+}
