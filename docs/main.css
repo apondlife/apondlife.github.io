@@ -97,6 +97,11 @@ a.Link--events {
   font-size: 0.9em;
 }
 
+.Event-image {
+  margin: 20px;
+  width: 60%;
+}
+
 .Event-body {
   margin-top: 10px
 }
