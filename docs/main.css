@@ -87,6 +87,12 @@ a.Link--events {
   margin-top: 10px;
 }
 
+.Footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid magenta;
+}
+
 /* -- pages/home -- */
 .Home-hero {
   width: 600px;
