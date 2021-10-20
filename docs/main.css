@@ -57,6 +57,12 @@ a.Link--events {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .Header {
+    flex-direction: column;
+  }
+}
+
 .Header-logo {
   align-self: center;
   height: 84px;
@@ -64,6 +70,13 @@ a.Link--events {
 
 .Header-text {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .Header-text {
+    margin-top: 20px;
+    margin-left: initial;
+  }
 }
 
 .Header-title {
@@ -90,13 +103,14 @@ a.Link--events {
 .Footer {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid magenta;
+  border-top: 1px dashed #ff00ff;
 }
 
 /* -- pages/home -- */
 .Home-hero {
-  width: 600px;
+  width: 100%;
   margin-bottom: 40px;
+  border-bottom: 5px solid #00ff00;
 }
 
 /* -- pages/games -- */
