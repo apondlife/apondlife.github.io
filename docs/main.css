@@ -47,12 +47,23 @@ a.Link--events {
 
 /* -- pages -- */
 .Page {
-  margin: 40px;
+  padding: 40px;
   max-width: 600px;
+  overflow: scroll;
 }
 
 .Header {
+  display: flex;
   margin-bottom: 40px;
+}
+
+.Header-logo {
+  align-self: center;
+  height: 84px;
+}
+
+.Header-text {
+  margin-left: 20px;
 }
 
 .Header-title {
@@ -61,6 +72,7 @@ a.Link--events {
 
 .Header-subtitle {
   font-size: 1.2em;
+  margin-top: 5px;
 }
 
 .Section + .Section {
