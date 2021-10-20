@@ -45,6 +45,16 @@ a.Link--events {
   color: #00ff00;
 }
 
+@media screen and (max-width: 600px) {
+  a.Link--games, a.Link--events {
+    text-decoration-style: dashed;
+  }
+
+  a.Link--games:hover, a.Link--events:hover {
+    text-decoration-style: unset;
+  }
+}
+
 /* -- pages -- */
 .Page {
   padding: 40px;
@@ -52,15 +62,10 @@ a.Link--events {
   overflow: scroll;
 }
 
+/* -- p/header */
 .Header {
   display: flex;
   margin-bottom: 40px;
-}
-
-@media screen and (max-width: 600px) {
-  .Header {
-    flex-direction: column;
-  }
 }
 
 .Header-logo {
@@ -72,13 +77,6 @@ a.Link--events {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .Header-text {
-    margin-top: 20px;
-    margin-left: initial;
-  }
-}
-
 .Header-title {
   font-size: 3.0em;
 }
@@ -88,6 +86,26 @@ a.Link--events {
   margin-top: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .Header {
+    flex-direction: column;
+  }
+
+  .Header-text {
+    margin-top: 20px;
+    margin-left: initial;
+  }
+
+  .Header-title {
+    line-height: 1;
+  }
+
+  .Header-subtitle {
+    margin-top: 15px;
+  }
+}
+
+/* -- p/section */
 .Section + .Section {
   margin-top: 30px;
 }
@@ -100,20 +118,21 @@ a.Link--events {
   margin-top: 10px;
 }
 
+/* -- p/footer */
 .Footer {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px dashed #ff00ff;
 }
 
-/* -- pages/home -- */
+/* -- home -- */
 .Home-hero {
   width: 100%;
   margin-bottom: 40px;
   border-bottom: 5px solid #00ff00;
 }
 
-/* -- pages/games -- */
+/* -- games -- */
 .GameList > * + * {
   margin-top: 20px;
 }
@@ -126,7 +145,7 @@ a.Link--events {
   margin-top: 10px
 }
 
-/* -- pages/events -- */
+/* -- events -- */
 .EventList > * + * {
   margin-top: 20px;
 }
