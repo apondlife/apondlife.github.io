@@ -87,6 +87,12 @@ a.Link--events {
   margin-top: 10px;
 }
 
+/* -- pages/home -- */
+.Home-hero {
+  width: 600px;
+  margin-bottom: 40px;
+}
+
 /* -- pages/games -- */
 .GameList > * + * {
   margin-top: 20px;
