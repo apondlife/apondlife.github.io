@@ -21,12 +21,17 @@ ul[class], ol[class] {
 }
 
 /* -- shared -- */
-a, a:hover a:visited {
-  color: cornflowerblue;
+body {
+  overflow-y: scroll;
+}
+
+/* -- s/links */
+a, a:hover, a:visited {
+  color: #00ffff;
 }
 
 a[target] {
-  color: burlywood;
+  color: #ff0000;
 }
 
 a {
@@ -59,7 +64,6 @@ a.Link--events {
 .Page {
   padding: 40px;
   max-width: 600px;
-  overflow: scroll;
 }
 
 /* -- p/header */
