@@ -1,3 +1,4 @@
+import path from "path"
 import preprocess from "svelte-preprocess"
 import adapter from "@sveltejs/adapter-static"
 
@@ -7,13 +8,21 @@ const config = {
   preprocess: preprocess(),
   // kit options
   kit: {
-    // set id of render target (el in app.html)
+    // id of render target (an el in ./src/app.html)
     target: "#site",
-    // static rendering options
+    // static rendering
     adapter: adapter({
       pages: "docs",
       assets: "docs"
-    })
+    }),
+    // build tool (https://github.com/vitejs/vite)
+    vite: {
+      resolve: {
+        alias: {
+          "@lib": path.resolve("./src/lib")
+        }
+      }
+    }
   }
 }
 

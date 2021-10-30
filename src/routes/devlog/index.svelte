@@ -1,5 +1,5 @@
 <script>
-  import Header from "../../shared/header.svelte"
+  import Header from "@lib/header.svelte"
 </script>
 
 <svelte:head>
@@ -9,7 +9,6 @@
 <template>
   <Header>
     <h1 class="Header-title">devlog</h1>
-
     <h2 class="Header-subtitle">weekly summaries of what we're up to</h2>
   </Header>
 

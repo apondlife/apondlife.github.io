@@ -1,5 +1,5 @@
 <script>
-  import Footer from "../shared/footer.svelte"
+  import Footer from "@lib/footer.svelte"
 </script>
 
 <div class="Page">

@@ -1,5 +1,5 @@
 <script>
-  import Header from "../../shared/header.svelte"
+  import Header from "@lib/header.svelte"
 </script>
 
 <svelte:head>
@@ -9,7 +9,6 @@
 <template>
   <Header>
     <h1 class="Header-title">our events</h1>
-
     <h2 class="Header-subtitle">here are some events we've had</h2>
   </Header>
 
