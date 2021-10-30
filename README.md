@@ -7,8 +7,7 @@ the games in the grass by pondlife website.
 first, install [node](https://nodejs.org/en/).
 
 ```sh
-# mac
-$ brew install node
+$ brew install node # mac
 ```
 
 this should also install `npm`. use this to install node packages:
@@ -25,7 +24,21 @@ to run the development server:
 $ npm run dev
 ```
 
-to build the site (to the `docs` dir) before deploy:
+to [format](https://prettier.io/) the code:
+
+```sh
+$ npm run format
+```
+
+to just check it:
+
+```sh
+$ npm run lint
+```
+
+## deploy
+
+to deploy to github pages, we need to to build the site to the `docs` dir before pushing:
 
 ```sh
 $ npm run build
