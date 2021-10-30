@@ -1,21 +1,38 @@
-# website
+# our site
 
-our website
+the games in the grass by pondlife website.
 
-# dev
+## setup
 
-easiest way to run the website is to open the `src/index.html` file in your browser.
-
-if you have `python3` intalled, you could run:
+first, install [node](https://nodejs.org/en/).
 
 ```sh
-$ python3 -m http.server --directory docs
+# mac
+$ brew install node
 ```
 
-and if you're on a mac you could run:
+this should also install `npm`. use this to install node packages:
 
 ```sh
-$ ./start
+$ npm install
 ```
 
-and then you can access the site at `http://localhost:8000`.
+## dev
+
+to run the development server:
+
+```sh
+$ npm run dev
+```
+
+to build the site (to the `docs` dir) before deploy:
+
+```sh
+$ npm run build
+```
+
+to preview the build site:
+
+```sh
+$ npm run preview
+```

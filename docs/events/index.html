@@ -1,82 +1,99 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+		<!-- mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- info -->
-  <title>gitg - events</title>
+		<!-- scrapers -->
+		<meta property="og:title" content="games in the grass">
+		<meta property="og:type" content="event">
+		<meta property="og:url" content="https://gamesinthegrass.github.io">
+		<meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg">
+		<meta property="og:description" content="a series of events blurring the boundaries between games, art, folk games, and videogames.">
 
-  <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- styles -->
+		<link href="/app.css" rel="stylesheet">
 
-  <!-- scrapers -->
-  <meta property="og:title" content="games in the grass">
-  <meta property="og:type" content="event">
-  <meta property="og:url" content="https://gamesinthegrass.github.io">
-  <meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg">
-  <meta property="og:description" content="a series of events blurring the boundaries between games, art, folk games, and videogames.">
+		<!-- per-page -->
+		<title>gitg - events</title>
 
-  <!-- styles -->
-  <link href="/main.css" rel="stylesheet">
-</head>
+		
 
-<body>
-  <main class="Page">
-    <header class="Header">
-      <a href="/">
-        <img
-          class="Header-logo"
-          src="/images/logo-green.png"
-          width="86"
-          height="84"
-        >
-      </a>
+		<link rel="modulepreload" href="/_app/start-bbe061fb.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-b4262478.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-478e4198.js">
+		<link rel="modulepreload" href="/_app/pages/events/index.svelte-806d8582.js">
+		<link rel="modulepreload" href="/_app/chunks/header-62b6eff2.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 
-      <div class="Header-text">
-        <h1 class="Header-title">
-          our events
-        </h1>
+		<script type="module">
+			import { start } from "/_app/start-bbe061fb.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-478e4198.js"),
+						import("/_app/pages/events/index.svelte-806d8582.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fevents",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
 
-        <h2 class="Header-subtitle">
-          here are some events we've had
-        </h2>
-      </div>
-    </header>
+	<body>
+		<div id="site">
 
-    <section class="Section">
-      <h1 class="Section-title">events</h1>
 
-      <div class="EventList">
-        <article id="gitg0" class="Event">
-          <h1 class="Event-title">
-            gitg #0
+<div class="Page">
+
+
+  <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
+
+    <div class="Header-text"><h1 class="Header-title">our events
+    </h1>
+
+    <h2 class="Header-subtitle">here are some events we&#39;ve had
+    </h2></div></header>
+
+  <main class="Events"><section class="Section"><h1 class="Section-title">events</h1>
+
+      <div class="EventList"><article id="gitg0" class="Event"><h1 class="Event-title">gitg #0
           </h1>
 
-          <p class="Event-metadata">
-            prospect park, 10.02.21
+          <p class="Event-metadata">prospect park, 10.02.21
           </p>
 
-          <p class="Event-body">
-            we played some games in prospect park, our first real playtest. we attempted to project
+          <div class="Event-body">we played some games in prospect park, our first real playtest. we attempted to project
             <a href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org</a>, but
             ran into server issues and had to abandon it. we ended up streaming the super mario bros.
             movie, vibing, and playing some folk games (in the grass!). even at this first
             event, <a href="/games#zending">new</a> <a href="/games#lightbox">new</a> games were
             invented! it felt vital.
-          </p>
-        </article>
+          </div></article>
 
-        <article id="gitg1" class="Event">
-          <h1 class="Event-title">
-            gitg #1
+        <article id="gitg1" class="Event"><h1 class="Event-title">gitg #1
           </h1>
 
-          <p class="Event-metadata">
-            willoughby streets, 10.06.21
+          <p class="Event-metadata">willoughby streets, 10.06.21
           </p>
 
-          <p class="Event-body">
-            we were invited to have a spot in the event willoughby walks, organized by
+          <div class="Event-body">we were invited to have a spot in the event willoughby walks, organized by
             <a href="https://www.downtownbrooklyn.com" target="_blank" rel="noopener noreferrer">downtown brooklyn</a>.
             we were able to get a battery from itp, and had a tv screen running
             <a href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org</a>, which was now fixed.
@@ -87,25 +104,20 @@
             strangers, and felt great. we also had some games from the new games movement to play, which we did once
             more of our friends arrived. some people seemed interested, spectating, but none actively joined us, and it
             was weird to go ask them, especially once we were a big group. in the end, we had a giant jenga tower, and a
-            passerby joined very enthusiastically, and a couple others spectated, which much enthusiasm as well. there's
+            passerby joined very enthusiastically, and a couple others spectated, which much enthusiasm as well. there&#39;s
             probably a great video of it somewhere. our energy lasted for around 2 hours, and then we just left. it was
             very fun, but also very exausting.
-          </p>
-        </article>
+          </div></article>
 
-        <article id="gitg2" class="Event">
-          <h1 class="Event-title">
-            gitg #2
+        <article id="gitg2" class="Event"><h1 class="Event-title">gitg #2
           </h1>
 
-          <p class="Event-metadata">
-            fort greene park, 10.25.21
+          <p class="Event-metadata">fort greene park, 10.25.21
           </p>
 
-          <p class="Event-body">
-            our event the previous weekend was rained out, and we overlapped with a lot of other game center social events,
+          <div class="Event-body">our event the previous weekend was rained out, and we overlapped with a lot of other game center social events,
             so we decided to move the event to fort greene this week. a few hours before the event the forecast turned
-            towards rain, but we weren't about to cancel a second week in a row. it did rain. we brought a tarp. we
+            towards rain, but we weren&#39;t about to cancel a second week in a row. it did rain. we brought a tarp. we
             discovered a new game or two. a cooperative
             <a href="/games#balloon-relay">balloon relay</a>
             played against the wind. we also tried to
@@ -113,27 +125,27 @@
             this event with a guitar and some drumsticks. it was pretty fun, at least for
             the person scoring, and works well with props that have predictable motion (like the balloon).
             <br><br>
-            a thing we observed is that there is a fine line we're treading right now between "event" and "party", where the
+            a thing we observed is that there is a fine line we&#39;re treading right now between &quot;event&quot; and &quot;party&quot;, where the
             former is higher pressure on us than the latter. at the moment, these feel more like parties. if there is
-            an expectation that we're presenting "a thing", we're not necessarily able to deliver (yet?). we probably want to
+            an expectation that we&#39;re presenting &quot;a thing&quot;, we&#39;re not necessarily able to deliver (yet?). we probably want to
             avoid <em>Events</em> where games and play are administered top-down by those facilitating. a thing that might be cool
-            is writing up a "menu" of games for that evening that people can look at, play themselves, ask to play, &c.
+            is writing up a &quot;menu&quot; of games for that evening that people can look at, play themselves, ask to play, &amp;c.
             <br><br>
-            we're still working on our streaming setup. out tethered internet doesn't seem reliable enough to keep a stream
+            we&#39;re still working on our streaming setup. out tethered internet doesn&#39;t seem reliable enough to keep a stream
             running smoothly. the stream is a nice game prop, something for everyone to play around in, to try and stay in
             (or out) of frame.
-          </p>
-        </article>
-      </div>
-    </section>
+          </div></article></div></section></main>
+  <footer class="Footer">see about us and any upcoming events on
+  <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
+  and
+  <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
+  and
+  <a href="https://twitter.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">twitter</a>.
+</footer></div>
 
-    <footer class="Footer">
-      see about us and any upcoming events on
-      <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
-      and
-      <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
-      and
-      <a href="https://twitter.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">twitter</a>.
-    </footer>
-  </main>
-</body>
+
+
+			
+		</div>
+	</body>
+</html>

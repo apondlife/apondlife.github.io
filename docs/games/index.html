@@ -1,228 +1,197 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+		<!-- mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- info -->
-  <title>gitg - games</title>
+		<!-- scrapers -->
+		<meta property="og:title" content="games in the grass">
+		<meta property="og:type" content="event">
+		<meta property="og:url" content="https://gamesinthegrass.github.io">
+		<meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg">
+		<meta property="og:description" content="a series of events blurring the boundaries between games, art, folk games, and videogames.">
 
-  <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- styles -->
+		<link href="/app.css" rel="stylesheet">
 
-  <!-- scrapers -->
-  <meta property="og:title" content="games in the grass">
-  <meta property="og:type" content="event">
-  <meta property="og:url" content="https://gamesinthegrass.github.io">
-  <meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg">
-  <meta property="og:description"
-    content="a series of events blurring the boundaries between games, art, folk games, and videogames.">
+		<!-- per-page -->
+		<title>gitg - games</title>
 
-  <!-- styles -->
-  <link href="/main.css" rel="stylesheet">
-</head>
+		
 
-<body>
-  <main class="Page">
-    <header class="Header">
-      <a href="/">
-        <img class="Header-logo" src="/images/logo-green.png" width="86" height="84">
-      </a>
+		<link rel="modulepreload" href="/_app/start-bbe061fb.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-b4262478.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-478e4198.js">
+		<link rel="modulepreload" href="/_app/pages/games/index.svelte-35301bb1.js">
+		<link rel="modulepreload" href="/_app/chunks/header-62b6eff2.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 
-      <div class="Header-text">
-        <h1 class="Header-title">
-          a game history
-        </h1>
+		<script type="module">
+			import { start } from "/_app/start-bbe061fb.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-478e4198.js"),
+						import("/_app/pages/games/index.svelte-35301bb1.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fgames",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
 
-        <h2 class="Header-subtitle">
-          here are some games we've played
-        </h2>
-      </div>
-    </header>
+	<body>
+		<div id="site">
 
-    <section class="Section">
-      <h1 class="Section-title">video</h1>
-      <article class="Game">
-        <h1 id="frogforg" class="Game-title">
-          <a href="http://frogf.org" target="_blank" rel="noopener noreferrer">frogf.org</a>
-        </h1>
 
-        <p class="Game-metadata">
-          first played: <a href="/events#gitg1">gitg #1</a>
-        </p>
+<div class="Page">
 
-        <p class="Game-body">
-        <p>a flatgame mmo</p>
-        <p>a reskin of <a href="http://walky.space/" target="_black" rel="noopener noreferrer">walky.space</a> by max
-          bittker</p>
-        <p>a website where you are a frog walking around an endless magenta expanse</p>
-        <p>you can add or move photos around the space</p>
-        <p>frogf.org can be projected onto a large screen (in combination with gorfmode), and then players can
-          participate by going to frogf.org on their phones
-        <p>spawned the videofolkgame <a href="#magenta-is-lava">magenta is lava</a></p>
-        </p>
-      </article>
-    </section>
 
-    <section class="Section">
-      <h1 class="Section-title">folk</h1>
+  <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
 
-      <div class="GameList">
-        <article class="Game">
-          <h1 id="forkgame" class="Game-title">
-            forkgame
+    <div class="Header-text"><h1 class="Header-title">a game history
+    </h1>
+
+    <h2 class="Header-subtitle">here are some games we&#39;ve played
+    </h2></div></header>
+
+  <main class="Games"><section class="Section"><h1 class="Section-title">video</h1>
+
+      <article class="Game"><h1 id="frogforg" class="Game-title"><a href="http://frogf.org" target="_blank" rel="noopener noreferrer">frogf.org</a></h1>
+
+        <p class="Game-metadata">first played: <a href="/events#gitg1">gitg #1</a></p>
+
+        <div class="Game-body"><p>a flatgame mmo</p>
+          <p>a reskin of <a href="http://walky.space/" target="_black" rel="noopener noreferrer">walky.space</a> by max bittker</p>
+          <p>a website where you are a frog walking around an endless magenta expanse</p>
+          <p>you can add or move photos around the space</p>
+          <p>frogf.org can be projected onto a large screen (in combination with gorfmode), and then players can participate by going to frogf.org on their phones
+          </p><p>spawned the videofolkgame <a href="#magenta-is-lava">magenta is lava</a></p></div></article></section>
+
+    <section class="Section"><h1 class="Section-title">folk</h1>
+
+      <div class="GameList"><article class="Game"><h1 id="forkgame" class="Game-title">forkgame
           </h1>
 
-          <p class="Game-metadata">
-            discovered: <a href="/events#gitg1">gitg #1</a>
-          </p>
+          <p class="Game-metadata">discovered: <a href="/events#gitg1">gitg #1</a></p>
 
-          <p class="Game-body">
-            this is one that you might be able to play at a cafeteria, also a reason to not throw away plastic forks. it
+          <div class="Game-body">this is one that you might be able to play at a cafeteria, also a reason to not throw away plastic forks. it
             is currently a game for 2, but maybe it can be played with many. place a quarter in a plastic fork, ideally
             by alternating the tines (I had to look up
-            <a href="https://www.homenish.com/wp-content/uploads/2021/04/Parts-of-a-Fork.jpg" target="_blank"
-              rel="noopener noreferrer">this fork diagram</a>),
+            <a href="https://www.homenish.com/wp-content/uploads/2021/04/Parts-of-a-Fork.jpg" target="_blank" rel="noopener noreferrer">this fork diagram</a>),
             just like the picture below. your objective is now to drop your opponents quarter without dropping your own.
             its a very sensitive game. our swordfigher friend consistently won, so even if it may seem random, theres a
             lot of skill involved. make sure to have some fun start of the match ritual, and a very flamboyant fencing
             pose.
             en garde!
-          </p>
-        </article>
+          </div></article>
 
-        <article id="darkroom" class="Game">
-          <h1 class="Game-title">
-            darkroom
+        <article id="darkroom" class="Game"><h1 class="Game-title">darkroom
           </h1>
 
-          <p class="Game-metadata">
-            found: <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer">the
-              infinite playground</a> by <a href="https://www.deepfun.com/bernie-dekoven-fun-theorist" target="blank"
-              rel="noopener noreferrer">bernie dekoven</a>
-          </p>
+          <p class="Game-metadata">found: <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer">the
+              infinite playground</a> by <a href="https://www.deepfun.com/bernie-dekoven-fun-theorist" target="blank" rel="noopener noreferrer">bernie dekoven</a></p>
 
-          <p class="Game-body">
-            an imagination game for any number of people (even one). you all close your eyes, lie down if
+          <div class="Game-body">an imagination game for any number of people (even one). you all close your eyes, lie down if
             you’re so inclined, and imagine you’re in a darkroom developing a photo. it’s sitting in a tray of
             developer, currently blank. the goal is not to invent anything, but to describe whatever you actually see in
             your imagination. when you notice something, say it out loud. at a certain point you’ll all know the photo
             is done, and you can take it out of the tray and develop the next one.
-          </p>
-        </article>
+          </div></article>
 
-        <article id="lightbox" class="Game">
-          <h1 class="Game-title">
-            lightbox
+        <article id="lightbox" class="Game"><h1 class="Game-title">lightbox
           </h1>
 
-          <p class="Game-metadata">
-            discovered: <a href="/events#gitg0">gitg #0</a>
-          </p>
+          <p class="Game-metadata">discovered: <a href="/events#gitg0">gitg #0</a></p>
 
-          <p class="Game-body">
-            one person holds a projector towards the ground, pretty high up so to people can fit in the box of light it
-            creates. it's nice if you put something fun on the screen. slowly lower the projector towards the ground
+          <div class="Game-body">one person holds a projector towards the ground, pretty high up so to people can fit in the box of light it
+            creates. it&#39;s nice if you put something fun on the screen. slowly lower the projector towards the ground
             while the two people in the box try and squeeze each other out of the space as it gets smaller.
-          </p>
-        </article>
+          </div></article>
 
-        <article id="handland" class="Game">
-          <h1 class="Game-title">
-            handland
+        <article id="handland" class="Game"><h1 class="Game-title">handland
           </h1>
 
-          <p class="Game-metadata">
-            found: <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer">the
-              infinite playground</a> by <a href="https://www.deepfun.com/bernie-dekoven-fun-theorist" target="blank"
-              rel="noopener noreferrer">bernie dekoven</a>
-          </p>
+          <p class="Game-metadata">found: <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer">the
+              infinite playground</a> by <a href="https://www.deepfun.com/bernie-dekoven-fun-theorist" target="blank" rel="noopener noreferrer">bernie dekoven</a></p>
 
-          <p class="Game-body">
-            like <a href="/games#darkoom">darkroom</a> but with sight and hand touching. line on your backs in a circle
+          <div class="Game-body">like <a href="/games#darkoom">darkroom</a> but with sight and hand touching. line on your backs in a circle
             with
             your heads pointed towards one another. inch together until those heads are touching or almost touching, as
             close
             as you can comfortably get right now. raise your hands into the sky and look up at this new digital world.
             introduce
             your hands to one other, talk to the local deity. the possibilities are endless.
-          </p>
-        </article>
+          </div></article>
 
-        <article class="Game">
-          <h1 id="zending" class="Game-title">
-            zending
+        <article class="Game"><h1 id="zending" class="Game-title">zending
           </h1>
 
-          <p class="Game-metadata">
-            discovered: <a href="/events#gitg0">gitg #0</a>
-          </p>
+          <p class="Game-metadata">discovered: <a href="/events#gitg0">gitg #0</a></p>
 
-          <p class="Game-body">
-            this is one to play before you all head home. everyone puts their hands in the middle and pick a word to say
-            together on the count of 5. like, "turtle on 5!". then try to count to 5, but each person is only allowed to
+          <div class="Game-body">this is one to play before you all head home. everyone puts their hands in the middle and pick a word to say
+            together on the count of 5. like, &quot;turtle on 5!&quot;. then try to count to 5, but each person is only allowed to
             say one number in a row, and if two people say a number at the same time, you start over. when you get to 5,
-            shout your word, throw your hands in the air, and head home. you could play to a different number if you're
+            shout your word, throw your hands in the air, and head home. you could play to a different number if you&#39;re
             feeling up for it.
-          </p>
-        </article>
+          </div></article>
 
-        <article class="Game">
-          <h1 id="balloon-relay" class="Game-title">
-            balloon relay
+        <article class="Game"><h1 id="balloon-relay" class="Game-title">balloon relay
           </h1>
 
-          <p class="Game-metadata">
-            discovered: <a href="/events#gitg2">gitg #2</a>
-          </p>
+          <p class="Game-metadata">discovered: <a href="/events#gitg2">gitg #2</a></p>
 
-          <p class="Game-body">
-            this game is to be played with a balloon on a windy day. the point is to try getting the balloon as far as
+          <div class="Game-body">this game is to be played with a balloon on a windy day. the point is to try getting the balloon as far as
             possible against the wind. you know the feeling of bouncing a balloon on a windy day, and the lack of
             control, but pure fun, it causes. this game takes that and makes a cooperative version of not letting the
             balloon touch the floor. in a very classic move chosing the most intense adversary, the wind, and the most
             arbitrary constraint, going against the wind and each player not allowed to hit the ball twice in a row. the
             grasshopper would approve.
 
-            we even a <a href="https://www.indiebound.org/book/9780262543866" target="blank"
-              rel="noopener noreferrer">https://vm.tiktok.com/ZM8UAu6YA/</a> of it to help you visualize it better!
-          </p>
+            we even a <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer">https://vm.tiktok.com/ZM8UAu6YA/</a> of it to help you visualize it better!
+          </div></article></div></section>
 
-        </article>
-      </div>
-    </section>
-
-    <section class="Section">
-      <h1 class="Section-title">videofolk</h1>
-      <article class="Game">
-        <h1 id="magenta-is-lava" class="Game-title">
-          magenta is lava
+    <section class="Section"><h1 class="Section-title">videofolk</h1>
+      <article class="Game"><h1 id="magenta-is-lava" class="Game-title">magenta is lava
         </h1>
 
-        <p class="Game-metadata">
-          discovered: <a href="/events#gitg1">gitg #1</a>
-        </p>
+        <p class="Game-metadata">discovered: <a href="/events#gitg1">gitg #1</a></p>
 
-        <p class="Game-body">
-        <p>a many-player game played on <a href="http://frogf.org" target="_blank"
-            rel="noopener noreferrer">frogf.org</a></p>
-        <p>each player will need a device with an internet browser in order to play</p>
-        <p>one frog is It. whoever is It tries to tag another frog by touching them on screen</p>
-        <p>if you get tagged, you are now It</p>
-        <p>(tag rules but in a virtual space)</p>
-        <p>you can cannot walk on the magenta part</p>
-        <p>you are allowed to add, move or take away photos</p>
-        <p>BUT you cannot move or take away a photo if there is another frog on it</p>
-        </p>
-      </article>
-    </section>
+        <div class="Game-body"><p>a many-player game played on <a href="http://frogf.org" target="_blank" rel="noopener noreferrer">frogf.org</a></p>
+          <p>each player will need a device with an internet browser in order to play</p>
+          <p>one frog is It. whoever is It tries to tag another frog by touching them on screen</p>
+          <p>if you get tagged, you are now It</p>
+          <p>(tag rules but in a virtual space)</p>
+          <p>you can cannot walk on the magenta part</p>
+          <p>you are allowed to add, move or take away photos</p>
+          <p>BUT you cannot move or take away a photo if there is another frog on it</p></div></article></section></main>
+  <footer class="Footer">see about us and any upcoming events on
+  <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
+  and
+  <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
+  and
+  <a href="https://twitter.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">twitter</a>.
+</footer></div>
 
-    <footer class="Footer">
-      see about us and any upcoming events on
-      <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
-      and
-      <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
-      and
-      <a href="https://twitter.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">twitter</a>.
-    </footer>
-  </main>
-</body>
+
+
+			
+		</div>
+	</body>
+</html>
