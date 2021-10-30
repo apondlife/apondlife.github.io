@@ -1,63 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+import{S as c,i as g,s as u,g as d,f,e as p,a as w,b as i,m as v,q as b,n as y,d as l,o as k}from"../../chunks/vendor-9f06eb49.js";import{H as _}from"../../chunks/header-af27e6b8.js";function E(h){let a,o,r;return{c(){a=p("h1"),a.textContent="our events",o=d(),r=p("h2"),r.textContent="here are some events we've had",w(a,"class","Header-title"),w(r,"class","Header-subtitle")},m(t,n){i(t,a,n),i(t,o,n),i(t,r,n)},d(t){t&&l(a),t&&l(o),t&&l(r)}}}function $(h){let a,o,r,t,n;return o=new _({props:{$$slots:{default:[E]},$$scope:{ctx:h}}}),{c(){a=d(),f(o.$$.fragment),r=d(),t=p("main"),t.innerHTML=`<section class="Section"><h1 class="Section-title">events</h1> 
 
-    <!-- mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <div class="EventList"><article id="gitg0" class="Event"><h1 class="Event-title">gitg #0</h1> 
 
-    <!-- scrapers -->
-    <meta property="og:title" content="games in the grass" />
-    <meta property="og:type" content="event" />
-    <meta property="og:url" content="https://gamesinthegrass.github.io" />
-    <meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg" />
-
-    <meta
-      property="og:description"
-      content="a series of events blurring the boundaries between games, art, folk games, and videogames."
-    />
-
-    <!-- styles -->
-    <link href="/app.css" rel="stylesheet" />
-
-    <!-- per-page -->
-    <title>gitg - events</title>
-
-		
-
-		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-
-		
-  </head>
-
-  <body>
-    <div id="site">
-
-
-<div class="Page">
-
-
-  <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
-
-    <div class="Header-text"><h1 class="Header-title">our events</h1>
-    <h2 class="Header-subtitle">here are some events we&#39;ve had</h2></div></header>
-
-  <main class="Events"><section class="Section"><h1 class="Section-title">events</h1>
-
-      <div class="EventList"><article id="gitg0" class="Event"><h1 class="Event-title">gitg #0</h1>
-
-          <p class="Event-metadata">prospect park, 10.02.21</p>
+          <p class="Event-metadata">prospect park, 10.02.21</p> 
 
           <div class="Event-body">we played some games in prospect park, our first real playtest. we attempted to project
             <a href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org</a>, but ran into server issues and
             had to abandon it. we ended up streaming the super mario bros. movie, vibing, and playing some folk games (in the
-            grass!). even at this first event, <a href="/games#zending">new</a> <a href="/games#lightbox">new</a> games were invented!
-            it felt vital.
-          </div></article>
+            grass!). even at this first event, <a href="/games#zending">new</a>  <a href="/games#lightbox">new</a> games were invented!
+            it felt vital.</div></article> 
 
-        <article id="gitg1" class="Event"><h1 class="Event-title">gitg #1</h1>
+        <article id="gitg1" class="Event"><h1 class="Event-title">gitg #1</h1> 
 
-          <p class="Event-metadata">willoughby streets, 10.06.21</p>
+          <p class="Event-metadata">willoughby streets, 10.06.21</p> 
 
           <div class="Event-body">we were invited to have a spot in the event willoughby walks, organized by
             <a href="https://www.downtownbrooklyn.com" target="_blank" rel="noopener noreferrer">downtown brooklyn</a>. we were
@@ -71,12 +26,11 @@
             interested, spectating, but none actively joined us, and it was weird to go ask them, especially once we were a big
             group. in the end, we had a giant jenga tower, and a passerby joined very enthusiastically, and a couple others
             spectated, which much enthusiasm as well. there&#39;s probably a great video of it somewhere. our energy lasted for around
-            2 hours, and then we just left. it was very fun, but also very exausting.
-          </div></article>
+            2 hours, and then we just left. it was very fun, but also very exausting.</div></article> 
 
-        <article id="gitg2" class="Event"><h1 class="Event-title">gitg #2</h1>
+        <article id="gitg2" class="Event"><h1 class="Event-title">gitg #2</h1> 
 
-          <p class="Event-metadata">fort greene park, 10.25.21</p>
+          <p class="Event-metadata">fort greene park, 10.25.21</p> 
 
           <div class="Event-body">our event the previous weekend was rained out, and we overlapped with a lot of other game center social events, so we
             decided to move the event to fort greene this week. a few hours before the event the forecast turned towards rain, but
@@ -87,27 +41,12 @@
             <a href="https://nottingham-repository.worktribe.com/preview/2222989/Improvising_a_Live_Score_to_an_InteractiveBrain_Controlled_Film.pdf" target="_blank" rel="noopener noreferrer">live score</a>
             this event with a guitar and some drumsticks. it was pretty fun, at least for the person scoring, and works well with props
             that have predictable motion (like the balloon).
-            <br><br>
+            <br/><br/>
             a thing we observed is that there is a fine line we&#39;re treading right now between &quot;event&quot; and &quot;party&quot;, where the former
             is higher pressure on us than the latter. at the moment, these feel more like parties. if there is an expectation that
             we&#39;re presenting &quot;a thing&quot;, we&#39;re not necessarily able to deliver (yet?). we probably want to avoid <em>Events</em>
             where games and play are administered top-down by those facilitating. a thing that might be cool is writing up a &quot;menu&quot;
             of games for that evening that people can look at, play themselves, ask to play, &amp;c.
-            <br><br>
+            <br/><br/>
             we&#39;re still working on our streaming setup. out tethered internet doesn&#39;t seem reliable enough to keep a stream running
-            smoothly. the stream is a nice game prop, something for everyone to play around in, to try and stay in (or out) of frame.
-          </div></article></div></section></main>
-  <footer class="Footer">see about us and any upcoming events on
-  <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
-  and
-  <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
-  and
-  <a href="https://twitter.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">twitter</a>.
-</footer></div>
-
-
-
-			
-		</div>
-  </body>
-</html>
+            smoothly. the stream is a nice game prop, something for everyone to play around in, to try and stay in (or out) of frame.</div></article></div></section>`,document.title="gitg - events",w(t,"class","Events")},m(e,s){i(e,a,s),v(o,e,s),i(e,r,s),i(e,t,s),n=!0},p(e,[s]){const m={};s&1&&(m.$$scope={dirty:s,ctx:e}),o.$set(m)},i(e){n||(b(o.$$.fragment,e),n=!0)},o(e){y(o.$$.fragment,e),n=!1},d(e){e&&l(a),k(o,e),e&&l(r),e&&l(t)}}}class j extends c{constructor(a){super();g(this,a,null,$,u,{})}}export{j as default};

@@ -15,6 +15,9 @@ const config = {
       pages: "docs",
       assets: "docs"
     }),
+    // make more static
+    router: false,
+    hydrate: false,
     // build tool (https://github.com/vitejs/vite)
     vite: {
       resolve: {
