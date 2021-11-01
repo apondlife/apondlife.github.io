@@ -1,5 +1,6 @@
 <script>
   import Header from "@lib/header.svelte"
+  import Game from "@lib/game.svelte"
 </script>
 
 <svelte:head>
@@ -156,6 +157,24 @@
             of it to help you visualize it better!
           </div>
         </article>
+        <Game
+          id="candlejoust"
+          title="candle joust"
+          discovered={{
+            href: "https://www.wonderville.nyc/events/haunted-arcade-10-31",
+            name: "haunted arcade @ wonderville"
+          }}
+        >
+          <p>
+            we all know playing with candles is fun. this one is simple, for as many players as you can (we played with 2 and 3).
+            lit up your candles, and don't let people turn yours off. protect yours and blow theirs, just dont move too fast
+            creating wind for yourself.
+          </p>
+          <p>
+            a nice thing about this one is that you will also be litting each others candles to restart the game, creating a back
+            and forth of collaboration and competition. also, it just looks nice.
+          </p>
+        </Game>
       </div>
     </section>
 
