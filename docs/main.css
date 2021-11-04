@@ -50,12 +50,17 @@ a.Link--events {
   color: #00ff00;
 }
 
+a.Link--devlog {
+  color: #ff0000;
+}
+
+
 @media screen and (max-width: 600px) {
-  a.Link--games, a.Link--events {
+  a.Link--games, a.Link--events, a.Link--devlog {
     text-decoration-style: dashed;
   }
 
-  a.Link--games:hover, a.Link--events:hover {
+  a.Link--games:hover, a.Link--events:hover, a.Link--devlog:hover {
     text-decoration-style: unset;
   }
 }
