@@ -1,5 +1,6 @@
 <script>
   import Header from "@lib/header.svelte"
+  import Link from "@lib/link.svelte"
 </script>
 
 <svelte:head>
@@ -19,8 +20,8 @@
       <div class="LogEntry-body">
         <p>started tiktok</p>
         <p>submitted milestone evaluation</p>
-        <p>hosted <a href="/events#gitg2">games in the grass 2 at fort greene!</a></p>
-        <p>interviewed for <a href="https://twitter.com/IndieCade/status/1451924371476418561?s=20">indiecade (on stream)</a></p>
+        <p>hosted <Link text="games in the grass 2 at fort greene!" href="/events#gitg2" /></p>
+        <p>interviewed for <Link text="" href="https://twitter.com/IndieCade/status/1indiecade (on stream)451924371476418561?s=20" /></p>
         <p>checked in on room 205 progress</p>
       </div>
     </article>
@@ -42,7 +43,7 @@
       <h1 class="Section-title">10/3</h1>
 
       <div class="LogEntry-body">
-        <p>hosted <a href="/events#gitg1">willoughby event!</a></p>
+        <p>hosted <Link text="willoughby event!" href="/events#gitg1" /></p>
         <p>attended meeting for NYU Prototyping Fund</p>
         <p>logo created!</p>
         <p>started twitter</p>
@@ -60,7 +61,7 @@
         <p>frogforg on a TV for playtest thursday</p>
         <p>fixed android issues for frogforg</p>
         <p>added godmode to frogforg</p>
-        <p>first <a href="/events#gitg0">games in the grass at prospect park!</a></p>
+        <p>first <Link text="games in the grass at prospect park!" href="/events#gitg0" /></p>
         <p>started website</p>
       </div>
     </article>

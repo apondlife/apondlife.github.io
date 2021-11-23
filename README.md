@@ -21,6 +21,7 @@ $ npm install
 to run the development server:
 
 ```sh
+$ npm start # or,
 $ npm run dev
 ```
 

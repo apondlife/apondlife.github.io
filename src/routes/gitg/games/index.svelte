@@ -1,6 +1,8 @@
 <script>
   import Header from "@lib/header.svelte"
   import Game from "@lib/game.svelte"
+  import Link from "@lib/link.svelte"
+  import Gitg from "@lib/gitg.svelte"
 </script>
 
 <svelte:head>
@@ -10,8 +12,7 @@
 <template>
   <Header>
     <h1 class="Header-title">a game history</h1>
-
-    <h2 class="Header-subtitle">here are some games we've played</h2>
+    <h2 class="Header-subtitle">games we've played at <Gitg /></h2>
   </Header>
 
   <main class="Games">
@@ -20,17 +21,17 @@
 
       <article class="Game">
         <h1 id="frogforg" class="Game-title">
-          <a href="http://frogf.org" target="_blank" rel="noopener noreferrer">frogf.org</a>
+          <Link text="frogf.org" href="http://frogf.org" />
         </h1>
 
         <p class="Game-metadata">
-          first played: <a href="/events#gitg1">gitg #1</a>
+          first played: <Link text="gitg #1" href="/events#gitg1" />
         </p>
 
         <div class="Game-body">
           <p>a flatgame mmo</p>
           <p>
-            a reskin of <a href="http://walky.space/" target="_black" rel="noopener noreferrer">walky.space</a> by max bittker
+            a reskin of <Link text="walky.space" href="http://walky.space/" /> by max bittker
           </p>
           <p>a website where you are a frog walking around an endless magenta expanse</p>
           <p>you can add or move photos around the space</p>
@@ -38,7 +39,7 @@
             frogf.org can be projected onto a large screen (in combination with gorfmode), and then players can participate by
             going to frogf.org on their phones
           </p>
-          <p>spawned the videofolkgame <a href="#magenta-is-lava">magenta is lava</a></p>
+          <p>spawned the videofolkgame <Link text="magenta is lava" href="#magenta-is-lava" /></p>
         </div>
       </article>
     </section>
@@ -51,18 +52,15 @@
           <h1 id="forkgame" class="Game-title">forkgame</h1>
 
           <p class="Game-metadata">
-            discovered: <a href="/events#gitg1">gitg #1</a>
+            discovered: <Link text="gitg #1" href="/events#gitg1" />
           </p>
 
           <div class="Game-body">
             this is one that you might be able to play at a cafeteria, also a reason to not throw away plastic forks. it is
             currently a game for 2, but maybe it can be played with many. place a quarter in a plastic fork, ideally by
             alternating the tines (I had to look up
-            <a
-              href="https://www.homenish.com/wp-content/uploads/2021/04/Parts-of-a-Fork.jpg"
-              target="_blank"
-              rel="noopener noreferrer">this fork diagram</a
-            >), just like the picture below. your objective is now to drop your opponents quarter without dropping your own. its a
+            <Link text="this fork diagram" href="https://www.homenish.com/wp-content/uploads/2021/04/Parts-of-a-Fork.jpg" />),
+            just like the picture below. your objective is now to drop your opponents quarter without dropping your own. its a
             very sensitive game. our swordfigher friend consistently won, so even if it may seem random, theres a lot of skill
             involved. make sure to have some fun start of the match ritual, and a very flamboyant fencing pose. en garde!
           </div>
@@ -72,13 +70,10 @@
           <h1 class="Game-title">darkroom</h1>
 
           <p class="Game-metadata">
-            found: <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer"
-              >the infinite playground</a
-            >
+            found:
+            <Link text="the infinite playground" href="https://www.indiebound.org/book/9780262543866" />
             by
-            <a href="https://www.deepfun.com/bernie-dekoven-fun-theorist" target="blank" rel="noopener noreferrer"
-              >bernie dekoven</a
-            >
+            <Link text="bernie dekoven" href="https://www.deepfun.com/bernie-dekoven-fun-theorist" />
           </p>
 
           <div class="Game-body">
@@ -94,7 +89,7 @@
           <h1 class="Game-title">lightbox</h1>
 
           <p class="Game-metadata">
-            discovered: <a href="/events#gitg0">gitg #0</a>
+            discovered: <Link text="gitg #0" href="/events#gitg0" />
           </p>
 
           <div class="Game-body">
@@ -108,17 +103,14 @@
           <h1 class="Game-title">handland</h1>
 
           <p class="Game-metadata">
-            found: <a href="https://www.indiebound.org/book/9780262543866" target="blank" rel="noopener noreferrer"
-              >the infinite playground</a
-            >
+            found:
+            <Link text="the infinite playground" href="https://www.indiebound.org/book/9780262543866" />
             by
-            <a href="https://www.deepfun.com/bernie-dekoven-fun-theorist" target="blank" rel="noopener noreferrer"
-              >bernie dekoven</a
-            >
+            <Link text="bernie dekoven" href="https://www.deepfun.com/bernie-dekoven-fun-theorist" ext />
           </p>
 
           <div class="Game-body">
-            like <a href="/games#darkoom">darkroom</a> but with sight and hand touching. line on your backs in a circle with your heads
+            like <Link text="darkroom" href="/games#darkoom" /> but with sight and hand touching. line on your backs in a circle with your heads
             pointed towards one another. inch together until those heads are touching or almost touching, as close as you can comfortably
             get right now. raise your hands into the sky and look up at this new digital world. introduce your hands to one other,
             talk to the local deity. the possibilities are endless.
@@ -129,7 +121,7 @@
           <h1 id="zending" class="Game-title">zending</h1>
 
           <p class="Game-metadata">
-            discovered: <a href="/events#gitg0">gitg #0</a>
+            discovered: <Link text="gitg #0" href="/events#gitg0" />
           </p>
 
           <div class="Game-body">
@@ -144,7 +136,7 @@
           <h1 id="balloon-relay" class="Game-title">balloon relay</h1>
 
           <p class="Game-metadata">
-            discovered: <a href="/events#gitg2">gitg #2</a>
+            discovered: <Link text="gitg #2" href="/events#gitg2" />
           </p>
 
           <div class="Game-body">
@@ -153,10 +145,11 @@
             causes. this game takes that and makes a cooperative version of not letting the balloon touch the floor. in a very
             classic move chosing the most intense adversary, the wind, and the most arbitrary constraint, going against the wind
             and each player not allowed to hit the ball twice in a row. the grasshopper would approve. we even have a
-            <a href="https://vm.tiktok.com/ZM8UAu6YA/" target="blank" rel="noopener noreferrer">tiktok</a>
+            <Link text="tiktok" href="https://vm.tiktok.com/ZM8UAu6YA/" />
             of it to help you visualize it better!
           </div>
         </article>
+
         <Game
           id="candlejoust"
           title="candle joust"
@@ -184,13 +177,13 @@
         <h1 id="magenta-is-lava" class="Game-title">magenta is lava</h1>
 
         <p class="Game-metadata">
-          discovered: <a href="/events#gitg1">gitg #1</a>
+          discovered: <Link text="gitg #1" href="/events#gitg1" />
         </p>
 
         <div class="Game-body">
           <p>
             a many-player game played on
-            <a href="http://frogf.org" target="_blank" rel="noopener noreferrer">frogf.org</a>
+            <Link text="frogf.org" href="http://frogf.org" />
           </p>
           <p>each player will need a device with an internet browser in order to play</p>
           <p>one frog is It. whoever is It tries to tag another frog by touching them on screen</p>
