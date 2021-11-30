@@ -1,4 +1,4 @@
-import{S as u,i as c,s as m,e as p,a as _,b as g,y as f,d,z as k,g as b,f as w,A as v,m as y,B as q,C,D as F,q as $,n as h,o as S}from"../chunks/vendor-9f06eb49.js";function j(r){let e;return{c(){e=p("footer"),e.innerHTML=`see about us and any upcoming events on
+import{S as u,i as c,s as m,e as p,a as _,b as g,y as f,d,z as k,g as b,f as w,A as v,m as y,B as q,C,D as F,q as $,n as h,o as S}from"../chunks/vendor-7ade1943.js";function j(r){let e;return{c(){e=p("footer"),e.innerHTML=`see about us and any upcoming events on
   <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
   and
   <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
