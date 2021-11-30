@@ -15,19 +15,32 @@
 
   <main class="Log">
     <article class="LogEntry Section">
-      <h1 class="Section-title">10/17</h1>
+      <h1 class="Section-title">10/25</h1>
+
+      <div class="LogEntry-body">
+        <p>in-person evaluations with shawn and eric</p>
+        <p>ordered bike parts</p>
+        <p>read dada manifesto</p>
+        <p>retro at ali's</p>
+        <p>began exploring website templating solutions</p>
+        <p>delayed games in the grass event to the following weekend (due to bad weather)</p>
+      </div>
+    </article>
+
+    <article class="LogEntry Section">
+      <h1 class="Section-title">10/18</h1>
 
       <div class="LogEntry-body">
         <p>started tiktok</p>
         <p>submitted milestone evaluation</p>
-        <p>hosted <Link text="games in the grass 2 at fort greene!" href="/events#gitg2" /></p>
-        <p>interviewed for <Link text="" href="https://twitter.com/IndieCade/status/1indiecade (on stream)451924371476418561?s=20" /></p>
+        <p>hosted <Link href="/gitg/events#gitg2" text="games in the grass 2 at fort greene!" /></p>
+        <p>interviewed for <Link href="https://twitter.com/IndieCade/status/1451924371476418561?s=20" text="indiecade (on stream)" /></p>
         <p>checked in on room 205 progress</p>
       </div>
     </article>
 
     <article class="LogEntry Section">
-      <h1 class="Section-title">10/10</h1>
+      <h1 class="Section-title">10/11</h1>
 
       <div class="LogEntry-body">
         <p>retro! (at ali's place)</p>
@@ -40,10 +53,10 @@
     </article>
 
     <article class="LogEntry Section">
-      <h1 class="Section-title">10/3</h1>
+      <h1 class="Section-title">10/4</h1>
 
       <div class="LogEntry-body">
-        <p>hosted <Link text="willoughby event!" href="/events#gitg1" /></p>
+        <p>hosted <Link href="/gitg/events#gitg1" text="willoughby event!" /></p>
         <p>attended meeting for NYU Prototyping Fund</p>
         <p>logo created!</p>
         <p>started twitter</p>
@@ -52,7 +65,7 @@
     </article>
 
     <article class="LogEntry Section">
-      <h1 class="Section-title">9/27</h1>
+      <h1 class="Section-title">9/28</h1>
 
       <div class="LogEntry-body">
         <p>applied to Culture Push grant</p>
@@ -61,7 +74,7 @@
         <p>frogforg on a TV for playtest thursday</p>
         <p>fixed android issues for frogforg</p>
         <p>added godmode to frogforg</p>
-        <p>first <Link text="games in the grass at prospect park!" href="/events#gitg0" /></p>
+        <p>hosted <Link href="/gitg/events#gitg0" text="games in the grass at prospect park!" /></p>
         <p>started website</p>
       </div>
     </article>
