@@ -10,6 +10,12 @@
 </svelte:head>
 
 <template>
+  <img
+    src="/zines/rats/fur.jpg"
+    alt="very nice rat fur texture"
+    class="Rats-texture"
+  />
+
   <main class="Rats">
     <Header />
     <Intro />
@@ -28,7 +34,16 @@
   }
 
   .Rats {
+    position: relative;
     display: flex;
     flex-direction: column;
+  }
+
+  .Rats-texture {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+    mix-blend-mode: color-dodge;
   }
 </style>
