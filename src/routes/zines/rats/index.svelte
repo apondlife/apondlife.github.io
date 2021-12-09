@@ -1,6 +1,7 @@
 <script>
   import Header from "./header.svelte"
   import Row from "./row.svelte"
+  import WebFrame from "./iframe.svelte"
   import Intro from "./intro.svelte"
   import Warning from "./warning.svelte"
 </script>
@@ -20,6 +21,14 @@
     <Header />
     <Intro />
     <Warning>get<br>ready<br>to<br>play<br>some<br>thing</Warning>
+    <Row>
+      <WebFrame
+        title="ratjam"
+        src="https://apondlife.github.io/rats/ratjam"
+        width=800
+        height=500
+      />
+    </Row>
   </main>
 </template>
 
@@ -37,6 +46,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30vh;
   }
 
   .Rats-texture {
