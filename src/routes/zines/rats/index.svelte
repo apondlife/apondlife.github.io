@@ -1,21 +1,34 @@
+<script>
+  import Header from "./header.svelte"
+  import Row from "./row.svelte"
+  import Intro from "./intro.svelte"
+  import Warning from "./warning.svelte"
+</script>
+
 <svelte:head>
   <title>rats</title>
 </svelte:head>
 
 <template>
   <main class="Rats">
-    <article class="Rat">rats</article>
+    <Header />
+    <Intro />
+    <Warning>get<br>ready<br>to<br>play<br>some<br>thing</Warning>
   </main>
 </template>
 
 <style>
-  .Rats {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  :global(body) {
+    background-color: #151515;
+    color: #937b7b;
   }
 
-  .Rat {
-    position: absolute;
+  :global(a) {
+    color: #ff81ce;
+  }
+
+  .Rats {
+    display: flex;
+    flex-direction: column;
   }
 </style>
