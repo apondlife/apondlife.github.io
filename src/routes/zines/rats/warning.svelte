@@ -1,13 +1,7 @@
-<script>
-  import Row from "./row.svelte"
-</script>
-
 <template>
-  <Row>
-    <p class="RatsWarning">
-      <slot />
-    </p>
-  </Row>
+  <p class="RatsWarning">
+    <slot />
+  </p>
 </template>
 
 <style>

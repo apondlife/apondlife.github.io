@@ -1,19 +1,11 @@
-<script>
-  import Row from "./row.svelte"
-</script>
-
 <template>
-  <Row>
-    <article class="RatsIntro">
-      <p>
-        here is the introductory text for the rats zine. this is a zine about rats,
-        and in it you should expect to encounter rats and things about rats. we chose
-        the theme of rats somewhat arbitrarily, because we love rats, and because we
-        wanted to work on making a bunch of small games together that would allow us
-        to explore our diverging interests towards some common goal.
-      </p>
-    </article>
-  </Row>
+  <article class="RatsIntro">
+    here is the introductory text for the rats zine. this is a zine about rats,
+    and in it you should expect to encounter rats and things about rats. we chose
+    the theme of rats somewhat arbitrarily, because we love rats, and because we
+    wanted to work on making a bunch of small games together that would allow us
+    to explore our diverging interests towards some common goal.
+  </article>
 </template>
 
 <style>
