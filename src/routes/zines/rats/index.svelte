@@ -52,6 +52,7 @@
   /* -- globals -- */
   :global(*) {
     box-sizing: border-box;
+    overscroll-behavior: none;
   }
 
   :global(body) {
