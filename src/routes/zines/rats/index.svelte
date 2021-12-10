@@ -202,7 +202,7 @@
     height: 600px;
   }
 
-/*  .Ratjam-frame {
+  /*.Ratjam-frame {
     flex: 1;
   }*/
 
@@ -229,10 +229,10 @@
 
   @keyframes HueRotate {
     from {
-      filter: sepia(0.1) hue-rotate(0deg) saturate(3);
+      filter: sepia(0.1) hue-rotate(0deg) saturate(3) invert(1);
     }
     to {
-      filter: sepia(0.1) hue-rotate(360deg) saturate(3);
+      filter: sepia(0.1) hue-rotate(360deg) saturate(3) invert(1);
     }
   }
 </style>
