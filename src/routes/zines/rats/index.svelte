@@ -90,6 +90,7 @@
       <div class="RatTickling Frame">
         <iframe
           class="RatTickling-frame flex-frame"
+          title="rat tickling"
           src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
         ></iframe>
       </div>
@@ -174,10 +175,6 @@
 
   .flex-frame {
     flex: 1;
-  }
-
-  .ItemRow {
-    margin-bottom: 30vh;
   }
 
   /* -- e/sidenote */
