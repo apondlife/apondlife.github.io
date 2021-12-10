@@ -24,7 +24,9 @@
     </Row>
 
     <Row>
-      <Warning>get<br>ready<br>to<br>play<br>some<br>thing</Warning>
+      <Warning>
+        get<br>ready<br>to<br>play<br>some<br>thing
+      </Warning>
     </Row>
 
     <Row>
@@ -93,7 +95,14 @@
 
   /* -- utils -- */
   .RatsFrame {
-    padding: 20px;
-    border: 5px solid white;
+    padding: 30px;
+    background-color: #1c1c1a;
+    border: 10px solid #262626;
+    border-radius: 2px;
+    box-shadow: 20px 20px 40px -25px black;
+  }
+
+  .RatsFrame > * {
+    border-radius: 2px;
   }
 </style>
