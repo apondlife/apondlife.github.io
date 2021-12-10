@@ -55,8 +55,12 @@
   }
 
   :global(body) {
-    background-color: #151515;
-    color: #937b7b;
+    --bg-color: #151515;
+    --fg-color: #ac9898;
+    --fg-color-dark: #937b7b;
+
+    background-color: var(--bg-color);
+    color: var(--fg-color);
     font-size: 16px;
   }
 

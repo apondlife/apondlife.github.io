@@ -18,6 +18,7 @@
 
   .RatsHeader h1 {
     font-size: 16em;
+    color: var(--fg-color-dark);
   }
 
   .RatsHeader h2 {
