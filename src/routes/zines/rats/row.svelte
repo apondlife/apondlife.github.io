@@ -1,30 +1,30 @@
 <template>
-  <div class="RatsRow">
-    <div class="RatsRow-gutter">
+  <div class="Row">
+    <div class="Row-gutter">
       <slot name="left" />
     </div>
 
-    <div class="RatsRow-bag">
+    <div class="Row-bag">
       <slot />
     </div>
 
-    <div class="RatsRow-gutter">
+    <div class="Row-gutter">
       <slot name="right" />
     </div>
   </div>
 </template>
 
 <style>
-  .RatsRow {
+  .Row {
     display: flex;
   }
 
-  .RatsRow-bag {
+  .Row-bag {
     flex: 1;
-    max-width: 1000px;
+    width: 960px;
   }
 
-  .RatsRow-gutter {
+  .Row-gutter {
     flex: 1;
   }
 </style>

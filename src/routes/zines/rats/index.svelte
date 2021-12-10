@@ -30,13 +30,20 @@
     </Row>
 
     <Row>
-      <div class="Ratjam RatsFrame">
+      <div class="Ratjam Frame">
         <iframe
           class="Ratjam-frame"
           title="ratjam"
           src="https://apondlife.github.io/rats/ratjam"
         />
       </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">you can click & hold for the rat to chase the cheese</p>
+        <p class="Sidenote" style="margin-top: 30px;">the rat loves the cheesee</p>
+        <p class="Sidenote" style="margin-top: 80px;">use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting</p>
+        <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
+      </aside>
     </Row>
   </main>
 </template>
@@ -50,6 +57,7 @@
   :global(body) {
     background-color: #151515;
     color: #937b7b;
+    font-size: 16px;
   }
 
   :global(a) {
@@ -83,18 +91,8 @@
   }
 
   /* -- elements -- */
-  .Ratjam {
-    display: flex;
-    width: 1000px;
-    height: 625px;
-  }
-
-  .Ratjam-frame {
-    flex: 1;
-  }
-
-  /* -- utils -- */
-  .RatsFrame {
+  /* -- e/frame */
+  .Frame {
     padding: 30px;
     background-color: #1c1c1a;
     border: 10px solid #262626;
@@ -102,7 +100,34 @@
     box-shadow: 20px 20px 40px -25px black;
   }
 
-  .RatsFrame > * {
+  .Frame > * {
     border-radius: 2px;
+  }
+
+  /* -- e/sidenote */
+  .Sidenote {
+    position: relative;
+    width: 100px;
+    margin-left: 50px;
+  }
+
+  .Sidenote::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -40px;
+    background: linear-gradient(to left, #0909094d, transparent);
+  }
+
+  /* -- arts -- */
+  .Ratjam {
+    display: flex;
+    width: 960px;
+    height: 600px;
+  }
+
+  .Ratjam-frame {
+    flex: 1;
   }
 </style>
