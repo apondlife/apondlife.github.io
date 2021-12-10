@@ -32,7 +32,7 @@
     <Row>
       <div class="Ratjam Frame">
         <iframe
-          class="Ratjam-frame"
+          class="flex-frame"
           title="ratjam"
           src="https://apondlife.github.io/rats/ratjam"
         />
@@ -45,6 +45,62 @@
         <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
       </aside>
     </Row>
+
+    <div class="RowSpacer"></div>
+
+    <Row>
+      <div class="WingsOfRat Frame">
+        <iframe
+          class="flex-frame"
+          title="wings of rat"
+          src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"
+        />
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">click to start</p>
+        <p class="Sidenote" style="margin-top: 30px;">use the WASD keys to fly around</p>
+      </aside>
+    </Row>
+
+    <div class="RowSpacer"></div>
+
+    <Row>
+      <div class="Frame">
+        <iframe
+          class="flex-frame"
+          width="671"
+          height="503"
+          src="https://www.youtube.com/embed/5g3lBt8y5js?autoplay=0&modestbranding=1&showinfo=0&controls=0"
+          title="rat dnb"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
+        <p class="Sidenote" style="margin-top: 30px;">youtube user lokirat made it</p>
+      </aside>
+    </Row>
+
+    <div class="RowSpacer"></div>
+
+    <Row>
+      <div class="RatTickling Frame">
+        <iframe
+          class="RatTickling-frame flex-frame"
+          src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
+        ></iframe>
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
+        <p class="Sidenote" style="margin-top: 30px;">it's produced by the purdue agriculture gaskill lab</p>
+        <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
+      </aside>
+    </Row>
+
   </main>
 </template>
 
@@ -95,6 +151,11 @@
     mix-blend-mode: color-dodge;
   }
 
+  .RowSpacer {
+    margin-top: 15vh;
+    margin-bottom:  15vh;
+  }
+
   /* -- elements -- */
   /* -- e/frame */
   .Frame {
@@ -103,10 +164,20 @@
     border: 10px solid #262626;
     border-radius: 2px;
     box-shadow: 20px 20px 40px -25px black;
+
+    display: flex;
   }
 
   .Frame > * {
     border-radius: 2px;
+  }
+
+  .flex-frame {
+    flex: 1;
+  }
+
+  .ItemRow {
+    margin-bottom: 30vh;
   }
 
   /* -- e/sidenote */
@@ -127,12 +198,41 @@
 
   /* -- arts -- */
   .Ratjam {
-    display: flex;
     width: 960px;
     height: 600px;
   }
 
-  .Ratjam-frame {
+/*  .Ratjam-frame {
     flex: 1;
+  }*/
+
+  .WingsOfRat {
+    width: 960px;
+    height: 540px;
+  }
+
+  /* external rattickling content size: 980 x 658 */
+  .RatTickling {
+    width: 980px;
+    height: 658px;
+  }
+
+  .RatTickling-frame {
+    /* just scaling down the iframe content to avoid scroll bars:  i don't really know how this works */
+    --RatTickling-scale-factor: 0.8 ;
+    min-width: calc(1/var(--RatTickling-scale-factor)*100%);
+    min-height: calc(1/var(--RatTickling-scale-factor)*100%);
+    transform: scale(var(--RatTickling-scale-factor));
+    transform-origin: 0 0;
+    animation: HueRotate 5s linear infinite alternate;
+  }
+
+  @keyframes HueRotate {
+    from {
+      filter: sepia(0.1) hue-rotate(0deg) saturate(3);
+    }
+    to {
+      filter: sepia(0.1) hue-rotate(360deg) saturate(3);
+    }
   }
 </style>
