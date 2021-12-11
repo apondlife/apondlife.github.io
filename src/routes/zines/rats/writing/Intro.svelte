@@ -10,8 +10,6 @@
 
 <style>
   .Intro {
-    padding: 20px;
-    border: 1px solid var(--fg-color-dark);
     font-size: 1.3em;
   }
 </style>

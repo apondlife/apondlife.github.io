@@ -1,8 +1,9 @@
 <script>
-  import Header from "./header.svelte"
-  import Row from "./row.svelte"
-  import Intro from "./intro.svelte"
-  import Warning from "./warning.svelte"
+  import Header from "./elements/Header.svelte"
+  import Row from "./elements/Row.svelte"
+  import Warning from "./elements/Warning.svelte"
+  import Intro from "./writing/Intro.svelte"
+  import OnRats from "./writing/OnRats.svelte"
 </script>
 
 <svelte:head>
@@ -20,19 +21,19 @@
     <Header />
 
     <Row>
-      <Intro />
+      <div class="Frame--line Frame">
+        <Intro />
+      </div>
     </Row>
 
-    <Row>
+    <Row --top="30vh">
       <Warning>
         get<br>ready<br>to<br>play<br>some<br>thing
       </Warning>
     </Row>
 
-    <Row
-      --top="15vh"
-    >
-      <div class="Ratjam Frame">
+    <Row --top="30vh">
+      <div class="Ratjam Frame--fancy Frame">
         <iframe
           class="flex-frame"
           title="ratjam"
@@ -48,10 +49,14 @@
       </aside>
     </Row>
 
-    <Row
-      --top="15vh"
-    >
-      <div class="WingsOfRat Frame">
+    <Row --top="30vh">
+      <div class="Frame--line Frame">
+        <OnRats />
+      </div>
+    </Row>
+
+    <Row --top="30vh">
+      <div class="WingsOfRat Frame--fancy Frame">
         <iframe
           class="WingsOfRat-frame flex-frame"
           title="wings of rat"
@@ -67,9 +72,7 @@
       </aside>
     </Row>
 
-    <Row
-      --top="15vh"
-    >
+    <Row --top="30vh">
       <div class="Frame">
         <iframe
           class="flex-frame"
@@ -88,9 +91,7 @@
       </aside>
     </Row>
 
-    <Row
-      --top="15vh"
-    >
+    <Row --top="30vh">
       <div class="RatTickling Frame">
         <iframe
           class="RatTickling-frame flex-frame"
@@ -105,7 +106,6 @@
         <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
       </aside>
     </Row>
-
   </main>
 </template>
 
@@ -160,15 +160,23 @@
   /* -- e/frame */
   .Frame {
     display: flex;
-    padding: 30px;
-    background-color: #1c1c1a;
-    border: 10px solid #262626;
     border-radius: 2px;
     box-shadow: 20px 20px 40px -25px black;
   }
 
   .Frame > * {
     border-radius: 2px;
+  }
+
+  .Frame--line {
+    padding: 20px;
+    border: 1px solid var(--fg-color-dark);
+  }
+
+  .Frame--fancy {
+    padding: 25px;
+    background-color: #1c1c1a;
+    border: 5px solid #262626;
   }
 
   .flex-frame {
