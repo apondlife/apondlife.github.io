@@ -224,15 +224,17 @@
     min-height: calc(1/var(--RatTickling-scale-factor)*100%);
     transform: scale(var(--RatTickling-scale-factor));
     transform-origin: 0 0;
-    animation: HueRotate 5s linear infinite alternate;
+    animation: HueRotate 30s linear infinite alternate;
   }
 
   @keyframes HueRotate {
     from {
-      filter: sepia(0.1) hue-rotate(0deg) saturate(3) invert(1) sepia(0.6);
+      /*filter: sepia(0.1) hue-rotate(0deg) saturate(3) invert(1) sepia(0.6);*/
+      filter:  brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(0deg) saturate(2);
     }
     to {
-      filter: sepia(0.1) hue-rotate(360deg) saturate(3) invert(1) sepia(0.6);
+      /*filter: sepia(0.1) hue-rotate(360deg) saturate(3) invert(1) sepia(0.6);*/
+      filter:  brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(180deg) saturate(2);
     }
   }
 </style>
