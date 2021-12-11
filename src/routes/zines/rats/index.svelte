@@ -4,7 +4,7 @@
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
   import Intro from "./content/Intro.svelte"
-  import Poratry from "./content/Poratry.svelte"
+  import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
 </script>
 
