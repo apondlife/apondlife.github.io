@@ -73,7 +73,7 @@
           class="flex-frame"
           width="671"
           height="503"
-          src="https://www.youtube.com/embed/5g3lBt8y5js?autoplay=0&modestbranding=1&showinfo=0&controls=0"
+          src="https://www.youtube.com/embed/5g3lBt8y5js?playlist=5g3lBt8y5js&autoplay=0&modestbranding=1&showinfo=0&controls=0&loop=1"
           title="rat dnb"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
