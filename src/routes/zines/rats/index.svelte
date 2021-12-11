@@ -2,6 +2,7 @@
   import Header from "./elements/Header.svelte"
   import Row from "./elements/Row.svelte"
   import Warning from "./elements/Warning.svelte"
+  import Loader from "./elements/Loader.svelte"
   import Intro from "./writing/Intro.svelte"
   import OnRats from "./writing/OnRats.svelte"
 </script>
@@ -57,11 +58,21 @@
 
     <Row --top="30vh">
       <div class="WingsOfRat Frame--fancy Frame">
-        <iframe
-          class="WingsOfRat-frame flex-frame"
-          title="wings of rat"
-          src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"
-        />
+        <Loader>
+          <iframe
+            slot="content"
+            class="WingsOfRat-frame flex-frame"
+            title="wings of rat"
+            src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"
+          />
+
+          <img
+            slot="loader"
+            class="WingsOfRat-frame"
+            src="/zines/rats/wings-of-rat-thumb.jpg"
+            alt="a rat w/ wings on a new york street"
+          />
+        </Loader>
       </div>
 
       <aside slot="right">
