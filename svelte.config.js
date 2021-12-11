@@ -10,6 +10,8 @@ const config = {
   kit: {
     // id of render target (an el in ./src/app.html)
     target: "#site",
+    // use app_ instead of _app to avoid jekyll problems on gh pages (https://giters.com/sveltejs/kit/issues/2143) 
+    appDir: "app_",
     // static rendering
     adapter: adapter({
       pages: "docs",
