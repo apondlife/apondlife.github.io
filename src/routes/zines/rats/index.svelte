@@ -49,9 +49,9 @@
     <div class="RowSpacer"></div>
 
     <Row>
-      <div class="WingsOfRat Frame">
+      <div class="Frame">
         <iframe
-          class="flex-frame"
+          class="WingsOfRat-frame flex-frame"
           title="wings of rat"
           src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"
         />
@@ -59,7 +59,9 @@
 
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">use the WASD keys to fly around</p>
+        <p class="Sidenote" style="margin-top: 30px;">use the WASD or arrow keys to fly around</p>
+        <p class="Sidenote" style="margin-top: 180px;">this game is inspired by a movie called 'wings of desire'</p>
+        <p class="Sidenote" style="margin-top: 60px;">the music is a track by 'wendy' called 'melody of life'</p>
       </aside>
     </Row>
 
@@ -203,9 +205,10 @@
     flex: 1;
   }*/
 
-  .WingsOfRat {
-    width: 960px;
-    height: 540px;
+  /* content is 16:9 */
+  .WingsOfRat-frame {
+    width: 880px;
+    height: 495px;
   }
 
   /* external rattickling content size: 980 x 658 */

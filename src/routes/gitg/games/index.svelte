@@ -25,7 +25,7 @@
         </h1>
 
         <p class="Game-metadata">
-          first played: <Link text="gitg #1" href="/events#gitg1" />
+          first played: <Link text="gitg #1" href="/gitg/events#gitg1" />
         </p>
 
         <div class="Game-body">
@@ -52,7 +52,7 @@
           <h1 id="forkgame" class="Game-title">forkgame</h1>
 
           <p class="Game-metadata">
-            discovered: <Link text="gitg #1" href="/events#gitg1" />
+            discovered: <Link text="gitg #1" href="/gitg/events#gitg1" />
           </p>
 
           <div class="Game-body">
@@ -89,7 +89,7 @@
           <h1 class="Game-title">lightbox</h1>
 
           <p class="Game-metadata">
-            discovered: <Link text="gitg #0" href="/events#gitg0" />
+            discovered: <Link text="gitg #0" href="/gitg/events#gitg0" />
           </p>
 
           <div class="Game-body">
@@ -110,7 +110,7 @@
           </p>
 
           <div class="Game-body">
-            like <Link text="darkroom" href="/games#darkoom" /> but with sight and hand touching. line on your backs in a circle with your heads
+            like <Link text="darkroom" href="/gitg/games#darkoom" /> but with sight and hand touching. line on your backs in a circle with your heads
             pointed towards one another. inch together until those heads are touching or almost touching, as close as you can comfortably
             get right now. raise your hands into the sky and look up at this new digital world. introduce your hands to one other,
             talk to the local deity. the possibilities are endless.
@@ -121,7 +121,7 @@
           <h1 id="zending" class="Game-title">zending</h1>
 
           <p class="Game-metadata">
-            discovered: <Link text="gitg #0" href="/events#gitg0" />
+            discovered: <Link text="gitg #0" href="/gitg/events#gitg0" />
           </p>
 
           <div class="Game-body">
@@ -136,7 +136,7 @@
           <h1 id="balloon-relay" class="Game-title">balloon relay</h1>
 
           <p class="Game-metadata">
-            discovered: <Link text="gitg #2" href="/events#gitg2" />
+            discovered: <Link text="gitg #2" href="/gitg/events#gitg2" />
           </p>
 
           <div class="Game-body">
@@ -177,7 +177,7 @@
         <h1 id="magenta-is-lava" class="Game-title">magenta is lava</h1>
 
         <p class="Game-metadata">
-          discovered: <Link text="gitg #1" href="/events#gitg1" />
+          discovered: <Link text="gitg #1" href="/gitg/events#gitg1" />
         </p>
 
         <div class="Game-body">
