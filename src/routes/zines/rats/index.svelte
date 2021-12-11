@@ -51,7 +51,7 @@
     <Row
       --top="15vh"
     >
-      <div class="Frame">
+      <div class="WingsOfRat Frame">
         <iframe
           class="WingsOfRat-frame flex-frame"
           title="wings of rat"
@@ -177,18 +177,12 @@
 
   /* -- e/sidenote */
   .Sidenote {
+    box-sizing: content-box;
     position: relative;
     width: 100px;
-    margin-left: 50px;
-  }
-
-  .Sidenote::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100%;
-    left: -40px;
-    background: linear-gradient(to left, #0909094d, transparent);
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 1px dashed var(--fg-color-dark);
   }
 
   /* -- arts -- */
