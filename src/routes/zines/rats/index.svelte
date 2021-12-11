@@ -29,7 +29,9 @@
       </Warning>
     </Row>
 
-    <Row>
+    <Row
+      --top="15vh"
+    >
       <div class="Ratjam Frame">
         <iframe
           class="flex-frame"
@@ -46,9 +48,9 @@
       </aside>
     </Row>
 
-    <div class="RowSpacer"></div>
-
-    <Row>
+    <Row
+      --top="15vh"
+    >
       <div class="Frame">
         <iframe
           class="WingsOfRat-frame flex-frame"
@@ -65,9 +67,9 @@
       </aside>
     </Row>
 
-    <div class="RowSpacer"></div>
-
-    <Row>
+    <Row
+      --top="15vh"
+    >
       <div class="Frame">
         <iframe
           class="flex-frame"
@@ -77,7 +79,7 @@
           title="rat dnb"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
+        />
       </div>
 
       <aside slot="right">
@@ -86,15 +88,15 @@
       </aside>
     </Row>
 
-    <div class="RowSpacer"></div>
-
-    <Row>
+    <Row
+      --top="15vh"
+    >
       <div class="RatTickling Frame">
         <iframe
           class="RatTickling-frame flex-frame"
           title="rat tickling"
           src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
-        ></iframe>
+        />
       </div>
 
       <aside slot="right">
@@ -154,21 +156,15 @@
     mix-blend-mode: color-dodge;
   }
 
-  .RowSpacer {
-    margin-top: 15vh;
-    margin-bottom:  15vh;
-  }
-
   /* -- elements -- */
   /* -- e/frame */
   .Frame {
+    display: flex;
     padding: 30px;
     background-color: #1c1c1a;
     border: 10px solid #262626;
     border-radius: 2px;
     box-shadow: 20px 20px 40px -25px black;
-
-    display: flex;
   }
 
   .Frame > * {

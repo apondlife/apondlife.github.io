@@ -17,6 +17,8 @@
 <style>
   .Row {
     display: flex;
+    margin-top: var(--top);
+    margin-bottom: var(--bot);
   }
 
   .Row-bag {
