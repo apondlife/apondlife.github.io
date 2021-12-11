@@ -3,8 +3,9 @@
   import Row from "./elements/Row.svelte"
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
-  import Intro from "./writing/Intro.svelte"
-  import OnRats from "./writing/OnRats.svelte"
+  import Intro from "./content/Intro.svelte"
+  import Poratry from "./content/Poratry.svelte"
+  import OnRats from "./content/OnRats.svelte"
 </script>
 
 <svelte:head>
@@ -50,6 +51,25 @@
       </aside>
     </Row>
 
+
+    <Row --top="30vh">
+      <Warning>
+        now<br>for<br>some<br>po<br>rat<br>try
+      </Warning>
+    </Row>
+
+    <Row --top="30vh">
+      <Poratry />
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">we did some automatic writing</p>
+        <p class="Sidenote" style="margin-top: 100px;">about<br>rats</p>
+        <p class="Sidenote" style="margin-top: 460px;">as well as some fluxus scores</p>
+        <p class="Sidenote" style="margin-top: 75px;">about<br>rats</p>
+        <p class="Sidenote" style="margin-top: 200px;">we are serious artists</p>
+      </aside>
+    </Row>
+
     <Row --top="30vh">
       <div class="Frame--line Frame">
         <OnRats />
@@ -69,7 +89,7 @@
           <img
             slot="loader"
             class="WingsOfRat-frame"
-            src="/zines/rats/wings-of-rat-thumb.jpg"
+            src="/zines/rats/games/wings-of-rat-thumb.jpg"
             alt="a rat w/ wings on a new york street"
           />
         </Loader>
@@ -135,6 +155,7 @@
     background-color: var(--bg-color);
     color: var(--fg-color);
     font-size: 16px;
+    line-height: 1.3;
   }
 
   :global(a) {
