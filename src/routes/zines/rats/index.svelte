@@ -329,7 +329,7 @@
   }
 
   .RatTickling--thumb {
-    flex: 1;
+    height: 631px;
   }
 
   .RatTickling-frame {
