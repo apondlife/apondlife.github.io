@@ -6,6 +6,7 @@
   import Intro from "./content/Intro.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
+  import Cratique from "./content/Cratique.svelte"
 </script>
 
 <svelte:head>
@@ -13,69 +14,96 @@
 </svelte:head>
 
 <template>
-  <img
-    src="/zines/rats/fur.jpg"
-    alt="very nice rat fur texture"
-    class="Rats-texture"
-  />
+  <img src="/zines/rats/fur.jpg" alt="very nice rat fur texture" class="Rats-texture" />
 
   <main class="Rats">
     <Header />
 
+    <!-- intro -->
     <Row>
       <div class="Frame--line Frame">
         <Intro />
       </div>
     </Row>
 
+    <!-- get ready to play some thing -->
     <Row --top="30vh">
       <Warning>
-        get<br>ready<br>to<br>play<br>some<br>thing
+        get<br />ready<br />to<br />play<br />some<br />thing
       </Warning>
     </Row>
 
+    <!-- rat jam -->
     <Row --top="30vh">
       <div class="Ratjam Frame--fancy Frame">
-        <iframe
-          class="flex-frame"
-          title="ratjam"
-          src="https://apondlife.github.io/rats/ratjam"
-        />
+        <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
 
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">you can click & hold for the rat to chase the cheese</p>
         <p class="Sidenote" style="margin-top: 30px;">the rat loves the cheesee</p>
-        <p class="Sidenote" style="margin-top: 80px;">use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting</p>
+        <p class="Sidenote" style="margin-top: 80px;">
+          use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different
+          parts of the painting
+        </p>
         <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
       </aside>
     </Row>
 
-
+    <!-- now some poratry -->
     <Row --top="30vh">
       <Warning>
-        now<br>for<br>some<br>po<br>rat<br>try
+        now<br />for<br />some<br />po<br />rat<br />try
       </Warning>
     </Row>
 
+    <!--poratry-->
     <Row --top="30vh">
       <Poratry />
 
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">we did some automatic writing</p>
-        <p class="Sidenote" style="margin-top: 100px;">about<br>rats</p>
+        <p class="Sidenote" style="margin-top: 100px;">about<br />rats</p>
         <p class="Sidenote" style="margin-top: 460px;">as well as some fluxus scores</p>
-        <p class="Sidenote" style="margin-top: 75px;">about<br>rats</p>
+        <p class="Sidenote" style="margin-top: 75px;">about<br />rats</p>
         <p class="Sidenote" style="margin-top: 200px;">we are serious artists</p>
       </aside>
     </Row>
 
+    <!-- on rats -->
     <Row --top="30vh">
       <div class="Frame--line Frame">
         <OnRats />
       </div>
     </Row>
 
+    <!-- rat loving -->
+    <Row --top="30vh">
+      <div class="RatLoving Frame--fancy Frame">
+        <Loader>
+          <iframe
+            slot="content"
+            class="RatLoving-frame flex-frame"
+            title="loving rats"
+            src="https://apondlife.github.io/rats/ratloving/Build/index.html"
+          />
+
+          <img
+            slot="loader"
+            class="RatLoving-frame"
+            src="/zines/rats/games/ratloving-thumb.jpg"
+            alt="a lot of rats, possibly inside a bag"
+          />
+        </Loader>
+      </div>
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">click to start</p>
+        <p class="Sidenote" style="margin-top: 30px;">move your cursor around to touch the rats</p>
+        <p class="Sidenote" style="margin-top: 90px;">does it tickle?</p>
+      </aside>
+    </Row>
+
+    <!-- wings of rat -->
     <Row --top="30vh">
       <div class="WingsOfRat Frame--fancy Frame">
         <Loader>
@@ -103,6 +131,7 @@
       </aside>
     </Row>
 
+    <!-- rat youtube video -->
     <Row --top="30vh">
       <div class="Frame">
         <iframe
@@ -122,20 +151,33 @@
       </aside>
     </Row>
 
+    <!-- here comes the video games -->
     <Row --top="30vh">
-      <div class="RatTickling Frame">
-        <iframe
-          class="RatTickling-frame flex-frame"
-          title="rat tickling"
-          src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
-        />
+      <Warning>
+        here<br />comes<br />the<br />video<br />games<br />tfarc<br />rats<br />ii
+      </Warning>
+    </Row>
+
+    <!-- tfarc rats ii -->
+    <Row --top="30vh">
+      <div class="Rats-II Frame--fancy Frame">
+        <iframe class="flex-frame" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii" />
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
-        <p class="Sidenote" style="margin-top: 30px;">it's produced by the purdue agriculture gaskill lab</p>
-        <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
+        <p class="Sidenote" style="margin-top: 00px;">you can right click & hold to create new rats</p>
+        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
+        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
+        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
+        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
       </aside>
+    </Row>
+
+    <!-- on rats -->
+    <Row --top="30vh">
+      <div class="Frame--line Frame">
+        <Cratique />
+      </div>
     </Row>
   </main>
 </template>
@@ -231,6 +273,12 @@
     height: 600px;
   }
 
+  .Rats-II {
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+  }
+
   /*.Ratjam-frame {
     flex: 1;
   }*/
@@ -238,6 +286,11 @@
   /* content is 16:9 */
   .WingsOfRat-frame {
     width: 880px;
+    height: 495px;
+  }
+
+  .RatLoving-frame {
+    width: 495px;
     height: 495px;
   }
 
@@ -249,9 +302,9 @@
 
   .RatTickling-frame {
     /* just scaling down the iframe content to avoid scroll bars:  i don't really know how this works */
-    --RatTickling-scale-factor: 0.8 ;
-    min-width: calc(1/var(--RatTickling-scale-factor)*100%);
-    min-height: calc(1/var(--RatTickling-scale-factor)*100%);
+    --RatTickling-scale-factor: 0.8;
+    min-width: calc(1 / var(--RatTickling-scale-factor) * 100%);
+    min-height: calc(1 / var(--RatTickling-scale-factor) * 100%);
     transform: scale(var(--RatTickling-scale-factor));
     transform-origin: 0 0;
     animation: HueRotate 30s linear infinite alternate;
@@ -260,11 +313,11 @@
   @keyframes HueRotate {
     from {
       /*filter: sepia(0.1) hue-rotate(0deg) saturate(3) invert(1) sepia(0.6);*/
-      filter:  brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(0deg) saturate(2);
+      filter: brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(0deg) saturate(2);
     }
     to {
       /*filter: sepia(0.1) hue-rotate(360deg) saturate(3) invert(1) sepia(0.6);*/
-      filter:  brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(180deg) saturate(2);
+      filter: brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(180deg) saturate(2);
     }
   }
 </style>
