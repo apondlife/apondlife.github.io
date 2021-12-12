@@ -7,6 +7,10 @@
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
+
+  function goHome() {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
 </script>
 
 <svelte:head>
@@ -25,6 +29,13 @@
         <Intro />
       </div>
     </Row>
+
+    <div
+      class="Home"
+      src="/images/logo-green.png"
+      on:click={goHome}
+      alt="a rat hole with a doormat that says home. there's a tail coming out of it."
+    />
 
     <!-- get ready to play some thing -->
     <Row --top="30vh">
@@ -103,6 +114,40 @@
       </aside>
     </Row>
 
+    <!-- tfarc rats ii -->
+    <Row --top="30vh">
+      <div class="Rats-II Frame--fancy Frame">
+        <iframe class="flex-frame" title="tfarc rats ii" src="https://apondlife.github.io/rats/rats-ii" />
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">you can right click & hold to create new rats</p>
+        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
+        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
+        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
+        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
+      </aside>
+    </Row>
+
+    <!-- net rat -->
+    <Row --top="30vh">
+      <Warning>
+        have<br />you<br />heard<br />about<br />net<br />rat<br />?
+      </Warning>
+    </Row>
+
+    <!-- labrat -->
+    <Row --top="30vh">
+      <div class="Labrat Frame--fancy Frame">
+        <iframe class="flex-frame" title="labrat" src="https://apondlife.github.io/rats/labrat" />
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 30px;">this is what the internet should be like</p>
+        <p class="Sidenote" style="margin-top: 50px;">its a webpage feel free to click around!</p>
+      </aside>
+    </Row>
+
     <!-- wings of rat -->
     <Row --top="30vh">
       <div class="WingsOfRat Frame--fancy Frame">
@@ -151,21 +196,42 @@
       </aside>
     </Row>
 
-    <!-- here comes the video games -->
+    <!-- here comes the video game -->
     <Row --top="30vh">
       <Warning>
-        here<br />comes<br />the<br />video<br />games<br />tfarc<br />rats<br />ii
+        here<br />comes<br />the<br />video<br />game<br />tfarc<br />rats<br />ii
       </Warning>
     </Row>
 
     <!-- tfarc rats ii -->
     <Row --top="30vh">
       <div class="Rats-II Frame--fancy Frame">
-        <iframe class="flex-frame" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii" />
+        <iframe class="flex-frame" title="tfarc rats ii" src="https://apondlife.github.io/rats/rats-ii" />
       </div>
 
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">you can right click & hold to create new rats</p>
+        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
+        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
+        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
+        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
+      </aside>
+    </Row>
+
+    <!-- drawing rats -->
+    <Row --top="30vh">
+      <div class="Sketching">
+        <div class="Portrat Frame--fancy Frame">
+          <iframe class="flex-frame" title="portrat" src="https://apondlife.github.io/rats/portrat" />
+        </div>
+
+        <div class="Ratist Frame--fancy Frame">
+          <iframe class="flex-frame" title="ratist" src="https://apondlife.github.io/rats/ratle" />
+        </div>
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">click and drag to draw some rats</p>
         <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
         <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
         <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
@@ -268,8 +334,33 @@
     border-left: 1px dashed var(--fg-color-dark);
   }
 
+  /* -- e/home */
+  .Home {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: sticky;
+    top: 25px;
+    /* bottom: 25px; */
+    left: 50px;
+    background-image: url("/zines/rats/homepage1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40" width="40"><text x="0" y="9" font-size="30" dominant-baseline="hanging">🐀</text></svg>'),
+      auto;
+  }
+
+  .Home:hover {
+    background-image: url("/zines/rats/homepage2.png");
+  }
+
   /* -- arts -- */
   .Ratjam {
+    width: 960px;
+    height: 600px;
+  }
+
+  .Labrat {
     width: 960px;
     height: 600px;
   }
@@ -278,6 +369,24 @@
     overflow: hidden;
     width: 600px;
     height: 600px;
+  }
+
+  .Sketching {
+    display: flex;
+    align-items: center;
+  }
+
+  .Ratist {
+    margin: 25px;
+    height: 600px;
+    width: 500px;
+    aspect-ratio: 4/4.4;
+  }
+
+  .Portrat {
+    margin: 25px;
+    width: 922px;
+    height: 400px;
   }
 
   /*.Ratjam-frame {
