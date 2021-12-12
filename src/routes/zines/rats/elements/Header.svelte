@@ -1,9 +1,12 @@
 <script>
   import Link from "$lib/link.svelte"
+
+  // the id of the header
+  export let id = ""
 </script>
 
 <template>
-  <header class="RatsHeader">
+  <header id={id} class="RatsHeader">
     <h1>rats</h1>
     <h2><Link href="/" text="pondlife" /> issue #0</h2>
   </header>

@@ -4,6 +4,7 @@
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
   import Intro from "./content/Intro.svelte"
+  import Table from "./content/Table.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
@@ -17,24 +18,31 @@
   <img src="/zines/rats/fur.jpg" alt="very nice rat fur texture" class="Rats-texture" />
 
   <main class="Rats">
-    <Header />
+    <Header
+      id="title"
+    />
 
     <!-- intro -->
-    <Row>
+    <Row id="introduction" --bot="15vh">
       <div class="Frame--line Frame">
         <Intro />
       </div>
     </Row>
 
+    <!-- table of contents -->
+    <Row id="table-of-contents" --top="15vh" --bot="15vh">
+      <Table />
+    </Row>
+
     <!-- get ready to play some thing -->
-    <Row --top="30vh">
+    <Row id="warning-1" --top="15vh" --bot="15vh">
       <Warning>
         get<br />ready<br />to<br />play<br />some<br />thing
       </Warning>
     </Row>
 
     <!-- rat jam -->
-    <Row --top="30vh">
+    <Row id="ratjam" --top="15vh" --bot="15vh">
       <div class="Ratjam Frame--fancy Frame">
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
@@ -51,14 +59,14 @@
     </Row>
 
     <!-- now some poratry -->
-    <Row --top="30vh">
+    <Row id="warning-2" --top="15vh" --bot="15vh">
       <Warning>
         now<br />for<br />some<br />po<br />rat<br />try
       </Warning>
     </Row>
 
     <!--poratry-->
-    <Row --top="30vh">
+    <Row id="poratry" --top="15vh" --bot="15vh">
       <Poratry />
 
       <aside slot="right">
@@ -71,14 +79,14 @@
     </Row>
 
     <!-- on rats -->
-    <Row --top="30vh">
+    <Row id="on-rats" --top="15vh" --bot="15vh">
       <div class="Frame--line Frame">
         <OnRats />
       </div>
     </Row>
 
     <!-- rat loving -->
-    <Row --top="30vh">
+    <Row id="ratloving" --top="15vh" --bot="15vh">
       <div class="RatLoving Frame--fancy Frame">
         <Loader>
           <iframe
@@ -104,7 +112,7 @@
     </Row>
 
     <!-- wings of rat -->
-    <Row --top="30vh">
+    <Row id="wings-of-rat" --top="15vh" --bot="15vh">
       <div class="WingsOfRat Frame--fancy Frame">
         <Loader>
           <iframe
@@ -132,7 +140,7 @@
     </Row>
 
     <!-- rat youtube video -->
-    <Row --top="30vh">
+    <Row id="rat-dnb" --top="15vh" --bot="15vh">
       <div class="Frame">
         <iframe
           class="flex-frame"
@@ -152,7 +160,7 @@
     </Row>
 
     <!-- rat tickling -->
-    <Row --top="30vh">
+    <Row id="rattickling" --top="15vh" --bot="15vh">
       <Loader>
         <div slot="content" class="RatTickling--page Frame">
           <iframe
@@ -181,15 +189,15 @@
     </Row>
 
     <!-- here comes the video games -->
-    <Row --top="30vh">
+    <Row id="warning-3" --top="15vh" --bot="15vh">
       <Warning>
         here<br />comes<br />the<br />video<br />games<br />tfarc<br />rats<br />ii
       </Warning>
     </Row>
 
     <!-- tfarc rats ii -->
-    <Row --top="30vh">
-      <div class="Rats-II Frame--fancy Frame">
+    <Row id="rats-ii" --top="15vh" --bot="15vh">
+      <div class="RatsIi Frame--fancy Frame">
         <iframe class="flex-frame" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii" />
       </div>
 
@@ -203,7 +211,7 @@
     </Row>
 
     <!-- on rats -->
-    <Row --top="30vh">
+    <Row id="cratique" --top="15vh" --bot="15vh">
       <div class="Frame--line Frame">
         <Cratique />
       </div>
@@ -303,7 +311,7 @@
     height: 600px;
   }
 
-  .Rats-II {
+  .RatsIi {
     overflow: hidden;
     width: 600px;
     height: 600px;
