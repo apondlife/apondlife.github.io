@@ -25,14 +25,63 @@
 
 		
 
+		<link rel="modulepreload" href="/app_/start-484ecebe.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-6fa2ee03.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/__layout.reset.svelte-4a38cbf9.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/index.svelte-af976443.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/elements/Header.svelte-5976d330.js">
+		<link rel="modulepreload" href="/app_/chunks/link-96572ac3.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/elements/Row.svelte-54a2f4a7.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/elements/Warning.svelte-2552935b.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/elements/Loader.svelte-53db91a2.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/Intro.svelte-5c42b5a2.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/Table.svelte-198b118a.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/poratry/Poratry.svelte-b5cdf5c8.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/poratry/Auto.svelte-a947f3d3.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/poratry/Score.svelte-4d9af06f.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/OnRats.svelte-6f680c57.js">
+		<link rel="modulepreload" href="/app_/pages/zines/rats/content/Cratique.svelte-00118291.js">
 		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/index.svelte-73c631fc.css">
-		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/header.svelte-ccce43b1.css">
-		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/row.svelte-1cbddb6d.css">
-		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/intro.svelte-dff56d70.css">
-		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/warning.svelte-8b770f92.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/index.svelte-5c8cea3b.css">
+		<link rel="stylesheet" href="/app_/assets/link.svelte_svelte&type=style&lang-92de51ed.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/elements/Header.svelte-51527e94.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/elements/Row.svelte-340e2893.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/elements/Warning.svelte-93d2b569.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/elements/Loader.svelte-e441c502.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/Intro.svelte-13fb41b7.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/Table.svelte-871be651.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/poratry/Poratry.svelte-25d706ec.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/poratry/Auto.svelte-f0cc18b1.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/poratry/Score.svelte-e9ee2d7c.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/OnRats.svelte-85f2586b.css">
+		<link rel="stylesheet" href="/app_/assets/pages/zines/rats/content/Cratique.svelte-4cc52043.css">
 
-		
+		<script type="module">
+			import { start } from "/app_/start-484ecebe.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: false,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/pages/zines/rats/__layout.reset.svelte-4a38cbf9.js"),
+						import("/app_/pages/zines/rats/index.svelte-af976443.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fzines\u002Frats",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
   </head>
 
   <body>
@@ -42,76 +91,271 @@
 
 
 
-  <img src="/zines/rats/fur.jpg" alt="very nice rat fur texture" class="Rats-texture svelte-1tfarfh">
+  <img src="/zines/rats/fur.jpg" alt="very nice rat fur texture" class="Rats-texture svelte-107a9vo">
 
-  <main class="Rats svelte-1tfarfh"><header class="RatsHeader svelte-bihq2c"><h1 class="svelte-bihq2c">rats</h1>
-    <h2 class="svelte-bihq2c"><a href="/">pondlife</a> issue #0</h2>
+  <main class="Rats svelte-107a9vo"><header id="title" class="RatsHeader svelte-bihq2c"><h1 class="svelte-bihq2c">rats</h1>
+    <h2 class="svelte-bihq2c"><a class="Link svelte-193kav2" href="/">pondlife
+  </a> issue #0</h2>
   </header>
 
-    <div class="Row svelte-1xtuxf2"><div class="Row-gutter svelte-1xtuxf2"></div>
+    
+    <div style="display: contents; --bot:15vh;"><div id="introduction" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
 
-    <div class="Row-bag svelte-1xtuxf2"><article class="Intro svelte-shg612">here is the introductory text for the rats zine. this is a zine about rats,
+    <div class="Row-bag svelte-shqhmm"><div class="Frame--line Frame svelte-107a9vo"><article class="Intro svelte-h5f2c7">here is the introductory text for the rats zine. this is a zine about rats,
     and in it you should expect to encounter rats and things about rats. we chose
     the theme of rats somewhat arbitrarily, because we love rats, and because we
     wanted to work on making a bunch of small games together that would allow us
     to explore our diverging interests towards some common goal.
-  </article></div>
+  </article></div></div>
 
-    <div class="Row-gutter svelte-1xtuxf2"></div>
-  </div>
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
 
-    <div class="Row svelte-1xtuxf2"><div class="Row-gutter svelte-1xtuxf2"></div>
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="table-of-contents" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
 
-    <div class="Row-bag svelte-1xtuxf2"><p class="RatsWarning svelte-lrcq37">get<br>ready<br>to<br>play<br>some<br>thing
+    <div class="Row-bag svelte-shqhmm"><nav class="Table svelte-1yum39e"><ol class="Table-list svelte-1yum39e"><li>00. <a class="Link svelte-193kav2" href="#title">title
+  </a></li>
+      <li>01. <a class="Link svelte-193kav2" href="#introduction">introduction
+  </a></li>
+      <li>02. <a class="Link svelte-193kav2" href="#toc">table of contents
+  </a></li>
+      <li>03. <a class="Link svelte-193kav2" href="#warning-1">warning 1
+  </a></li>
+      <li>04. <a class="Link svelte-193kav2" href="#ratjam">ratjam
+  </a></li>
+      <li>05. <a class="Link svelte-193kav2" href="#warning-2">warning 2
+  </a></li>
+      <li>06. <a class="Link svelte-193kav2" href="#poratry">poratry
+  </a></li>
+      <li>07. <a class="Link svelte-193kav2" href="#on-rats">on rats
+  </a></li>
+      <li>08. <a class="Link svelte-193kav2" href="#ratloving">ratloving
+  </a></li>
+      <li>09. <a class="Link svelte-193kav2" href="#wings-of-rat">wings of rat
+  </a></li>
+      <li>10. <a class="Link svelte-193kav2" href="#rat-dnb">rat spins to dnb
+  </a></li>
+      <li>11. <a class="Link svelte-193kav2" href="#rattickling">rattickling
+  </a></li>
+      <li>12. <a class="Link svelte-193kav2" href="#warning-3">warning 3
+  </a></li>
+      <li>13. <a class="Link svelte-193kav2" href="#rats-ii">tfarc rats ii
+  </a></li>
+      <li>14. <a class="Link svelte-193kav2" href="#cratique">cratique
+  </a></li>
+    <ol></ol></ol></nav></div>
+
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
+
+    <div class="Home svelte-107a9vo" src="/images/logo-green.png" alt="a rat hole with a doormat that says home. there's a tail coming out of it."></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="warning-1" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><p class="RatsWarning svelte-flhtp1">get<br>ready<br>to<br>play<br>some<br>thing
       
   </p></div>
 
-    <div class="Row-gutter svelte-1xtuxf2"></div>
-  </div>
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
 
-    <div class="Row svelte-1xtuxf2"><div class="Row-gutter svelte-1xtuxf2"></div>
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="ratjam" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
 
-    <div class="Row-bag svelte-1xtuxf2"><div class="Ratjam Frame svelte-1tfarfh"><iframe class="flex-frame svelte-1tfarfh" title="ratjam" src="https://apondlife.github.io/rats/ratjam"></iframe></div></div>
+    <div class="Row-bag svelte-shqhmm"><div class="Ratjam Frame--fancy Frame svelte-107a9vo"><iframe class="flex-frame svelte-107a9vo" title="ratjam" src="https://apondlife.github.io/rats/ratjam"></iframe></div></div>
 
-    <div class="Row-gutter svelte-1xtuxf2"><aside slot="right"><p class="Sidenote svelte-1tfarfh" style="margin-top: 00px;">you can click &amp; hold for the rat to chase the cheese</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 30px;">the rat loves the cheesee</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 80px;">use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 60px;">the rat loves painting</p></aside></div>
-  </div>
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">you can click &amp; hold for the rat to chase the cheese</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">the rat loves the cheesee</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 80px;">use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different
+          parts of the painting
+        </p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 60px;">the rat loves painting</p></aside></div>
+  </div></div>
 
-    <div class="RowSpacer svelte-1tfarfh"></div>
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="warning-2" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
 
-    <div class="Row svelte-1xtuxf2"><div class="Row-gutter svelte-1xtuxf2"></div>
+    <div class="Row-bag svelte-shqhmm"><p class="RatsWarning svelte-flhtp1">now<br>for<br>some<br>po<br>rat<br>try
+      
+  </p></div>
 
-    <div class="Row-bag svelte-1xtuxf2"><div class="Frame svelte-1tfarfh"><iframe class="WingsOfRat-frame flex-frame svelte-1tfarfh" title="wings of rat" src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"></iframe></div></div>
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
 
-    <div class="Row-gutter svelte-1xtuxf2"><aside slot="right"><p class="Sidenote svelte-1tfarfh" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 30px;">use the WASD or arrow keys to fly around</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 180px;">this game is inspired by a movie called &#39;wings of desire&#39;</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 60px;">the music is a track by &#39;wendy&#39; called &#39;melody of life&#39;</p></aside></div>
-  </div>
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="poratry" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
 
-    <div class="RowSpacer svelte-1tfarfh"></div>
+    <div class="Row-bag svelte-shqhmm"><article class="Poratry svelte-1x2xt5p"><section class="Poratry-col svelte-1x2xt5p"><article class="Auto svelte-4mvj1o"><a class="Link Link--block svelte-193kav2" href="/zines/rats/poems/poem4.png" target="_blank" rel="noopener noreferrer"><img class="Auto-img svelte-4mvj1o" src="/zines/rats/poems/poem4-thumb.png" alt="a poem: teeth of trash / carry on fucking / legends like the smell">
+  </a>
+  </article>
 
-    <div class="Row svelte-1xtuxf2"><div class="Row-gutter svelte-1xtuxf2"></div>
+      <article class="Auto svelte-4mvj1o"><a class="Link Link--block svelte-193kav2" href="/zines/rats/poems/poem3.png" target="_blank" rel="noopener noreferrer"><img class="Auto-img svelte-4mvj1o" src="/zines/rats/poems/poem3-thumb.png" alt="a poem: scrabbling @ / blind feet / tails destroy hole / black queijo time / A smooth think / cheese raft">
+  </a>
+  </article>
 
-    <div class="Row-bag svelte-1xtuxf2"><div class="Frame svelte-1tfarfh"><iframe class="flex-frame svelte-1tfarfh" width="671" height="503" src="https://www.youtube.com/embed/5g3lBt8y5js?playlist=5g3lBt8y5js&autoplay=0&modestbranding=1&showinfo=0&controls=0&loop=1" title="rat dnb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></div>
+      <article class="Score svelte-195if38"><h1 class="svelte-195if38"><span slot="title">family event ii (game night)</span></h1>
+    <p>remove the game pieces from the box and give each player their player piece. set up the game board. put all of the player pieces in the nearest trash can, and shake the trash can (taking care to not let any trash escape). in turn order, search the trash can for your player piece, setting aside any pieces of trash you find. once all players have found their player piece, whoever has collected the most trash wins.</p>
+  </article>
 
-    <div class="Row-gutter svelte-1xtuxf2"><aside slot="right"><p class="Sidenote svelte-1tfarfh" style="margin-top: 00px;">we didn&#39;t make this</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 30px;">youtube user lokirat made it</p></aside></div>
-  </div>
+      <article class="Auto svelte-4mvj1o"><a class="Link Link--block svelte-193kav2" href="/zines/rats/poems/poem2.png" target="_blank" rel="noopener noreferrer"><img class="Auto-img svelte-4mvj1o" src="/zines/rats/poems/poem2-thumb.png" alt="a poem: raats last rat dear please / [branch right] you disgusting refuse are cutefinescrabblegood / [branch down] ratos on pizza gutter dirt &amp; carrion AAA bugrats">
+  </a>
+  </article></section>
 
-    <div class="RowSpacer svelte-1tfarfh"></div>
+    <section class="Poratry-col svelte-1x2xt5p"><article class="Auto svelte-4mvj1o"><a class="Link Link--block svelte-193kav2" href="/zines/rats/poems/poem5.png" target="_blank" rel="noopener noreferrer"><img class="Auto-img svelte-4mvj1o" src="/zines/rats/poems/poem5-thumb.png" alt="a poem: fast rats at pharmacy enraptured / league of bitter pizza / fast / loyal ears fast rapido / tight trash eveloped scrounging / stop / whatever crush">
+  </a>
+  </article>
 
-    <div class="Row svelte-1xtuxf2"><div class="Row-gutter svelte-1xtuxf2"></div>
+      <article class="Score svelte-195if38"><h1 class="svelte-195if38"><span slot="title">family event i</span></h1>
+    <p>enter a large pile of garbage. follow the sweet scent of rot, search gleefully. consume immediately and continue, or bring it home with you.</p>
+  </article>
 
-    <div class="Row-bag svelte-1xtuxf2"><div class="RatTickling Frame svelte-1tfarfh"><iframe class="RatTickling-frame flex-frame svelte-1tfarfh" title="rat tickling" src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"></iframe></div></div>
+      <article class="Auto svelte-4mvj1o"><a class="Link Link--block svelte-193kav2" href="/zines/rats/poems/poem1.png" target="_blank" rel="noopener noreferrer"><img class="Auto-img svelte-4mvj1o" src="/zines/rats/poems/poem1-thumb.png" alt="a poem: cute jinx rubberband yummy / me the rat rat rat rat rat rat rat (rats / megamind sucks">
+  </a>
+  </article>
 
-    <div class="Row-gutter svelte-1xtuxf2"><aside slot="right"><p class="Sidenote svelte-1tfarfh" style="margin-top: 00px;">we didn&#39;t make this</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 30px;">it&#39;s produced by the purdue agriculture gaskill lab</p>
-        <p class="Sidenote svelte-1tfarfh" style="margin-top: 30px;">we applied some css filters</p></aside></div>
-  </div>
+      <article class="Score svelte-195if38"><h1 class="svelte-195if38"><span slot="title">family event iii (rocks)</span></h1>
+    <p>find some people. hide in a tight circle while they throw rocks into a pot lid without purpose. one may pull you by the tail as another attempts to smash the pot lid over your head (watch out for the rocks). shriek performatively but not farcically.</p>
+  </article></section>
+  </article></div>
 
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">we did some automatic writing</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 100px;">about<br>rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 345px;">as well as some fluxus scores</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 75px;">about<br>rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 200px;">we are serious artists</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="on-rats" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="Frame--line Frame svelte-107a9vo"><article class="OnRats svelte-pv9bha">here is the some more text about rats. one common objects that was in our shared ideas was a trash bag full of rats inside. Do
+    rats procreate inside of them? Is it possible for a trash bag to migrate because of the rats inside of it. If so, does the
+    collective consciousness of the rats inside the bag have a consciousness of its own. A world full of bags, with a world full
+    of rats and trash inside. many thoughts about that, but implementing a physically realistic bag of rats was outside the scope
+    of this project. (if you think the world is really in need of a fully fledged videogame about rats inside a bag, please
+    contact us at <a class="Link svelte-193kav2" href="mailto:frogfrogforg@gmail.com">
+  </a>).
+  </article></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="ratloving" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="RatLoving Frame--fancy Frame svelte-107a9vo"><span class="Loader svelte-gwixtf"><img slot="loader" class="RatLoving-frame svelte-107a9vo" src="/zines/rats/games/ratloving-thumb.jpg" alt="a lot of rats, possibly inside a bag"></span></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">click to start</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">move your cursor around to touch the rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 90px;">does it tickle?</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:30vh;"><div id="" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><p class="RatsWarning svelte-flhtp1">have<br>you<br>heard<br>about<br>net<br>rat<br>?
+      
+  </p></div>
+
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:30vh;"><div id="" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="Labrat Frame--fancy Frame svelte-107a9vo"><iframe class="flex-frame svelte-107a9vo" title="labrat" src="https://apondlife.github.io/rats/labrat"></iframe></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">this is what the internet should be like</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 50px;">its a webpage feel free to click around!</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="wings-of-rat" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="WingsOfRat Frame--fancy Frame svelte-107a9vo"><span class="Loader svelte-gwixtf"><img slot="loader" class="WingsOfRat-frame svelte-107a9vo" src="/zines/rats/games/wings-of-rat-thumb.jpg" alt="a rat w/ wings on a new york street"></span></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">click to start</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">use the WASD or arrow keys to fly around</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 180px;">this game is inspired by a movie called &#39;wings of desire&#39;</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 60px;">the music is a track by &#39;wendy&#39; called &#39;melody of life&#39;</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="rat-dnb" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="Frame svelte-107a9vo"><iframe class="flex-frame svelte-107a9vo" width="671" height="503" src="https://www.youtube.com/embed/5g3lBt8y5js?playlist=5g3lBt8y5js&autoplay=0&modestbranding=1&showinfo=0&controls=0&loop=1" title="rat dnb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">we didn&#39;t make this</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">youtube user lokirat made it</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="rattickling" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><span class="Loader svelte-gwixtf"><div slot="loader" class="RatTickling--thumb Frame svelte-107a9vo"><img class="RatTickling-frame svelte-107a9vo" src="/zines/rats/games/rat-tickling-thumb.jpg" alt="a rat"></div></span></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">click to start this certification training</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 80px;">we didn&#39;t make this</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 160px;">it&#39;s produced by the purdue agriculture gaskill lab</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">we applied some css filters</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">rats should be happy</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="warning-3" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><p class="RatsWarning svelte-flhtp1">here<br>comes<br>the<br>video<br>game<br>tfarc<br>rats<br>ii
+      
+  </p></div>
+
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="rats-ii" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="RatsIi Frame--fancy Frame svelte-107a9vo"><iframe class="flex-frame svelte-107a9vo" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii"></iframe></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">you can right click &amp; hold to create new rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">a lot of new rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 50px;">the yellow box also selects them</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 120px;">the selected rats all act the same.</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:30vh;"><div id="" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="Sketching svelte-107a9vo"><div class="Portrat Frame--fancy Frame svelte-107a9vo"><iframe class="flex-frame svelte-107a9vo" title="portrat" src="https://apondlife.github.io/rats/portrat"></iframe></div>
+
+        <div class="Ratist Frame--fancy Frame svelte-107a9vo"><iframe class="flex-frame svelte-107a9vo" title="ratist" src="https://apondlife.github.io/rats/ratle"></iframe></div></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"><aside slot="right"><p class="Sidenote svelte-107a9vo" style="margin-top: 00px;">click and drag to draw some rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 30px;">a lot of new rats</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 50px;">the yellow box also selects them</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
+        <p class="Sidenote svelte-107a9vo" style="margin-top: 120px;">the selected rats all act the same.</p></aside></div>
+  </div></div>
+
+    
+    <div style="display: contents; --top:15vh; --bot:15vh;"><div id="cratique" class="Row svelte-shqhmm"><div class="Row-gutter svelte-shqhmm"></div>
+
+    <div class="Row-bag svelte-shqhmm"><div class="Frame--line Frame svelte-107a9vo"><article class="Cratique svelte-vh6et7"><h3><b>why i dislike rats as a theme for making games</b></h3>
+    while they are interesting characters, and their cuteness or grossness is very appealing, rats have too much personality. its very
+    easy to make a game that has a rat in it, but it is hard to make it be about the rats as an object. its hard to interact with the
+    rat as a rat, not with the rat as a character. (the continuous use of cheese shows this a lot, we are making games with the caricature
+    of rats). additionally the games are not about the ratness of the rat, or in any way attempting to simulate/immerse/contemplate
+    the behaviours of rats. (sadly rats in bags didn&#39;t happen, but still, that is rats in bags as an object not the rats themselves).
+    using some design-speak, it is very hard to come up with the affordances of the rat (in this sense, its hard to objectify a rat).
+    one of my main interests in a theme like this, is its dissection (you can only dissect a dead rat, (or kill it in the process)).
+    i want a theme that is more dissectable, that we can explore many uses of our object, that we can make people think of the object
+    in ways they haven&#39;t before. to make videogames like still lives of objects. animals are not good objects, they are good characters.
+  </article></div></div>
+
+    <div class="Row-gutter svelte-shqhmm"></div>
+  </div></div>
   </main>
 
 

@@ -25,9 +25,43 @@
 
 		
 
+		<link rel="modulepreload" href="/app_/start-484ecebe.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-6fa2ee03.js">
+		<link rel="modulepreload" href="/app_/pages/__layout.svelte-f1481043.js">
+		<link rel="modulepreload" href="/app_/pages/gitg/index.svelte-ac9c2d26.js">
+		<link rel="modulepreload" href="/app_/chunks/header-60ace7e0.js">
+		<link rel="modulepreload" href="/app_/chunks/gitg-8cb4642b.js">
+		<link rel="modulepreload" href="/app_/chunks/link-96572ac3.js">
+		<link rel="modulepreload" href="/app_/chunks/pondlife-e0b6e668.js">
 		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/app_/assets/link.svelte_svelte&type=style&lang-92de51ed.css">
 
-		
+		<script type="module">
+			import { start } from "/app_/start-484ecebe.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: false,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/pages/__layout.svelte-f1481043.js"),
+						import("/app_/pages/gitg/index.svelte-ac9c2d26.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fgitg",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
   </head>
 
   <body>
@@ -39,10 +73,15 @@
 
   <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
 
-    <div class="Header-text"><h1 class="Header-title"><a href="/gitg/games">games</a>
-  <a href="/gitg/events">in</a>
+    <div class="Header-text"><h1 class="Header-title"><a class="Link svelte-193kav2" href="/gitg/games">games
+  </a>
+  <a class="Link svelte-193kav2" href="/gitg/events">in
+  </a>
   the grass</h1>
-    <h2 class="Header-subtitle">parties by p<a href="/zines" class="Link--nav">on</a>d<a href="/devlog" class="Link--nav">li</a>f<a href="/gitg" class="Link--nav">e</a></h2></div></header>
+    <h2 class="Header-subtitle">parties by p<a class="Link--nav svelte-193kav2" href="/zines">on
+  </a>d<a class="Link--nav svelte-193kav2" href="/devlog">li
+  </a>f<a class="Link--nav svelte-193kav2" href="/gitg">e
+  </a></h2></div></header>
 
   <main class="Home"><section id="what" class="Section"><h1 class="Section-title">what</h1>
       <p>game-forward-parties trying to blur the boundaries between games, art, folk games, and videogames. in the spirit of the

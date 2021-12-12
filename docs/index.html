@@ -25,9 +25,42 @@
 
 		
 
+		<link rel="modulepreload" href="/app_/start-484ecebe.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-6fa2ee03.js">
+		<link rel="modulepreload" href="/app_/pages/__layout.svelte-f1481043.js">
+		<link rel="modulepreload" href="/app_/pages/index.svelte-a7d67230.js">
+		<link rel="modulepreload" href="/app_/chunks/header-60ace7e0.js">
+		<link rel="modulepreload" href="/app_/chunks/link-96572ac3.js">
+		<link rel="modulepreload" href="/app_/chunks/pondlife-e0b6e668.js">
 		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/app_/assets/link.svelte_svelte&type=style&lang-92de51ed.css">
 
-		
+		<script type="module">
+			import { start } from "/app_/start-484ecebe.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: false,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/pages/__layout.svelte-f1481043.js"),
+						import("/app_/pages/index.svelte-a7d67230.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
   </head>
 
   <body>
@@ -39,12 +72,16 @@
 
   <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
 
-    <div class="Header-text"><h1 class="Header-title">p<a href="/zines" class="Link--nav">on</a>d<a href="/devlog" class="Link--nav">li</a>f<a href="/gitg" class="Link--nav">e</a></h1>
+    <div class="Header-text"><h1 class="Header-title">p<a class="Link--nav svelte-193kav2" href="/zines">on
+  </a>d<a class="Link--nav svelte-193kav2" href="/devlog">li
+  </a>f<a class="Link--nav svelte-193kav2" href="/gitg">e
+  </a></h1>
 
     <h2 class="Header-subtitle">making and living games
     </h2></div></header>
 
-  <main class="Home"><a href="/events/0/images/projector.jpg" target="_blank" rel="noopener noreferrer"><img class="Home-hero" src="/events/0/images/projector-thumb.jpg" width="600" alt="four feet in a box of light projected into the grass"></a>
+  <main class="Home"><a class="Link svelte-193kav2" href="/events/0/images/projector.jpg" target="_blank" rel="noopener noreferrer"><img class="Home-hero" src="/events/0/images/projector-thumb.jpg" width="600" alt="four feet in a box of light projected into the grass">
+  </a>
 
     <section id="who" class="Section"><h1 class="Section-title">who</h1>
       <p>ali, darwin, fran, mut, ty</p></section>
@@ -56,11 +93,16 @@
 
     <section id="portfolio" class="Section"><h1 class="Section-title">portfolio</h1>
       <p>links to our external itch.io profiles</p>
-      <ul><li><a href="https://aaaaaugh.itch.io/" target="_blank" rel="noopener noreferrer">ali</a></li>
-        <li><a href="https://gurnburial.itch.io/" target="_blank" rel="noopener noreferrer">darwin</a></li>
-        <li><a href="https://frojo.itch.io/" target="_blank" rel="noopener noreferrer">fran</a></li>
-        <li><a href="https://muts.itch.io/" target="_blank" rel="noopener noreferrer">mut</a></li>
-        <li><a href="https://tycobbb.itch.io/" target="_blank" rel="noopener noreferrer">ty</a></li></ul></section></main>
+      <ul><li><a class="Link svelte-193kav2" href="https://aaaaaugh.itch.io/" target="_blank" rel="noopener noreferrer">ali
+  </a></li>
+        <li><a class="Link svelte-193kav2" href="https://gurnburial.itch.io/" target="_blank" rel="noopener noreferrer">darwin
+  </a></li>
+        <li><a class="Link svelte-193kav2" href="https://frojo.itch.io/" target="_blank" rel="noopener noreferrer">fran
+  </a></li>
+        <li><a class="Link svelte-193kav2" href="https://muts.itch.io/" target="_blank" rel="noopener noreferrer">mut
+  </a></li>
+        <li><a class="Link svelte-193kav2" href="https://tycobbb.itch.io/" target="_blank" rel="noopener noreferrer">ty
+  </a></li></ul></section></main>
   <footer class="Footer">see about us and any upcoming events on
   <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
   and

@@ -25,9 +25,42 @@
 
 		
 
+		<link rel="modulepreload" href="/app_/start-484ecebe.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-6fa2ee03.js">
+		<link rel="modulepreload" href="/app_/pages/__layout.svelte-f1481043.js">
+		<link rel="modulepreload" href="/app_/pages/gitg/events/index.svelte-7c9a7548.js">
+		<link rel="modulepreload" href="/app_/chunks/header-60ace7e0.js">
+		<link rel="modulepreload" href="/app_/chunks/link-96572ac3.js">
+		<link rel="modulepreload" href="/app_/chunks/gitg-8cb4642b.js">
 		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/app_/assets/link.svelte_svelte&type=style&lang-92de51ed.css">
 
-		
+		<script type="module">
+			import { start } from "/app_/start-484ecebe.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: false,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/pages/__layout.svelte-f1481043.js"),
+						import("/app_/pages/gitg/events/index.svelte-7c9a7548.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fgitg\u002Fevents",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
   </head>
 
   <body>
@@ -40,8 +73,10 @@
   <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
 
     <div class="Header-text"><h1 class="Header-title">our events</h1>
-    <h2 class="Header-subtitle">a list of <a href="/gitg/games">games</a>
-  <a href="/gitg/events">in</a>
+    <h2 class="Header-subtitle">a list of <a class="Link svelte-193kav2" href="/gitg/games">games
+  </a>
+  <a class="Link svelte-193kav2" href="/gitg/events">in
+  </a>
   the grass events</h2></div></header>
 
   <main class="Events"><section class="Section"><h1 class="Section-title">events</h1>
@@ -51,9 +86,12 @@
           <p class="Event-metadata">prospect park, 10.02.21</p>
 
           <div class="Event-body">we played some games in prospect park, our first real playtest. we attempted to project
-            <a href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org</a>, but ran into server issues and
+            <a class="Link svelte-193kav2" href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org
+  </a>, but ran into server issues and
             had to abandon it. we ended up streaming the super mario bros. movie, vibing, and playing some folk games (in the
-            grass!). even at this first event, <a href="/gitg/games#zending">new</a> <a href="/gitg/games#lightbox">new</a> games were invented!
+            grass!). even at this first event, <a class="Link svelte-193kav2" href="/gitg/games#zending">new
+  </a> <a class="Link svelte-193kav2" href="/gitg/games#lightbox">new
+  </a> games were invented!
             it felt vital.
           </div></article>
 
@@ -62,13 +100,16 @@
           <p class="Event-metadata">willoughby streets, 10.06.21</p>
 
           <div class="Event-body">we were invited to have a spot in the event willoughby walks, organized by
-            <a href="https://www.downtownbrooklyn.com" target="_blank" rel="noopener noreferrer">downtown brooklyn</a>. we were
+            <a class="Link svelte-193kav2" href="https://www.downtownbrooklyn.com" target="_blank" rel="noopener noreferrer">downtown brooklyn
+  </a>. we were
             able to get a battery from itp, and had a tv screen running
-            <a href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org</a>, which was now fixed. some of our
+            <a class="Link svelte-193kav2" href="http://frogf.org/" target="_blank" rel="noopener noreferrer">frogf.org
+  </a>, which was now fixed. some of our
             computers had problems with connecting to the website, but we eventually sorted it out. we then had the problem of how
             to get people to interact with us. since there were only four of us present at this time, and one of us tasked with
             documenting, it was hard to start something that seemed active enough to draw peoples attention. we invented the
-            <a href="/gitg/games#forkgame">forkgame</a>, which we got to play with at least two strangers, and felt great. we also had
+            <a class="Link svelte-193kav2" href="/gitg/games#forkgame">forkgame
+  </a>, which we got to play with at least two strangers, and felt great. we also had
             some games from the new games movement to play, which we did once more of our friends arrived. some people seemed
             interested, spectating, but none actively joined us, and it was weird to go ask them, especially once we were a big
             group. in the end, we had a giant jenga tower, and a passerby joined very enthusiastically, and a couple others
@@ -84,9 +125,11 @@
             decided to move the event to fort greene this week. a few hours before the event the forecast turned towards rain, but
             we weren&#39;t about to cancel a second week in a row. it did rain. we brought a tarp. we discovered a new game or two. a
             cooperative
-            <a href="/gitg/games#balloon-relay">balloon relay</a>
+            <a class="Link svelte-193kav2" href="/gitg/games#balloon-relay">balloon relay
+  </a>
             played against the wind. we also tried to
-            <a href="https://nottingham-repository.worktribe.com/preview/2222989/Improvising_a_Live_Score_to_an_InteractiveBrain_Controlled_Film.pdf" target="_blank" rel="noopener noreferrer">live score</a>
+            <a class="Link svelte-193kav2" href="https://nottingham-repository.worktribe.com/preview/2222989/Improvising_a_Live_Score_to_an_InteractiveBrain_Controlled_Film.pdf" target="_blank" rel="noopener noreferrer">live score
+  </a>
             this event with a guitar and some drumsticks. it was pretty fun, at least for the person scoring, and works well with props
             that have predictable motion (like the balloon).
             <br><br>

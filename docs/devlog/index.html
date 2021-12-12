@@ -25,9 +25,41 @@
 
 		
 
+		<link rel="modulepreload" href="/app_/start-484ecebe.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-6fa2ee03.js">
+		<link rel="modulepreload" href="/app_/pages/__layout.svelte-f1481043.js">
+		<link rel="modulepreload" href="/app_/pages/devlog/index.svelte-32c770e8.js">
+		<link rel="modulepreload" href="/app_/chunks/header-60ace7e0.js">
+		<link rel="modulepreload" href="/app_/chunks/link-96572ac3.js">
 		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/app_/assets/link.svelte_svelte&type=style&lang-92de51ed.css">
 
-		
+		<script type="module">
+			import { start } from "/app_/start-484ecebe.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: false,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/pages/__layout.svelte-f1481043.js"),
+						import("/app_/pages/devlog/index.svelte-32c770e8.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fdevlog",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
   </head>
 
   <body>
@@ -55,8 +87,10 @@
 
       <div class="LogEntry-body"><p>started tiktok</p>
         <p>submitted milestone evaluation</p>
-        <p>hosted <a href="/gitg/events#gitg2">games in the grass 2 at fort greene!</a></p>
-        <p>interviewed for <a href="https://twitter.com/IndieCade/status/1451924371476418561?s=20" target="_blank" rel="noopener noreferrer">indiecade (on stream)</a></p>
+        <p>hosted <a class="Link svelte-193kav2" href="/gitg/events#gitg2">games in the grass 2 at fort greene!
+  </a></p>
+        <p>interviewed for <a class="Link svelte-193kav2" href="https://twitter.com/IndieCade/status/1451924371476418561?s=20" target="_blank" rel="noopener noreferrer">indiecade (on stream)
+  </a></p>
         <p>checked in on room 205 progress</p></div></article>
 
     <article class="LogEntry Section"><h1 class="Section-title">10/11</h1>
@@ -70,7 +104,8 @@
 
     <article class="LogEntry Section"><h1 class="Section-title">10/4</h1>
 
-      <div class="LogEntry-body"><p>hosted <a href="/gitg/events#gitg1">willoughby event!</a></p>
+      <div class="LogEntry-body"><p>hosted <a class="Link svelte-193kav2" href="/gitg/events#gitg1">willoughby event!
+  </a></p>
         <p>attended meeting for NYU Prototyping Fund</p>
         <p>logo created!</p>
         <p>started twitter</p>
@@ -84,7 +119,8 @@
         <p>frogforg on a TV for playtest thursday</p>
         <p>fixed android issues for frogforg</p>
         <p>added godmode to frogforg</p>
-        <p>hosted <a href="/gitg/events#gitg0">games in the grass at prospect park!</a></p>
+        <p>hosted <a class="Link svelte-193kav2" href="/gitg/events#gitg0">games in the grass at prospect park!
+  </a></p>
         <p>started website</p></div></article></main>
   <footer class="Footer">see about us and any upcoming events on
   <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
