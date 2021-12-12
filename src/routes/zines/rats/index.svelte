@@ -123,18 +123,30 @@
     </Row>
 
     <Row --top="30vh">
-      <div class="RatTickling Frame">
-        <iframe
-          class="RatTickling-frame flex-frame"
-          title="rat tickling"
-          src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
-        />
-      </div>
+      <Loader>
+        <div slot="content" class="RatTickling--page Frame">
+          <iframe
+            class="RatTickling-frame flex-frame"
+            title="rat tickling"
+            src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
+          />
+        </div>
+
+        <div slot="loader" class="RatTickling--thumb Frame">
+          <img
+            class="RatTickling-frame"
+            src="/zines/rats/games/rat-tickling-thumb.jpg"
+            alt="a rat"
+          />
+        </div>
+      </Loader>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
-        <p class="Sidenote" style="margin-top: 30px;">it's produced by the purdue agriculture gaskill lab</p>
+        <p class="Sidenote" style="margin-top: 00px;">click to start this certification training</p>
+        <p class="Sidenote" style="margin-top: 80px;">we didn't make this</p>
+        <p class="Sidenote" style="margin-top: 160px;">it's produced by the purdue agriculture gaskill lab</p>
         <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
+        <p class="Sidenote" style="margin-top: 30px;">rats should be happy</p>
       </aside>
     </Row>
   </main>
@@ -242,29 +254,36 @@
     height: 495px;
   }
 
-  /* external rattickling content size: 980 x 658 */
-  .RatTickling {
+  .RatTickling--page {
+    /* rat-tickling has a fixed internal content size: 980 x 658 */
     width: 980px;
     height: 658px;
+    transform: scale(0.95918);
+    transform-origin: top;
+    margin-bottom: -26px;
+  }
+
+  .RatTickling--thumb {
+    flex: 1;
   }
 
   .RatTickling-frame {
-    /* just scaling down the iframe content to avoid scroll bars:  i don't really know how this works */
-    --RatTickling-scale-factor: 0.8 ;
-    min-width: calc(1/var(--RatTickling-scale-factor)*100%);
-    min-height: calc(1/var(--RatTickling-scale-factor)*100%);
-    transform: scale(var(--RatTickling-scale-factor));
-    transform-origin: 0 0;
     animation: HueRotate 30s linear infinite alternate;
+  }
+
+  .RatTickling--page .RatTickling-frame {
+    --scale: 0.94;
+    min-width: calc(1 / var(--scale) * 100%);
+    min-height: calc(1 / var(--scale) * 100%);
+    transform: scale(var(--scale));
+    transform-origin: 0 0;
   }
 
   @keyframes HueRotate {
     from {
-      /*filter: sepia(0.1) hue-rotate(0deg) saturate(3) invert(1) sepia(0.6);*/
       filter:  brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(0deg) saturate(2);
     }
     to {
-      /*filter: sepia(0.1) hue-rotate(360deg) saturate(3) invert(1) sepia(0.6);*/
       filter:  brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(180deg) saturate(2);
     }
   }
