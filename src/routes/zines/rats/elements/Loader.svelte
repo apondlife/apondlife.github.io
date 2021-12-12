@@ -12,9 +12,9 @@
 
 <template>
   {#if !isPlaying}
-    <div class="Loader" on:click={onPlay}>
+    <span class="Loader" on:click={onPlay}>
       <slot name="loader" />
-    </div>
+    </span>
   {:else}
     <slot name="content" />
   {/if}
@@ -23,5 +23,6 @@
 <style>
   .Loader {
     cursor: pointer;
+    display: contents;
   }
 </style>

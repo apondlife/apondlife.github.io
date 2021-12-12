@@ -4,6 +4,7 @@
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
   import Intro from "./content/Intro.svelte"
+  import Table from "./content/Table.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
@@ -21,13 +22,18 @@
   <img src="/zines/rats/fur.jpg" alt="very nice rat fur texture" class="Rats-texture" />
 
   <main class="Rats">
-    <Header />
+    <Header id="title" />
 
     <!-- intro -->
-    <Row>
+    <Row id="introduction" --bot="15vh">
       <div class="Frame--line Frame">
         <Intro />
       </div>
+    </Row>
+
+    <!-- table of contents -->
+    <Row id="table-of-contents" --top="15vh" --bot="15vh">
+      <Table />
     </Row>
 
     <div
@@ -38,14 +44,14 @@
     />
 
     <!-- get ready to play some thing -->
-    <Row --top="30vh">
+    <Row id="warning-1" --top="15vh" --bot="15vh">
       <Warning>
         get<br />ready<br />to<br />play<br />some<br />thing
       </Warning>
     </Row>
 
     <!-- rat jam -->
-    <Row --top="30vh">
+    <Row id="ratjam" --top="15vh" --bot="15vh">
       <div class="Ratjam Frame--fancy Frame">
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
@@ -62,14 +68,14 @@
     </Row>
 
     <!-- now some poratry -->
-    <Row --top="30vh">
+    <Row id="warning-2" --top="15vh" --bot="15vh">
       <Warning>
         now<br />for<br />some<br />po<br />rat<br />try
       </Warning>
     </Row>
 
     <!--poratry-->
-    <Row --top="30vh">
+    <Row id="poratry" --top="15vh" --bot="15vh">
       <Poratry />
 
       <aside slot="right">
@@ -82,14 +88,14 @@
     </Row>
 
     <!-- on rats -->
-    <Row --top="30vh">
+    <Row id="on-rats" --top="15vh" --bot="15vh">
       <div class="Frame--line Frame">
         <OnRats />
       </div>
     </Row>
 
     <!-- rat loving -->
-    <Row --top="30vh">
+    <Row id="ratloving" --top="15vh" --bot="15vh">
       <div class="RatLoving Frame--fancy Frame">
         <Loader>
           <iframe
@@ -114,21 +120,6 @@
       </aside>
     </Row>
 
-    <!-- tfarc rats ii -->
-    <Row --top="30vh">
-      <div class="Rats-II Frame--fancy Frame">
-        <iframe class="flex-frame" title="tfarc rats ii" src="https://apondlife.github.io/rats/rats-ii" />
-      </div>
-
-      <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">you can right click & hold to create new rats</p>
-        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
-        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
-        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
-        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
-      </aside>
-    </Row>
-
     <!-- net rat -->
     <Row --top="30vh">
       <Warning>
@@ -149,7 +140,7 @@
     </Row>
 
     <!-- wings of rat -->
-    <Row --top="30vh">
+    <Row id="wings-of-rat" --top="15vh" --bot="15vh">
       <div class="WingsOfRat Frame--fancy Frame">
         <Loader>
           <iframe
@@ -177,7 +168,7 @@
     </Row>
 
     <!-- rat youtube video -->
-    <Row --top="30vh">
+    <Row id="rat-dnb" --top="15vh" --bot="15vh">
       <div class="Frame">
         <iframe
           class="flex-frame"
@@ -196,17 +187,42 @@
       </aside>
     </Row>
 
-    <!-- here comes the video game -->
-    <Row --top="30vh">
+    <!-- rat tickling -->
+    <Row id="rattickling" --top="15vh" --bot="15vh">
+      <Loader>
+        <div slot="content" class="RatTickling--page Frame">
+          <iframe
+            class="RatTickling-frame flex-frame"
+            title="rat tickling"
+            src="https://storage.googleapis.com/ecourses/Rat%20Tickling%20Certification/story_html5.html"
+          />
+        </div>
+
+        <div slot="loader" class="RatTickling--thumb Frame">
+          <img class="RatTickling-frame" src="/zines/rats/games/rat-tickling-thumb.jpg" alt="a rat" />
+        </div>
+      </Loader>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 00px;">click to start this certification training</p>
+        <p class="Sidenote" style="margin-top: 80px;">we didn't make this</p>
+        <p class="Sidenote" style="margin-top: 160px;">it's produced by the purdue agriculture gaskill lab</p>
+        <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
+        <p class="Sidenote" style="margin-top: 30px;">rats should be happy</p>
+      </aside>
+    </Row>
+
+    <!-- here comes the video games -->
+    <Row id="warning-3" --top="15vh" --bot="15vh">
       <Warning>
         here<br />comes<br />the<br />video<br />game<br />tfarc<br />rats<br />ii
       </Warning>
     </Row>
 
     <!-- tfarc rats ii -->
-    <Row --top="30vh">
-      <div class="Rats-II Frame--fancy Frame">
-        <iframe class="flex-frame" title="tfarc rats ii" src="https://apondlife.github.io/rats/rats-ii" />
+    <Row id="rats-ii" --top="15vh" --bot="15vh">
+      <div class="RatsIi Frame--fancy Frame">
+        <iframe class="flex-frame" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii" />
       </div>
 
       <aside slot="right">
@@ -240,7 +256,7 @@
     </Row>
 
     <!-- on rats -->
-    <Row --top="30vh">
+    <Row id="cratique" --top="15vh" --bot="15vh">
       <div class="Frame--line Frame">
         <Cratique />
       </div>
@@ -365,7 +381,7 @@
     height: 600px;
   }
 
-  .Rats-II {
+  .RatsIi {
     overflow: hidden;
     width: 600px;
     height: 600px;
@@ -404,10 +420,17 @@
     height: 495px;
   }
 
-  /* external rattickling content size: 980 x 658 */
-  .RatTickling {
+  .RatTickling--page {
+    /* rat-tickling has a fixed internal content size: 980 x 658 */
     width: 980px;
     height: 658px;
+    transform: scale(0.95918);
+    transform-origin: top;
+    margin-bottom: -26px;
+  }
+
+  .RatTickling--thumb {
+    height: 631px;
   }
 
   .RatTickling-frame {
@@ -420,13 +443,19 @@
     animation: HueRotate 30s linear infinite alternate;
   }
 
+  .RatTickling--page .RatTickling-frame {
+    --scale: 0.94;
+    min-width: calc(1 / var(--scale) * 100%);
+    min-height: calc(1 / var(--scale) * 100%);
+    transform: scale(var(--scale));
+    transform-origin: 0 0;
+  }
+
   @keyframes HueRotate {
     from {
-      /*filter: sepia(0.1) hue-rotate(0deg) saturate(3) invert(1) sepia(0.6);*/
       filter: brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(0deg) saturate(2);
     }
     to {
-      /*filter: sepia(0.1) hue-rotate(360deg) saturate(3) invert(1) sepia(0.6);*/
       filter: brightness(0.6) sepia(0.3) contrast(1.1) hue-rotate(180deg) saturate(2);
     }
   }

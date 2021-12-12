@@ -1,5 +1,10 @@
+<script>
+  // the id of the row
+  export let id = ""
+</script>
+
 <template>
-  <div class="Row">
+  <div id={id} class="Row">
     <div class="Row-gutter">
       <slot name="left" />
     </div>
@@ -17,8 +22,8 @@
 <style>
   .Row {
     display: flex;
-    margin-top: var(--top);
-    margin-bottom: var(--bot);
+    padding-top: var(--top);
+    padding-bottom: var(--bot);
   }
 
   .Row-bag {
