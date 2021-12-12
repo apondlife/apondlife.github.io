@@ -1,6 +1,5 @@
 <script>
   import Link from "$lib/link.svelte"
-  import { cx } from "$lib/utils.js"
 
   // the image soruce url
   export let src = ""
@@ -10,15 +9,10 @@
 
   // the image alt text
   export let alt = ""
-
-  // if this is a large image
-  export let large = false
 </script>
 
 <template>
-  <article
-    class={cx(large && "Auto--large", "Auto")}
-  >
+  <article class="Auto">
     <Link href={src} block ext>
       <img
         class="Auto-img"
@@ -31,11 +25,9 @@
 
 <style>
   .Auto {
-    flex: 1;
-  }
-
-  .Auto--large {
-    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .Auto-img {

@@ -7,11 +7,15 @@
 
 <style>
   .Score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
     font-family: "Courier New", Courier, monospace;
-    flex: 1;
   }
 
   .Score > h1 {
+    display: block;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
