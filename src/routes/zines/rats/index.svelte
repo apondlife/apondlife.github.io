@@ -64,7 +64,7 @@
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">we did some automatic writing</p>
         <p class="Sidenote" style="margin-top: 100px;">about<br>rats</p>
-        <p class="Sidenote" style="margin-top: 460px;">as well as some fluxus scores</p>
+        <p class="Sidenote" style="margin-top: 345px;">as well as some fluxus scores</p>
         <p class="Sidenote" style="margin-top: 75px;">about<br>rats</p>
         <p class="Sidenote" style="margin-top: 200px;">we are serious artists</p>
       </aside>
@@ -155,6 +155,7 @@
     background-color: var(--bg-color);
     color: var(--fg-color);
     font-size: 16px;
+    font-family: "Baskerville", "Georgia", "Garamond", serif;
     line-height: 1.3;
   }
 
