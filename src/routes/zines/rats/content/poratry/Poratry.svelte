@@ -7,14 +7,14 @@
   <article class="Poratry">
     <section class="Poratry-col">
       <Auto
-        src="/zines/rats/poems/poem4.jpg"
-        thm="/zines/rats/poems/poem4-thumb.jpg"
+        src="/zines/rats/poems/poem4.png"
+        thm="/zines/rats/poems/poem4-thumb.png"
         alt="a poem: teeth of trash / carry on fucking / legends like the smell"
       />
 
       <Auto
-        src="/zines/rats/poems/poem3.jpg"
-        thm="/zines/rats/poems/poem3-thumb.jpg"
+        src="/zines/rats/poems/poem3.png"
+        thm="/zines/rats/poems/poem3-thumb.png"
         alt="a poem: scrabbling @ / blind feet / tails destroy hole / black queijo time / A smooth think / cheese raft"
       />
 
@@ -24,16 +24,16 @@
       </Score>
 
       <Auto
-        src="/zines/rats/poems/poem2.jpg"
-        thm="/zines/rats/poems/poem2-thumb.jpg"
+        src="/zines/rats/poems/poem2.png"
+        thm="/zines/rats/poems/poem2-thumb.png"
         alt="a poem: raats last rat dear please / [branch right] you disgusting refuse are cutefinescrabblegood / [branch down] ratos on pizza gutter dirt & carrion AAA bugrats"
       />
     </section>
 
     <section class="Poratry-col">
       <Auto
-        src="/zines/rats/poems/poem5.jpg"
-        thm="/zines/rats/poems/poem5-thumb.jpg"
+        src="/zines/rats/poems/poem5.png"
+        thm="/zines/rats/poems/poem5-thumb.png"
         alt="a poem: fast rats at pharmacy enraptured / league of bitter pizza / fast / loyal ears fast rapido / tight trash eveloped scrounging / stop / whatever crush"
         large
       />
@@ -44,8 +44,8 @@
       </Score>
 
       <Auto
-        src="/zines/rats/poems/poem1.jpg"
-        thm="/zines/rats/poems/poem1-thumb.jpg"
+        src="/zines/rats/poems/poem1.png"
+        thm="/zines/rats/poems/poem1-thumb.png"
         alt="a poem: cute jinx rubberband yummy / me the rat rat rat rat rat rat rat (rats / megamind sucks"
       />
 
