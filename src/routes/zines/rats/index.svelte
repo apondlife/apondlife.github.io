@@ -101,26 +101,30 @@
     <Row id="ratloving" --top="15vh" --bot="15vh">
       <div class="RatLoving Frame--fancy Frame">
         <Loader>
-          <iframe
-            slot="content"
-            class="RatLoving-frame flex-frame"
-            title="loving rats"
-            src="https://apondlife.github.io/rats/ratloving/Build/index.html"
-          />
+          <div
+            slot="content">
+            <iframe
+              class="RatLoving-frame flex-frame"
+              title="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
+              src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
+            />
+            Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption
+          </div>
 
           <img
             slot="loader"
             class="RatLoving-frame"
-            src="/zines/rats/games/ratloving-thumb.jpg"
-            alt="a lot of rats, possibly inside a bag"
+            src="/zines/rats/games/princess-thumb.jpg"
+            alt="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
           />
         </Loader>
       </div>
 
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">move your cursor around to touch the rats</p>
-        <p class="Sidenote" style="margin-top: 90px;">does it tickle?</p>
+        <p class="Sidenote" style="margin-top: 30px;">this is based on a true story</p>
+        <p class="Sidenote" style="margin-top: 60px;">you can touch the rats with your mouse</p>
+        <p class="Sidenote" style="margin-top: 50px;">you don't have to</p>
       </aside>
     </Row>
 
@@ -490,8 +494,8 @@
   }
 
   .RatLoving-frame {
-    width: 495px;
-    height: 495px;
+    width: 512px;
+    height: 518px; 
   }
 
   .RatTickling--page {
