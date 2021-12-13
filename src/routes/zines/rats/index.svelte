@@ -5,6 +5,7 @@
   import Loader from "./elements/Loader.svelte"
   import Intro from "./content/Intro.svelte"
   import Table from "./content/Table.svelte"
+  import RatjamProcess from "./content/RatjamProcess.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
@@ -56,7 +57,19 @@
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
 
-      <aside slot="right">
+      <aside slot="right" style="overflow: hidden">
+        <!-- hidden documentation -->
+        <div style="height: 600px; width: 120%; border: none; overflow: auto" >
+            <RatjamProcess />
+        </div>
+        <!--
+          <iframe title="ratjam extra info" style="border: none; overflow: auto; width: 200%;" src="/zines/rats/ratjam-process.html" ></iframe>
+        <div style="overflow: auto">
+        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
+        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
+        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
+        </div>
+
         <p class="Sidenote" style="margin-top: 00px;">you can click & hold for the rat to chase the cheese</p>
         <p class="Sidenote" style="margin-top: 30px;">the rat loves the cheesee</p>
         <p class="Sidenote" style="margin-top: 80px;">
@@ -64,6 +77,7 @@
           parts of the painting
         </p>
         <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
+        -->
       </aside>
     </Row>
 
