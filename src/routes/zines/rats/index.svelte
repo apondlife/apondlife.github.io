@@ -1,4 +1,5 @@
 <script>
+  import Link from "$lib/link.svelte"
   import Header from "./elements/Header.svelte"
   import Row from "./elements/Row.svelte"
   import Warning from "./elements/Warning.svelte"
@@ -8,7 +9,9 @@
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
+  import Arats from "./content/Arats.svelte"
 
+  // -- commands --
   function goHome() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
@@ -116,6 +119,7 @@
           />
         </Loader>
       </div>
+
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">click to start</p>
         <p class="Sidenote" style="margin-top: 30px;">this is based on a true story</p>
@@ -203,6 +207,21 @@
       </aside>
     </Row>
 
+    <!-- all rats act the same -->
+    <Row id="arats" --top="15vh" --bot="15vh">
+      <div class="Frame--line Frame">
+        <Arats />
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 000px;">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</p>
+        <p class="Sidenote" style="margin-top: 030px;">all rats act the same</p>
+        <p class="Sidenote" style="margin-top: 050px;">you can perform it in person w/ yr friends & family</p>
+        <p class="Sidenote" style="margin-top: 090px;">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</p>
+        <p class="Sidenote" style="margin-top: 080px;">enjoy =)</p>
+      </aside>
+    </Row>
+
     <!-- rat tickling -->
     <Row id="rattickling" --top="15vh" --bot="15vh">
       <Loader>
@@ -281,12 +300,17 @@
 </template>
 
 <style>
-  /* -- globals -- */
+  /* -- resets -- */
+  :global(iframe) {
+    border: none;
+  }
+
   :global(*) {
     box-sizing: border-box;
     overscroll-behavior: none;
   }
 
+  /* -- globals -- */
   :global(body) {
     --bg-color: #151515;
     --fg-color: #ac9898;
@@ -299,7 +323,7 @@
     line-height: 1.3;
   }
 
-  :global(a) {
+  :global(a, a[target]) {
     color: #ff81ce;
     text-decoration: none;
   }
@@ -308,9 +332,8 @@
     text-decoration: underline;
   }
 
-  /* -- resets -- */
-  :global(iframe) {
-    border: none;
+  :global(strong) {
+    font-weight: 600;
   }
 
   /* -- page -- */
