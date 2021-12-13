@@ -116,7 +116,7 @@
           <img
             slot="loader"
             class="RatLoving-frame"
-            src="/zines/rats/games/princess-thumb.jpg"
+            src="/zines/rats/games/princess-thumb.png"
             alt="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
           />
         </Loader>
