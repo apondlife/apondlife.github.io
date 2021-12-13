@@ -99,16 +99,18 @@
 
     <!-- rat loving -->
     <Row id="ratloving" --top="15vh" --bot="15vh">
-      <div class="RatLoving Frame--fancy Frame">
+      <div class="RatLoving Frame--fancy Frame" style="width:fit-content /* sorry for horrible css i don't know what i'm doing :( */">
         <Loader>
           <div
-            slot="content">
+            slot="content"
+            style="width:512px">
             <iframe
               class="RatLoving-frame flex-frame"
               title="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
               src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
             />
-            Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption
+            <br>
+            <span style="font-size: 21px;">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</span>
           </div>
 
           <img
