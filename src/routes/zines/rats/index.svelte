@@ -139,6 +139,18 @@
       </aside>
     </Row>
 
+    <Row --top="30vh">
+      <div class="Ratcapella Frame--fancy Frame">
+        <iframe class="flex-frame" title="Ratcapella" src="https://apondlife.github.io/rats/ratcapella" />
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 30px;">did you know that rats can sing really well</p>
+        <p class="Sidenote" style="margin-top: 50px;">listen to those beautiful squeaks!</p>
+        <p class="Sidenote" style="margin-top: 90px;">by the way, click on the rats to make them squeak</p>
+      </aside>
+    </Row>
+
     <!-- wings of rat -->
     <Row id="wings-of-rat" --top="15vh" --bot="15vh">
       <div class="WingsOfRat Frame--fancy Frame">
@@ -378,6 +390,11 @@
 
   .Labrat {
     width: 960px;
+    height: 600px;
+  }
+
+  .Ratcapella {
+    width: 900px;
     height: 600px;
   }
 
