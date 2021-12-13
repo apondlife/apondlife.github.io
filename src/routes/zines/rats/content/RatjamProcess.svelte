@@ -35,16 +35,17 @@
     <p>there seemed to be two rats, a larger one and a smaller one. i like to believe it was a momma rat and her baby</p>
     <p>i was lucky enough to have the momma rat skitter past me in that last video. this last video is what was eventually used as the source material for the animated rat in the piece</p>
 
-    <p>originally, i'd recorded these because i was working on a one-week RTS prototype TODO: LINK and wanted to some rat assets for it</p>
-    <p>mut saw this prototype and i mentioned that i'd wished the rats were animated, but it was too much work to figure it out</p>
+    <p>originally, i'd recorded these because i was working on a one-week <a href="https://frojo.itch.io/ratcraft">RTS prototype</a> and wanted some rat assets for it</p>
+    <p>mut saw this prototype and i mentioned that i tried to animate the rats, but it was too much work to figure it out</p>
     <p>later that night, mut DM'd me asking for the video</p>
-    <p>and cropped out a little loop of animation</p>
+    <p>and then he cropped out a little loop of animation</p>
+    TODO GIFs here
     <p>i started updating the game with the gif, but that ended up getting deprioritized for other work</p>
     <p>about a month later, pondlife decided to make this zine, and we decided the theme would be rats</p>
-    <p>we were sitting in the room that we do work, like we did on tuesday and thursday afternoons. i think mut had the idea that we should all work on a game together in realtime. mut set up a 10-minute timer on his computer, and we each got to have hands on keyboard and mouse for 10 minutes. when the timer ran out, we handed over to control to someone else. the rest of us sat around and watched and were free to comment or work on something else</p>
-    <p>i forget exactly how we arrived on the idea of rotoscoping the rat gif</p>
-    <p>mut started, and immediately started coding, but quickly switched to bringing the rat gif into blender and frame-by-frame tracing it. he only got a few frames in before he handed off the work to someone else who continued to trace every frame. we continued like this for about an hour until we traced all the frames</p>
-    <p>different people had different tracing styles, which was interesting. at some point ali gave the rat a mickey mouse tatto on its butt</p>
+    <p>we're sitting in the room that we do work in together. i think mut has the idea that we should all work on a game together "at the same time".
+    <p>mut sets up a 10-minute timer on his computer. the rule is we each had 10 minutes to do whatever we wanted, but when the timer runs out, we hand over to control to someone else. the rest of us sit around and watch and are free to comment or work on something else</p>
+    <p>i forget exactly how we arrived on the idea of rotoscoping the rat gif. we brought the rat gif into blender and traced it frame by frame. I'm pretty sure we all did some tracing. we continued like this for about an hour until we traced all the frames</p>
+    <p>different people had different tracing styles. at some point ali gave the rat a mickey mouse tatto on their butt</p>
     <p>ali was working on a website experiment, and the rest of us would take turns helping her while we weren't tracing the rat</p>
     <p>when we were done tracing, we switched back to coding. we wrote some quick javascript that would loop over all the frames and animate the rat. and some code to make the rat follow the cursor, and eventually made the cursor a cheese emoji</p>
     <p>i left at around this point while the rest of pondlife kept working. the next day i saw they'd added this painting as a background</p>
