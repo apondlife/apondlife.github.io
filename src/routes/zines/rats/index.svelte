@@ -134,7 +134,19 @@
     <!-- labrat -->
     <Row --top="30vh">
       <div class="Labrat Frame--fancy Frame">
-        <iframe class="flex-frame" title="labrat" src="https://apondlife.github.io/rats/labrat" />
+        <Loader>
+          <iframe
+            slot="content"
+            class="flex-frame"
+            title="labrat"
+            src="https://apondlife.github.io/rats/labrat"
+          />
+
+          <div
+            slot="loader"
+            class="flex-frame"
+          />
+        </Loader>
       </div>
 
       <aside slot="right">
@@ -190,10 +202,8 @@
           class="flex-frame"
           width="671"
           height="503"
-          src="https://www.youtube.com/embed/5g3lBt8y5js?playlist=5g3lBt8y5js&autoplay=0&modestbranding=1&showinfo=0&controls=0&loop=1"
+          src="https://www.youtube-nocookie.com/embed/5g3lBt8y5js"
           title="rat dnb"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
       </div>
 
@@ -269,11 +279,27 @@
     <Row --top="30vh">
       <div class="Sketching">
         <div class="Portrat Frame--fancy Frame">
-          <iframe class="flex-frame" title="portrat" src="https://apondlife.github.io/rats/portrat" />
+          <Loader>
+            <iframe
+              slot="content"
+              class="Portrat-game"
+              title="portrat"
+              src="https://apondlife.github.io/rats/portrat"
+            />
+
+            <div
+              slot="loader"
+              class="Portrat-thumb Portrat-game"
+            />
+          </Loader>
         </div>
 
         <div class="Ratist Frame--fancy Frame">
-          <iframe class="flex-frame" title="ratist" src="https://apondlife.github.io/rats/ratle" />
+          <iframe
+            class="flex-frame"
+            title="ratist"
+            src="https://apondlife.github.io/rats/ratle"
+          />
         </div>
       </div>
 
@@ -443,6 +469,14 @@
     margin: 25px;
     width: 922px;
     height: 400px;
+  }
+
+  .Portrat-game {
+    flex: 1;
+  }
+
+  .Portrat-thumb {
+    background-color: white;
   }
 
   /*.Ratjam-frame {
