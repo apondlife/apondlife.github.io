@@ -13,7 +13,7 @@
       <li>05. <Link href="#warning-2">warning 2</Link></li>
       <li>06. <Link href="#poratry">poratry</Link></li>
       <li>07. <Link href="#on-rats">on rats</Link></li>
-      <li>08. <Link href="#ratloving">ratloving</Link></li>
+      <li>08. <Link href="#ratloving">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</Link></li>
       <li>09. <Link href="#wings-of-rat">wings of rat</Link></li>
       <li>10. <Link href="#rat-dnb">rat spins to dnb</Link></li>
       <li>11. <Link href="#rattickling">rattickling</Link></li>
