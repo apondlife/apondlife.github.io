@@ -1,4 +1,5 @@
 <script>
+  import Link from "$lib/link.svelte"
   import Header from "./elements/Header.svelte"
   import Row from "./elements/Row.svelte"
   import Warning from "./elements/Warning.svelte"
@@ -9,7 +10,9 @@
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
+  import Arats from "./content/Arats.svelte"
 
+  // -- commands --
   function goHome() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
@@ -110,27 +113,34 @@
 
     <!-- rat loving -->
     <Row id="ratloving" --top="15vh" --bot="15vh">
-      <div class="RatLoving Frame--fancy Frame">
+      <div class="RatLoving Frame--fancy Frame" style="width:fit-content /* sorry for horrible css i don't know what i'm doing :( */">
         <Loader>
-          <iframe
+          <div
             slot="content"
-            class="RatLoving-frame flex-frame"
-            title="loving rats"
-            src="https://apondlife.github.io/rats/ratloving/Build/index.html"
-          />
+            style="width:512px">
+            <iframe
+              class="RatLoving-frame flex-frame"
+              title="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
+              src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
+            />
+            <br>
+            <span style="font-size: 21px;">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</span>
+          </div>
 
           <img
             slot="loader"
             class="RatLoving-frame"
-            src="/zines/rats/games/ratloving-thumb.jpg"
-            alt="a lot of rats, possibly inside a bag"
+            src="/zines/rats/games/princess-thumb.png"
+            alt="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
           />
         </Loader>
       </div>
+
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">move your cursor around to touch the rats</p>
-        <p class="Sidenote" style="margin-top: 90px;">does it tickle?</p>
+        <p class="Sidenote" style="margin-top: 30px;">this is based on a true story</p>
+        <p class="Sidenote" style="margin-top: 60px;">you can touch the rats with your mouse</p>
+        <p class="Sidenote" style="margin-top: 50px;">you don't have to</p>
       </aside>
     </Row>
 
@@ -144,7 +154,19 @@
     <!-- labrat -->
     <Row --top="30vh">
       <div class="Labrat Frame--fancy Frame">
-        <iframe class="flex-frame" title="labrat" src="https://apondlife.github.io/rats/labrat" />
+        <Loader>
+          <iframe
+            slot="content"
+            class="flex-frame"
+            title="labrat"
+            src="https://apondlife.github.io/rats/labrat"
+          />
+
+          <div
+            slot="loader"
+            class="flex-frame"
+          />
+        </Loader>
       </div>
 
       <aside slot="right">
@@ -200,16 +222,29 @@
           class="flex-frame"
           width="671"
           height="503"
-          src="https://www.youtube.com/embed/5g3lBt8y5js?playlist=5g3lBt8y5js&autoplay=0&modestbranding=1&showinfo=0&controls=0&loop=1"
+          src="https://www.youtube-nocookie.com/embed/5g3lBt8y5js"
           title="rat dnb"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
       </div>
 
       <aside slot="right">
         <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
         <p class="Sidenote" style="margin-top: 30px;">youtube user lokirat made it</p>
+      </aside>
+    </Row>
+
+    <!-- all rats act the same -->
+    <Row id="arats" --top="15vh" --bot="15vh">
+      <div class="Frame--line Frame">
+        <Arats />
+      </div>
+
+      <aside slot="right">
+        <p class="Sidenote" style="margin-top: 000px;">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</p>
+        <p class="Sidenote" style="margin-top: 030px;">all rats act the same</p>
+        <p class="Sidenote" style="margin-top: 050px;">you can perform it in person w/ yr friends & family</p>
+        <p class="Sidenote" style="margin-top: 090px;">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</p>
+        <p class="Sidenote" style="margin-top: 080px;">enjoy =)</p>
       </aside>
     </Row>
 
@@ -264,11 +299,27 @@
     <Row --top="30vh">
       <div class="Sketching">
         <div class="Portrat Frame--fancy Frame">
-          <iframe class="flex-frame" title="portrat" src="https://apondlife.github.io/rats/portrat" />
+          <Loader>
+            <iframe
+              slot="content"
+              class="Portrat-game"
+              title="portrat"
+              src="https://apondlife.github.io/rats/portrat"
+            />
+
+            <div
+              slot="loader"
+              class="Portrat-thumb Portrat-game"
+            />
+          </Loader>
         </div>
 
         <div class="Ratist Frame--fancy Frame">
-          <iframe class="flex-frame" title="ratist" src="https://apondlife.github.io/rats/ratle" />
+          <iframe
+            class="flex-frame"
+            title="ratist"
+            src="https://apondlife.github.io/rats/ratle"
+          />
         </div>
       </div>
 
@@ -291,12 +342,17 @@
 </template>
 
 <style>
-  /* -- globals -- */
+  /* -- resets -- */
+  :global(iframe) {
+    border: none;
+  }
+
   :global(*) {
     box-sizing: border-box;
     overscroll-behavior: none;
   }
 
+  /* -- globals -- */
   :global(body) {
     --bg-color: #151515;
     --fg-color: #ac9898;
@@ -309,7 +365,7 @@
     line-height: 1.3;
   }
 
-  :global(a) {
+  :global(a, a[target]) {
     color: #ff81ce;
     text-decoration: none;
   }
@@ -318,9 +374,8 @@
     text-decoration: underline;
   }
 
-  /* -- resets -- */
-  :global(iframe) {
-    border: none;
+  :global(strong) {
+    font-weight: 600;
   }
 
   /* -- page -- */
@@ -436,6 +491,14 @@
     height: 400px;
   }
 
+  .Portrat-game {
+    flex: 1;
+  }
+
+  .Portrat-thumb {
+    background-color: white;
+  }
+
   /*.Ratjam-frame {
     flex: 1;
   }*/
@@ -447,8 +510,8 @@
   }
 
   .RatLoving-frame {
-    width: 495px;
-    height: 495px;
+    width: 512px;
+    height: 518px; 
   }
 
   .RatTickling--page {
