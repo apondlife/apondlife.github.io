@@ -1,13 +1,4 @@
-<script>
-  import Sidenote from "../elements/Sidenote.svelte"
-</script>
-
 <template>
-  <Sidenote --top="00px;" text="you can click & hold for the rat to chase the cheese" />
-  <Sidenote --top="30px;" text="the rat loves the cheesee" />
-  <Sidenote --top="80px;" text="use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting" />
-  <Sidenote --top="60px;" text="the rat loves painting" />
-
   <br>
 
   <div class="positioner">

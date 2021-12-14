@@ -64,6 +64,11 @@
       <aside slot="right" style="overflow: hidden">
         <!-- hidden documentation -->
         <div style="height: 600px; width: 120%; border: none; overflow: auto" >
+          <Sidenote --top="00px" text="you can click & hold for the rat to chase the cheese" />
+          <Sidenote --top="30px" text="the rat loves the cheesee" />
+          <Sidenote --top="80px" text="use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting" />
+          <Sidenote --top="60px" text="the rat loves painting" />
+
           <RatjamProcess />
         </div>
       </aside>
@@ -82,9 +87,9 @@
 
       <aside slot="right">
         <Sidenote --top="00px" text="we did some automatic writing" />
-        <Sidenote --top="100px;">about<br />rats</Sidenote>
+        <Sidenote --top="100px">about<br />rats</Sidenote>
         <Sidenote --top="345px" text="as well as some fluxus scores" />
-        <Sidenote --top="75px;">about<br />rats</Sidenote>
+        <Sidenote --top="75px">about<br />rats</Sidenote>
         <Sidenote --top="200px" text="we are serious artists" />
       </aside>
     </Row>
@@ -124,10 +129,10 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="00px;" text="click to start" />
-        <Sidenote --top="30px;" text="this is based on a true story" />
-        <Sidenote --top="60px;" text="you can touch the rats with your mouse" />
-        <Sidenote --top="50px;" text="you don't have to" />
+        <Sidenote --top="00px" text="click to start" />
+        <Sidenote --top="30px" text="this is based on a true story" />
+        <Sidenote --top="60px" text="you can touch the rats with your mouse" />
+        <Sidenote --top="50px" text="you don't have to" />
       </aside>
     </Row>
 
@@ -159,10 +164,10 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="030px;" text="click to load" />
-        <Sidenote --top="080px;" text="this is what the internet should be like" />
-        <Sidenote --top="100px;" text="it's a webpage feel free to click around!" />
-        <Sidenote --top="080px;" text="don't forget to scroll around too" />
+        <Sidenote --top="030px" text="click to load" />
+        <Sidenote --top="080px" text="this is what the internet should be like" />
+        <Sidenote --top="100px" text="it's a webpage feel free to click around!" />
+        <Sidenote --top="080px" text="don't forget to scroll around too" />
       </aside>
     </Row>
 
@@ -172,9 +177,9 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="30px;" text="did you know that rats can sing really well" />
-        <Sidenote --top="50px;" text="listen to those beautiful squeaks!" />
-        <Sidenote --top="90px;" text="by the way, click on the rats to make them squeak" />
+        <Sidenote --top="30px" text="did you know that rats can sing really well" />
+        <Sidenote --top="50px" text="listen to those beautiful squeaks!" />
+        <Sidenote --top="90px" text="by the way, click on the rats to make them squeak" />
       </aside>
     </Row>
 
@@ -199,10 +204,10 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="00px;" text="click to start" />
-        <Sidenote --top="30px;" text="use the WASD or arrow keys to fly around" />
-        <Sidenote --top="180px;" text="this game is inspired by a movie called 'wings of desire'" />
-        <Sidenote --top="60px;" text="the music is a track by 'wendy' called 'melody of life'" />
+        <Sidenote --top="00px" text="click to start" />
+        <Sidenote --top="30px" text="use the WASD or arrow keys to fly around" />
+        <Sidenote --top="180px" text="this game is inspired by a movie called 'wings of desire'" />
+        <Sidenote --top="60px" text="the music is a track by 'wendy' called 'melody of life'" />
       </aside>
     </Row>
 
@@ -219,8 +224,8 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="00px;" text="we didn't make this" />
-        <Sidenote --top="30px;" text="youtube user lokirat made it" />
+        <Sidenote --top="00px" text="we didn't make this" />
+        <Sidenote --top="30px" text="youtube user lokirat made it" />
       </aside>
     </Row>
 
@@ -231,11 +236,11 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="000px;">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</Sidenote>
-        <Sidenote --top="030px;" text="all rats act the same" />
-        <Sidenote --top="050px;" text="you can perform it in person w/ yr friends & family" />
-        <Sidenote --top="090px;">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</Sidenote>
-        <Sidenote --top="080px;" text="enjoy =)" />
+        <Sidenote --top="000px">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</Sidenote>
+        <Sidenote --top="030px" text="all rats act the same" />
+        <Sidenote --top="050px" text="you can perform it in person w/ yr friends & family" />
+        <Sidenote --top="090px">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</Sidenote>
+        <Sidenote --top="080px" text="enjoy =)" />
       </aside>
     </Row>
 
@@ -256,11 +261,11 @@
       </Loader>
 
       <aside slot="right">
-        <Sidenote --top="000px;" text="click to start this certification training" />
-        <Sidenote --top="080px;" text="we didn't make this" />
-        <Sidenote --top="160px;" text="it's produced by the purdue agriculture gaskill lab" />
-        <Sidenote --top="030px;" text="we applied some css filters" />
-        <Sidenote --top="030px;" text="rats should be happy" />
+        <Sidenote --top="000px" text="click to start this certification training" />
+        <Sidenote --top="080px" text="we didn't make this" />
+        <Sidenote --top="160px" text="it's produced by the purdue agriculture gaskill lab" />
+        <Sidenote --top="030px" text="we applied some css filters" />
+        <Sidenote --top="030px" text="rats should be happy" />
       </aside>
     </Row>
 
@@ -278,11 +283,11 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="00px;" text="you can right click & hold to create new rats" />
-        <Sidenote --top="30px;" text="a lot of new rats" />
-        <Sidenote --top="50px;" text="the yellow box also selects them" />
-        <Sidenote --top="90px;" text="left click drops a cheese, you remember the cheese" />
-        <Sidenote --top="120px;" text="the selected rats all act the same." />
+        <Sidenote --top="00px" text="you can right click & hold to create new rats" />
+        <Sidenote --top="30px" text="a lot of new rats" />
+        <Sidenote --top="50px" text="the yellow box also selects them" />
+        <Sidenote --top="90px" text="left click drops a cheese, you remember the cheese" />
+        <Sidenote --top="120px" text="the selected rats all act the same." />
       </aside>
     </Row>
 
@@ -323,10 +328,10 @@
       </div>
 
       <aside slot="right">
-        <Sidenote --top="000px;" text="click to run these drawing tools" />
-        <Sidenote --top="080px;" text="then click and drag to draw rats" />
-        <Sidenote --top="020px;" text="or draw with rats" />
-        <Sidenote --top="100px;" text="follow the form of the rat, or describe your own" />
+        <Sidenote --top="000px" text="click to run these drawing tools" />
+        <Sidenote --top="080px" text="then click and drag to draw rats" />
+        <Sidenote --top="020px" text="or draw with rats" />
+        <Sidenote --top="100px" text="follow the form of the rat, or describe your own" />
       </aside>
     </Row>
 
