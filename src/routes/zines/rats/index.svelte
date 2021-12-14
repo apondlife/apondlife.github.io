@@ -164,16 +164,20 @@
             src="https://apondlife.github.io/rats/labrat"
           />
 
-          <div
+          <img
             slot="thumb"
             class="flex-frame"
+            src="/zines/rats/games/labrat-thumb.jpg"
+            alt="a screenshot of a website w/ a rat illustration and tabs numbered 001 through 005"
           />
         </Loader>
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 30px;">this is what the internet should be like</p>
-        <p class="Sidenote" style="margin-top: 50px;">its a webpage feel free to click around!</p>
+        <p class="Sidenote" style="margin-top: 030px;">click to load</p>
+        <p class="Sidenote" style="margin-top: 080px;">this is what the internet should be like</p>
+        <p class="Sidenote" style="margin-top: 100px;">it's a webpage feel free to click around!</p>
+        <p class="Sidenote" style="margin-top: 080px;">don't forget to scroll around too</p>
       </aside>
     </Row>
 
