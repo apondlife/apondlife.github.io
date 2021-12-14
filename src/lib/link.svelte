@@ -36,8 +36,10 @@
   <a class={klass} {href} {...props} {...$$restProps}>
     {#if text !== ""}
       {text}
-    {:else}
+    {:else if $$slots.default}
       <slot />
+    {:else}
+      {href}
     {/if}
   </a>
 </template>

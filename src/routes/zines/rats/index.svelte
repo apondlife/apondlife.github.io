@@ -9,7 +9,7 @@
   import Table from "./content/Table.svelte"
   import RatjamProcess from "./content/RatjamProcess.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
-  import OnRats from "./content/OnRats.svelte"
+  import RatsInBag from "./content/RatsInBag.svelte"
   import Cratique from "./content/Cratique.svelte"
   import Arats from "./content/Arats.svelte"
 
@@ -107,9 +107,9 @@
     </Row>
 
     <!-- on rats -->
-    <Row id="on-rats" --top="30vh">
+    <Row id="rats-in-bag" --top="30vh">
       <div class="Frame--line Frame">
-        <OnRats />
+        <RatsInBag />
       </div>
     </Row>
 
