@@ -1,126 +1,131 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- info -->
-  <title>gitg - devlog</title>
+    <!-- scrapers -->
+    <meta property="og:title" content="games in the grass" />
+    <meta property="og:type" content="event" />
+    <meta property="og:url" content="https://gamesinthegrass.github.io" />
+    <meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg" />
 
-  <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      property="og:description"
+      content="a series of events blurring the boundaries between games, art, folk games, and videogames."
+    />
 
-  <!-- scrapers -->
-  <meta property="og:title" content="games in the grass">
-  <meta property="og:type" content="event">
-  <meta property="og:url" content="https://gamesinthegrass.github.io">
-  <meta property="og:image" content="https://gamesinthegrass.github.io/events/0/images/projector-thumb.jpg">
-  <meta property="og:description"
-    content="a series of events blurring the boundaries between games, art, folk games, and videogames.">
+    <!-- styles -->
+    <link href="/app.css" rel="stylesheet" />
 
-  <!-- styles -->
-  <link href="/main.css" rel="stylesheet">
-</head>
+    <!-- per-page -->
+    <title>gitg - devlog</title>
 
-<body>
-  <main class="Page">
-    <header class="Header">
-      <a href="/">
-        <img class="Header-logo" src="/images/logo-green.png" width="86" height="84">
-      </a>
+		
 
-      <div class="Header-text">
-        <h1 class="Header-title">
-	  devlog 
-        </h1>
+		<link rel="modulepreload" href="/app_/start-8fae54b5.js">
+		<link rel="modulepreload" href="/app_/chunks/vendor-dd9689f8.js">
+		<link rel="modulepreload" href="/app_/layout.svelte-eac8eb9b.js">
+		<link rel="modulepreload" href="/app_/pages/devlog/index.svelte-484c25fc.js">
+		<link rel="modulepreload" href="/app_/chunks/header-7cceabf4.js">
+		<link rel="modulepreload" href="/app_/chunks/link-26f35d9e.js">
+		<link rel="stylesheet" href="/app_/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/app_/assets/link.svelte_svelte&type=style&lang-92de51ed.css">
 
-        <h2 class="Header-subtitle">
-          weekly summaries of what we're up to
-        </h2>
-      </div>
-    </header>
+		<script type="module">
+			import { start } from "/app_/start-8fae54b5.js";
+			start({
+				target: document.querySelector("#site"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: false,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/app_/layout.svelte-eac8eb9b.js"),
+						import("/app_/pages/devlog/index.svelte-484c25fc.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fdevlog",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+  </head>
 
-    <section class="Section">
-      <h1 class="Section-title">10/25</h1>
-      <article class="Game">
+  <body>
+    <div id="site">
 
-        <p class="Game-body">
-	  <p>in-person evaluations with shawn and eric</p>
-	  <p>ordered bike parts</p>
-	  <p>read dada manifesto</p>
-	  <p>retro at ali's</p>
-	  <p>began exploring website templating solutions</p>
-	  <p>delayed games in the grass event to the following weekend (due to bad weather)</p>
-        </p>
-      </article>
-    </section>
 
-    <section class="Section">
-      <h1 class="Section-title">10/18</h1>
-      <article class="Game">
 
-        <p class="Game-body">
-        <p>started tiktok</p>
+
+
+  <header class="Header"><a href="/"><img class="Header-logo" src="/images/logo-green.png" width="86" height="84" alt="drawing of a controller nestled in neon green grass"></a>
+
+    <div class="Header-text"><h1 class="Header-title">devlog</h1>
+    <h2 class="Header-subtitle">weekly summaries of what we&#39;re up to</h2></div></header>
+
+  <main class="Log"><article class="LogEntry Section"><h1 class="Section-title">10/25</h1>
+
+      <div class="LogEntry-body"><p>in-person evaluations with shawn and eric</p>
+        <p>ordered bike parts</p>
+        <p>read dada manifesto</p>
+        <p>retro at ali&#39;s</p>
+        <p>began exploring website templating solutions</p>
+        <p>delayed games in the grass event to the following weekend (due to bad weather)</p></div></article>
+
+    <article class="LogEntry Section"><h1 class="Section-title">10/18</h1>
+
+      <div class="LogEntry-body"><p>started tiktok</p>
         <p>submitted milestone evaluation</p>
-        <p>hosted <a href="/events#gitg2">games in the grass 2 at fort greene!</a></p>
-        <p>interviewed for <a href="https://twitter.com/IndieCade/status/1451924371476418561?s=20">indiecade (on stream)</a></p>
-        <p>checked in on room 205 progress</p>
-        </p>
-      </article>
-    </section>
+        <p>hosted <a class="Link svelte-193kav2" href="/gitg/events#gitg2">games in the grass 2 at fort greene!
+  </a></p>
+        <p>interviewed for <a class="Link svelte-193kav2" href="https://twitter.com/IndieCade/status/1451924371476418561?s=20" target="_blank" rel="noopener noreferrer">indiecade (on stream)
+  </a></p>
+        <p>checked in on room 205 progress</p></div></article>
 
-    <section class="Section">
-      <h1 class="Section-title">10/11</h1>
-      <article class="Game">
+    <article class="LogEntry Section"><h1 class="Section-title">10/11</h1>
 
-        <p class="Game-body">
-        <p>retro! (at ali's place)</p>
+      <div class="LogEntry-body"><p>retro! (at ali&#39;s place)</p>
         <p>met with naomi on thurs.</p>
         <p>created event checklist for park</p>
         <p>started instagram</p>
         <p>(unsuccessfully) debugged frogforg websockets issue</p>
-        <p>rainchecked games in the grass</p>
-        </p>
-      </article>
-    </section>
+        <p>rainchecked games in the grass</p></div></article>
 
-    <section class="Section">
-      <h1 class="Section-title">10/4</h1>
-      <article class="Game">
+    <article class="LogEntry Section"><h1 class="Section-title">10/4</h1>
 
-        <p class="Game-body">
-        <p>hosted <a href="/events#gitg1">willoughby event!</a></p>
+      <div class="LogEntry-body"><p>hosted <a class="Link svelte-193kav2" href="/gitg/events#gitg1">willoughby event!
+  </a></p>
         <p>attended meeting for NYU Prototyping Fund</p>
         <p>logo created!</p>
         <p>started twitter</p>
-        <p>fixed frogforg (after it was broken for event)</p>
-        </p>
-      </article>
-    </section>
-    <section class="Section">
-      <h1 class="Section-title">9/28</h1>
-      <article class="Game">
+        <p>fixed frogforg (after it was broken for event)</p></div></article>
 
-        <p class="Game-body">
-        <p>applied to Culture Push grant</p>
+    <article class="LogEntry Section"><h1 class="Section-title">9/28</h1>
+
+      <div class="LogEntry-body"><p>applied to Culture Push grant</p>
         <p>wrote design brief for thesis milestone</p>
         <p>reached out to Logan for a battery</p>
         <p>frogforg on a TV for playtest thursday</p>
         <p>fixed android issues for frogforg</p>
         <p>added godmode to frogforg</p>
-        <p>first <a href="/events#gitg0">games in the grass at prospect park!</a></p>
-        <p>started website</p>
-        </p>
-      </article>
-    </section>
+        <p>hosted <a class="Link svelte-193kav2" href="/gitg/events#gitg0">games in the grass at prospect park!
+  </a></p>
+        <p>started website</p></div></article></main>
 
 
-    <footer class="Footer">
-      see about us and any upcoming events on
-      <a href="https://instagram.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">instagram</a>
-      and
-      <a href="https://www.tiktok.com/@gamesinthegrass?" target="_blank" rel="noopener noreferrer">tiktok</a>
-      and
-      <a href="https://twitter.com/gamesinthegrass" target="_blank" rel="noopener noreferrer">twitter</a>.
-    </footer>
-  </main>
-</body>
+
+			
+		</div>
+  </body>
+</html>
