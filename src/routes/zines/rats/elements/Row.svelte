@@ -22,8 +22,8 @@
 <style>
   .Row {
     display: flex;
-    padding-top: var(--top);
-    padding-bottom: var(--bot);
+    margin-top: var(--top);
+    margin-bottom: var(--bot);
   }
 
   .Row-bag {

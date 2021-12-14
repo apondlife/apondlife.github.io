@@ -5,11 +5,12 @@
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
   import Placeholder from "./elements/Placeholder.svelte"
+  import Sidenote from "./elements/Sidenote.svelte"
   import Intro from "./content/Intro.svelte"
   import Table from "./content/Table.svelte"
   import RatjamProcess from "./content/RatjamProcess.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
-  import OnRats from "./content/OnRats.svelte"
+  import RatsInBag from "./content/RatsInBag.svelte"
   import Cratique from "./content/Cratique.svelte"
   import Arats from "./content/Arats.svelte"
 
@@ -30,85 +31,86 @@
     <Header id="title" />
 
     <!-- intro -->
-    <Row id="introduction" --bot="15vh">
+    <Row --top="-15vh">
+      <svg class="Tail" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="
+          M 50 100
+          C 40 80, 60 75, 50 60
+          S 45 40, 50 30
+          S 45 15, 50 00
+          "
+        />
+      </svg>
+    </Row>
+
+    <Row id="introduction" --top="40px">
       <div class="Frame--line Frame">
         <Intro />
       </div>
     </Row>
 
     <!-- table of contents -->
-    <Row id="table-of-contents" --top="15vh" --bot="15vh">
+    <Row id="table-of-contents" --top="30vh">
       <Table />
     </Row>
 
+    <!-- home button -->
     <div
       class="Home"
-      src="/images/logo-green.png"
-      on:click={goHome}
       alt="a rat hole with a doormat that says home. there's a tail coming out of it."
+      on:click={goHome}
     />
 
     <!-- get ready to play some thing -->
-    <Row id="warning-1" --top="15vh" --bot="15vh">
+    <Row id="warning-1" --top="30vh">
       <Warning>
         get<br />ready<br />to<br />play<br />some<br />thing
       </Warning>
     </Row>
 
     <!-- rat jam -->
-    <Row id="ratjam" --top="15vh" --bot="15vh">
+    <Row id="ratjam" --top="30vh">
       <div class="Ratjam Frame--fancy Frame">
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
 
-      <aside slot="right" style="overflow: hidden">
+      <aside slot="right" class="RatjamGutter">
         <!-- hidden documentation -->
-        <div style="height: 600px; width: 120%; border: none; overflow: auto" >
-            <RatjamProcess />
+        <div class="RatjamGutter-scroll">
+          <Sidenote --top="00px" text="you can click & hold for the rat to chase the cheese" />
+          <Sidenote --top="30px" text="the rat loves the cheesee" />
+          <Sidenote --top="80px" text="use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting" />
+          <Sidenote --top="60px" text="the rat loves painting" />
+          <RatjamProcess />
         </div>
-        <!--
-          <iframe title="ratjam extra info" style="border: none; overflow: auto; width: 200%;" src="/zines/rats/ratjam-process.html" ></iframe>
-        <div style="overflow: auto">
-        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
-        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
-        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
-        </div>
-
-        <p class="Sidenote" style="margin-top: 00px;">you can click & hold for the rat to chase the cheese</p>
-        <p class="Sidenote" style="margin-top: 30px;">the rat loves the cheesee</p>
-        <p class="Sidenote" style="margin-top: 80px;">
-          use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different
-          parts of the painting
-        </p>
-        <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
-        -->
       </aside>
     </Row>
 
     <!-- now some poratry -->
-    <Row id="warning-2" --top="15vh" --bot="15vh">
+    <Row id="warning-2" --top="30vh">
       <Warning>
         now<br />for<br />some<br />po<br />rat<br />try
       </Warning>
     </Row>
 
     <!--poratry-->
-    <Row id="poratry" --top="15vh" --bot="15vh">
+    <Row id="poratry" --top="30vh">
       <Poratry />
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">we did some automatic writing</p>
-        <p class="Sidenote" style="margin-top: 100px;">about<br />rats</p>
-        <p class="Sidenote" style="margin-top: 345px;">as well as some fluxus scores</p>
-        <p class="Sidenote" style="margin-top: 75px;">about<br />rats</p>
-        <p class="Sidenote" style="margin-top: 200px;">we are serious artists</p>
+        <Sidenote --top="00px" text="we did some automatic writing" />
+        <Sidenote --top="100px">about<br />rats</Sidenote>
+        <Sidenote --top="345px" text="as well as some fluxus scores" />
+        <Sidenote --top="75px">about<br />rats</Sidenote>
+        <Sidenote --top="200px" text="we are serious artists" />
       </aside>
     </Row>
 
     <!-- on rats -->
-    <Row id="on-rats" --top="15vh" --bot="15vh">
+    <Row id="rats-in-bag" --top="30vh">
       <div class="Frame--line Frame">
-        <OnRats />
+        <RatsInBag />
       </div>
     </Row>
 
@@ -133,10 +135,10 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">this is based on a true story</p>
-        <p class="Sidenote" style="margin-top: 60px;">you can touch the rats with your mouse</p>
-        <p class="Sidenote" style="margin-top: 50px;">you don't have to</p>
+        <Sidenote --top="00px" text="click to start" />
+        <Sidenote --top="30px" text="this is based on a true story" />
+        <Sidenote --top="60px" text="you can touch the rats with your mouse" />
+        <Sidenote --top="50px" text="you don't have to" />
       </aside>
     </Row>
 
@@ -168,10 +170,10 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 030px;">click to load</p>
-        <p class="Sidenote" style="margin-top: 080px;">this is what the internet should be like</p>
-        <p class="Sidenote" style="margin-top: 100px;">it's a webpage feel free to click around!</p>
-        <p class="Sidenote" style="margin-top: 080px;">don't forget to scroll around too</p>
+        <Sidenote --top="030px" text="click to load" />
+        <Sidenote --top="080px" text="this is what the internet should be like" />
+        <Sidenote --top="100px" text="it's a webpage feel free to click around!" />
+        <Sidenote --top="080px" text="don't forget to scroll around too" />
       </aside>
     </Row>
 
@@ -181,14 +183,14 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 30px;">did you know that rats can sing really well</p>
-        <p class="Sidenote" style="margin-top: 50px;">listen to those beautiful squeaks!</p>
-        <p class="Sidenote" style="margin-top: 90px;">by the way, click on the rats to make them squeak</p>
+        <Sidenote --top="30px" text="did you know that rats can sing really well" />
+        <Sidenote --top="50px" text="listen to those beautiful squeaks!" />
+        <Sidenote --top="90px" text="by the way, click on the rats to make them squeak" />
       </aside>
     </Row>
 
     <!-- wings of rat -->
-    <Row id="wings-of-rat" --top="15vh" --bot="15vh">
+    <Row id="wings-of-rat" --top="30vh">
       <div class="WingsOfRat Frame--fancy Frame">
         <div class="WingsOfRat-frame">
           <Loader>
@@ -207,15 +209,15 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">use the WASD or arrow keys to fly around</p>
-        <p class="Sidenote" style="margin-top: 180px;">this game is inspired by a movie called 'wings of desire'</p>
-        <p class="Sidenote" style="margin-top: 60px;">the music is a track by 'wendy' called 'melody of life'</p>
+        <Sidenote --top="00px" text="click to start" />
+        <Sidenote --top="30px" text="use the WASD or arrow keys to fly around" />
+        <Sidenote --top="180px" text="this game is inspired by a movie called 'wings of desire'" />
+        <Sidenote --top="60px" text="the music is a track by 'wendy' called 'melody of life'" />
       </aside>
     </Row>
 
     <!-- rat youtube video -->
-    <Row id="rat-dnb" --top="15vh" --bot="15vh">
+    <Row id="rat-dnb" --top="30vh">
       <div class="Frame">
         <iframe
           class="flex-frame"
@@ -227,28 +229,28 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
-        <p class="Sidenote" style="margin-top: 30px;">youtube user lokirat made it</p>
+        <Sidenote --top="00px" text="we didn't make this" />
+        <Sidenote --top="30px" text="youtube user lokirat made it" />
       </aside>
     </Row>
 
     <!-- all rats act the same -->
-    <Row id="arats" --top="15vh" --bot="15vh">
+    <Row id="arats" --top="30vh">
       <div class="Frame--line Frame">
         <Arats />
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 000px;">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</p>
-        <p class="Sidenote" style="margin-top: 030px;">all rats act the same</p>
-        <p class="Sidenote" style="margin-top: 050px;">you can perform it in person w/ yr friends & family</p>
-        <p class="Sidenote" style="margin-top: 090px;">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</p>
-        <p class="Sidenote" style="margin-top: 080px;">enjoy =)</p>
+        <Sidenote --top="000px">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</Sidenote>
+        <Sidenote --top="030px" text="all rats act the same" />
+        <Sidenote --top="050px" text="you can perform it in person w/ yr friends & family" />
+        <Sidenote --top="090px">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</Sidenote>
+        <Sidenote --top="080px" text="enjoy =)" />
       </aside>
     </Row>
 
     <!-- rat tickling -->
-    <Row id="rattickling" --top="15vh" --bot="15vh">
+    <Row id="rattickling" --top="30vh">
       <Loader>
         <div slot="content" class="RatTickling--page Frame">
           <iframe
@@ -264,33 +266,33 @@
       </Loader>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click to start this certification training</p>
-        <p class="Sidenote" style="margin-top: 80px;">we didn't make this</p>
-        <p class="Sidenote" style="margin-top: 160px;">it's produced by the purdue agriculture gaskill lab</p>
-        <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
-        <p class="Sidenote" style="margin-top: 30px;">rats should be happy</p>
+        <Sidenote --top="000px" text="click to start this certification training" />
+        <Sidenote --top="080px" text="we didn't make this" />
+        <Sidenote --top="160px" text="it's produced by the purdue agriculture gaskill lab" />
+        <Sidenote --top="030px" text="we applied some css filters" />
+        <Sidenote --top="030px" text="rats should be happy" />
       </aside>
     </Row>
 
     <!-- here comes the video games -->
-    <Row id="warning-3" --top="15vh" --bot="15vh">
+    <Row id="warning-3" --top="30vh">
       <Warning>
         here<br />comes<br />the<br />video<br />game<br />tfarc<br />rats<br />ii
       </Warning>
     </Row>
 
     <!-- tfarc rats ii -->
-    <Row id="rats-ii" --top="15vh" --bot="15vh">
+    <Row id="rats-ii" --top="30vh">
       <div class="RatsIi Frame--fancy Frame">
         <iframe class="flex-frame" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii" />
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">you can right click & hold to create new rats</p>
-        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
-        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
-        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
-        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
+        <Sidenote --top="00px" text="you can right click & hold to create new rats" />
+        <Sidenote --top="30px" text="a lot of new rats" />
+        <Sidenote --top="50px" text="the yellow box also selects them" />
+        <Sidenote --top="90px" text="left click drops a cheese, you remember the cheese" />
+        <Sidenote --top="120px" text="the selected rats all act the same." />
       </aside>
     </Row>
 
@@ -331,15 +333,15 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 000px;">click to run these drawing tools</p>
-        <p class="Sidenote" style="margin-top: 080px;">then click and drag to draw rats</p>
-        <p class="Sidenote" style="margin-top: 020px;">or draw with rats</p>
-        <p class="Sidenote" style="margin-top: 100px;">follow the form of the rat, or describe your own</p>
+        <Sidenote --top="000px" text="click to run these drawing tools" />
+        <Sidenote --top="080px" text="then click and drag to draw rats" />
+        <Sidenote --top="020px" text="or draw with rats" />
+        <Sidenote --top="100px" text="follow the form of the rat, or describe your own" />
       </aside>
     </Row>
 
     <!-- on rats -->
-    <Row id="cratique" --top="15vh" --bot="15vh">
+    <Row id="cratique" --top="30vh">
       <div class="Frame--line Frame">
         <Cratique />
       </div>
@@ -427,16 +429,6 @@
     flex: 1;
   }
 
-  /* -- e/sidenote */
-  .Sidenote {
-    box-sizing: content-box;
-    position: relative;
-    width: 100px;
-    margin-left: 30px;
-    padding-left: 20px;
-    border-left: 1px dashed var(--fg-color-dark);
-  }
-
   /* -- e/home */
   .Home {
     width: 200px;
@@ -457,10 +449,34 @@
     background-image: url("/zines/rats/homepage2.png");
   }
 
+  /* -- e/tail */
+  .Tail {
+    width: 480px;
+    overflow: visible;
+  }
+
+  .Tail path {
+    stroke: #ff81ce;
+    fill: transparent;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-dasharray: 10 5;
+  }
+
   /* -- arts -- */
   .Ratjam {
     width: 960px;
     height: 600px;
+  }
+
+  .RatjamGutter {
+    overflow: hidden;
+  }
+
+  .RatjamGutter-scroll {
+    height: 600px;
+    width: 120%;
+    overflow: auto;
   }
 
   .Labrat {
