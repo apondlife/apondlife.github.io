@@ -26,7 +26,7 @@
 
     <h2>the rat</h2>
 
-    <p>on October 16, while waiting for a C train that took more than an hour to come, I (fran) recorded a few videos of rats in the station. I will include a couple of them here</p>
+    <p>on October 16, while waiting for a C train that took more than an hour to come, I (fran) recorded a few videos of rats in the station. I will include a couple of them here (compressed so that the website doesn't get too heavy)</p>
 
 
     TODO: videos here
