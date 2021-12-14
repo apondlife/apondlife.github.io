@@ -16,7 +16,7 @@
     <h1>how the rat gets made</h1>
 
     <p>a variety of materials, tools, and processes were used to make this piece</p>
-    <p>the labor can be divided rougly into two parts: 1) making the painting, and 2) 2) making the rat</p>
+    <p>the labor can be divided rougly into two parts: 1) making the painting, and 2) making the animation</p>
     <p></p>
 
     <h2>the painting</h2>
@@ -24,7 +24,7 @@
     <p> TODO: ask mut and ali about the process <p>
 
 
-    <h2>the rat</h2>
+    <h2>the animation</h2>
 
     <p>on October 16, while waiting for a C train that took more than an hour to come, I (fran) recorded a few videos of rats in the station. I will include a couple of them here (compressed so that the website doesn't get too heavy)</p>
 
