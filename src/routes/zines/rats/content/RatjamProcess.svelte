@@ -28,9 +28,9 @@
 
     <p>on October 16, while waiting for a C train that took more than an hour to come, I (fran) recorded a few videos of rats in the station. I will include a couple of them here (compressed so that the website doesn't get too heavy)</p>
 
-
-    TODO: videos here
-
+  <img src="/zines/rats/ratvid1.gif" alt="a rat in the subway scurrying out of sight" />
+  <img src="/zines/rats/ratvid2.gif" alt="a momma rat with her baby" />
+  <img src="/zines/rats/ratvid3.gif" alt="a rat scurrying towards a shaky camera person" />
 
     <p>there seemed to be two rats, a larger one and a smaller one. i like to believe it was a momma rat and her baby</p>
     <p>i was lucky enough to have the momma rat skitter past me in that last video. this last video is what was eventually used as the source material for the animated rat in the piece</p>
@@ -39,7 +39,10 @@
     <p>mut saw this prototype and i mentioned that i tried to animate the rats, but it was too much work to figure it out</p>
     <p>later that night, mut DM'd me asking for the video</p>
     <p>and then he cropped out a little loop of animation</p>
-    TODO GIFs here
+    <video muted autoplay>
+        <source src="/zines/rats/ratanim.mp4" type="video/mp4">
+    </video>
+    <img src="/zines/rats/ratanim.gif" alt="a rat scurrying towards a shaky camera person" />
     <p>i started updating the game with the gif, but that ended up getting deprioritized for other work</p>
     <p>about a month later, pondlife decided to make this zine, and we decided the theme would be rats</p>
     <p>we're sitting in the room that we do work in together. i think mut has the idea that we should all work on a game together "at the same time".
