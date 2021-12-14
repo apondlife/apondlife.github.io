@@ -6,6 +6,7 @@
   import Loader from "./elements/Loader.svelte"
   import Intro from "./content/Intro.svelte"
   import Table from "./content/Table.svelte"
+  import RatjamProcess from "./content/RatjamProcess.svelte"
   import Poratry from "./content/poratry/Poratry.svelte"
   import OnRats from "./content/OnRats.svelte"
   import Cratique from "./content/Cratique.svelte"
@@ -59,7 +60,19 @@
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
 
-      <aside slot="right">
+      <aside slot="right" style="overflow: hidden">
+        <!-- hidden documentation -->
+        <div style="height: 600px; width: 120%; border: none; overflow: auto" >
+            <RatjamProcess />
+        </div>
+        <!--
+          <iframe title="ratjam extra info" style="border: none; overflow: auto; width: 200%;" src="/zines/rats/ratjam-process.html" ></iframe>
+        <div style="overflow: auto">
+        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
+        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
+        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
+        </div>
+
         <p class="Sidenote" style="margin-top: 00px;">you can click & hold for the rat to chase the cheese</p>
         <p class="Sidenote" style="margin-top: 30px;">the rat loves the cheesee</p>
         <p class="Sidenote" style="margin-top: 80px;">
@@ -67,6 +80,7 @@
           parts of the painting
         </p>
         <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
+        -->
       </aside>
     </Row>
 
@@ -99,22 +113,26 @@
 
     <!-- rat loving -->
     <Row id="ratloving" --top="15vh" --bot="15vh">
-      <div class="RatLoving Frame--fancy Frame">
+      <div class="RatLoving Frame--fancy Frame" style="width:fit-content /* sorry for horrible css i don't know what i'm doing :( */">
         <Loader>
-          <div slot="content">
+          <div
+            slot="content"
+            style="width:512px"
+          >
             <iframe
               class="RatLoving-frame flex-frame"
               title="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
               src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
             />
 
-            Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption
+            <br>
+            <span style="font-size: 21px;">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</span>
           </div>
 
           <img
             slot="thumb"
             class="RatLoving-frame"
-            src="/zines/rats/games/princess-thumb.jpg"
+            src="/zines/rats/games/princess-thumb.png"
             alt="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
           />
         </Loader>
