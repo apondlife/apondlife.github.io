@@ -75,7 +75,8 @@
   /* copy some zine styles */
   .positioner {
     width: 80%;
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* get back the normal spacings */
@@ -90,5 +91,10 @@
   p {
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+
+  img,
+  video {
+    width: 100%;
   }
 </style>

@@ -61,14 +61,13 @@
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
 
-      <aside slot="right" style="overflow: hidden">
+      <aside slot="right" class="RatjamGutter">
         <!-- hidden documentation -->
-        <div style="height: 600px; width: 120%; border: none; overflow: auto" >
+        <div class="RatjamGutter-scroll">
           <Sidenote --top="00px" text="you can click & hold for the rat to chase the cheese" />
           <Sidenote --top="30px" text="the rat loves the cheesee" />
           <Sidenote --top="80px" text="use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different parts of the painting" />
           <Sidenote --top="60px" text="the rat loves painting" />
-
           <RatjamProcess />
         </div>
       </aside>
@@ -458,6 +457,16 @@
   .Ratjam {
     width: 960px;
     height: 600px;
+  }
+
+  .RatjamGutter {
+    overflow: hidden;
+  }
+
+  .RatjamGutter-scroll {
+    height: 600px;
+    width: 120%;
+    overflow: auto;
   }
 
   .Labrat {
