@@ -14,12 +14,14 @@
 
 <style>
   .RatsHeader {
-    text-align: center;
-    padding-top: 28vh;
-    padding-bottom: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
   .RatsHeader h1 {
+    margin-top: -0.3em;
     font-size: 16em;
     color: var(--fg-color-dark);
   }

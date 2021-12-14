@@ -30,33 +30,46 @@
     <Header id="title" />
 
     <!-- intro -->
-    <Row id="introduction" --bot="15vh">
+    <Row --top="-15vh">
+      <svg class="Tail" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="
+          M 50 100
+          C 40 80, 60 75, 50 60
+          S 45 40, 50 30
+          S 45 15, 50 00
+          "
+        />
+      </svg>
+    </Row>
+
+    <Row id="introduction" --top="40px">
       <div class="Frame--line Frame">
         <Intro />
       </div>
     </Row>
 
     <!-- table of contents -->
-    <Row id="table-of-contents" --top="15vh" --bot="15vh">
+    <Row id="table-of-contents" --top="30vh">
       <Table />
     </Row>
 
+    <!-- home button -->
     <div
       class="Home"
-      src="/images/logo-green.png"
-      on:click={goHome}
       alt="a rat hole with a doormat that says home. there's a tail coming out of it."
+      on:click={goHome}
     />
 
     <!-- get ready to play some thing -->
-    <Row id="warning-1" --top="15vh" --bot="15vh">
+    <Row id="warning-1" --top="30vh">
       <Warning>
         get<br />ready<br />to<br />play<br />some<br />thing
       </Warning>
     </Row>
 
     <!-- rat jam -->
-    <Row id="ratjam" --top="15vh" --bot="15vh">
+    <Row id="ratjam" --top="30vh">
       <div class="Ratjam Frame--fancy Frame">
         <iframe class="flex-frame" title="ratjam" src="https://apondlife.github.io/rats/ratjam" />
       </div>
@@ -74,14 +87,14 @@
     </Row>
 
     <!-- now some poratry -->
-    <Row id="warning-2" --top="15vh" --bot="15vh">
+    <Row id="warning-2" --top="30vh">
       <Warning>
         now<br />for<br />some<br />po<br />rat<br />try
       </Warning>
     </Row>
 
     <!--poratry-->
-    <Row id="poratry" --top="15vh" --bot="15vh">
+    <Row id="poratry" --top="30vh">
       <Poratry />
 
       <aside slot="right">
@@ -94,14 +107,14 @@
     </Row>
 
     <!-- on rats -->
-    <Row id="on-rats" --top="15vh" --bot="15vh">
+    <Row id="on-rats" --top="30vh">
       <div class="Frame--line Frame">
         <OnRats />
       </div>
     </Row>
 
     <!-- rat loving -->
-    <Row id="ratloving" --top="15vh" --bot="15vh">
+    <Row id="ratloving" --top="30vh">
       <div class="RatLoving Frame--fancy Frame" style="width:fit-content /* sorry for horrible css i don't know what i'm doing :( */">
         <Loader>
           <div
@@ -183,7 +196,7 @@
     </Row>
 
     <!-- wings of rat -->
-    <Row id="wings-of-rat" --top="15vh" --bot="15vh">
+    <Row id="wings-of-rat" --top="30vh">
       <div class="WingsOfRat Frame--fancy Frame">
         <Loader>
           <iframe
@@ -211,7 +224,7 @@
     </Row>
 
     <!-- rat youtube video -->
-    <Row id="rat-dnb" --top="15vh" --bot="15vh">
+    <Row id="rat-dnb" --top="30vh">
       <div class="Frame">
         <iframe
           class="flex-frame"
@@ -229,7 +242,7 @@
     </Row>
 
     <!-- all rats act the same -->
-    <Row id="arats" --top="15vh" --bot="15vh">
+    <Row id="arats" --top="30vh">
       <div class="Frame--line Frame">
         <Arats />
       </div>
@@ -244,7 +257,7 @@
     </Row>
 
     <!-- rat tickling -->
-    <Row id="rattickling" --top="15vh" --bot="15vh">
+    <Row id="rattickling" --top="30vh">
       <Loader>
         <div slot="content" class="RatTickling--page Frame">
           <iframe
@@ -269,14 +282,14 @@
     </Row>
 
     <!-- here comes the video games -->
-    <Row id="warning-3" --top="15vh" --bot="15vh">
+    <Row id="warning-3" --top="30vh">
       <Warning>
         here<br />comes<br />the<br />video<br />game<br />tfarc<br />rats<br />ii
       </Warning>
     </Row>
 
     <!-- tfarc rats ii -->
-    <Row id="rats-ii" --top="15vh" --bot="15vh">
+    <Row id="rats-ii" --top="30vh">
       <div class="RatsIi Frame--fancy Frame">
         <iframe class="flex-frame" title="Rats-II" src="https://apondlife.github.io/rats/rats-ii" />
       </div>
@@ -335,7 +348,7 @@
     </Row>
 
     <!-- on rats -->
-    <Row id="cratique" --top="15vh" --bot="15vh">
+    <Row id="cratique" --top="30vh">
       <div class="Frame--line Frame">
         <Cratique />
       </div>
@@ -423,16 +436,6 @@
     flex: 1;
   }
 
-  /* -- e/sidenote */
-  .Sidenote {
-    box-sizing: content-box;
-    position: relative;
-    width: 100px;
-    margin-left: 30px;
-    padding-left: 20px;
-    border-left: 1px dashed var(--fg-color-dark);
-  }
-
   /* -- e/home */
   .Home {
     width: 200px;
@@ -451,6 +454,20 @@
 
   .Home:hover {
     background-image: url("/zines/rats/homepage2.png");
+  }
+
+  /* -- e/tail */
+  .Tail {
+    width: 480px;
+    overflow: visible;
+  }
+
+  .Tail path {
+    stroke: #ff81ce;
+    fill: transparent;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-dasharray: 10 5;
   }
 
   /* -- arts -- */
