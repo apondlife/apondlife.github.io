@@ -4,6 +4,7 @@
   import Row from "./elements/Row.svelte"
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
+  import Sidenote from "./elements/Sidenote.svelte"
   import Intro from "./content/Intro.svelte"
   import Table from "./content/Table.svelte"
   import RatjamProcess from "./content/RatjamProcess.svelte"
@@ -63,24 +64,8 @@
       <aside slot="right" style="overflow: hidden">
         <!-- hidden documentation -->
         <div style="height: 600px; width: 120%; border: none; overflow: auto" >
-            <RatjamProcess />
+          <RatjamProcess />
         </div>
-        <!--
-          <iframe title="ratjam extra info" style="border: none; overflow: auto; width: 200%;" src="/zines/rats/ratjam-process.html" ></iframe>
-        <div style="overflow: auto">
-        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
-        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
-        pojwpowjefp pweojfw epofj wepojw epofjwpe fojwe pfojew fpoewjf pweojf pweofjwe pofjew pfojew pfoewjf powejf pweojf wpeofj wepofjew pofjwe pofjew pfojew fpowejf powejf pweojf pweojf pweojf pweojf pweojf pweojf pweojf pweojf wpeofjwe pofjwe pfojwef powejf p
-        </div>
-
-        <p class="Sidenote" style="margin-top: 00px;">you can click & hold for the rat to chase the cheese</p>
-        <p class="Sidenote" style="margin-top: 30px;">the rat loves the cheesee</p>
-        <p class="Sidenote" style="margin-top: 80px;">
-          use the muscles in your head to rotate your eyes into different positions. this will allow you to look at different
-          parts of the painting
-        </p>
-        <p class="Sidenote" style="margin-top: 60px;">the rat loves painting</p>
-        -->
       </aside>
     </Row>
 
@@ -96,11 +81,11 @@
       <Poratry />
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">we did some automatic writing</p>
-        <p class="Sidenote" style="margin-top: 100px;">about<br />rats</p>
-        <p class="Sidenote" style="margin-top: 345px;">as well as some fluxus scores</p>
-        <p class="Sidenote" style="margin-top: 75px;">about<br />rats</p>
-        <p class="Sidenote" style="margin-top: 200px;">we are serious artists</p>
+        <Sidenote --top="00px" text="we did some automatic writing" />
+        <Sidenote --top="100px;">about<br />rats</Sidenote>
+        <Sidenote --top="345px" text="as well as some fluxus scores" />
+        <Sidenote --top="75px;">about<br />rats</Sidenote>
+        <Sidenote --top="200px" text="we are serious artists" />
       </aside>
     </Row>
 
@@ -139,10 +124,10 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">this is based on a true story</p>
-        <p class="Sidenote" style="margin-top: 60px;">you can touch the rats with your mouse</p>
-        <p class="Sidenote" style="margin-top: 50px;">you don't have to</p>
+        <Sidenote --top="00px;" text="click to start" />
+        <Sidenote --top="30px;" text="this is based on a true story" />
+        <Sidenote --top="60px;" text="you can touch the rats with your mouse" />
+        <Sidenote --top="50px;" text="you don't have to" />
       </aside>
     </Row>
 
@@ -174,10 +159,10 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 030px;">click to load</p>
-        <p class="Sidenote" style="margin-top: 080px;">this is what the internet should be like</p>
-        <p class="Sidenote" style="margin-top: 100px;">it's a webpage feel free to click around!</p>
-        <p class="Sidenote" style="margin-top: 080px;">don't forget to scroll around too</p>
+        <Sidenote --top="030px;" text="click to load" />
+        <Sidenote --top="080px;" text="this is what the internet should be like" />
+        <Sidenote --top="100px;" text="it's a webpage feel free to click around!" />
+        <Sidenote --top="080px;" text="don't forget to scroll around too" />
       </aside>
     </Row>
 
@@ -187,9 +172,9 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 30px;">did you know that rats can sing really well</p>
-        <p class="Sidenote" style="margin-top: 50px;">listen to those beautiful squeaks!</p>
-        <p class="Sidenote" style="margin-top: 90px;">by the way, click on the rats to make them squeak</p>
+        <Sidenote --top="30px;" text="did you know that rats can sing really well" />
+        <Sidenote --top="50px;" text="listen to those beautiful squeaks!" />
+        <Sidenote --top="90px;" text="by the way, click on the rats to make them squeak" />
       </aside>
     </Row>
 
@@ -214,10 +199,10 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click to start</p>
-        <p class="Sidenote" style="margin-top: 30px;">use the WASD or arrow keys to fly around</p>
-        <p class="Sidenote" style="margin-top: 180px;">this game is inspired by a movie called 'wings of desire'</p>
-        <p class="Sidenote" style="margin-top: 60px;">the music is a track by 'wendy' called 'melody of life'</p>
+        <Sidenote --top="00px;" text="click to start" />
+        <Sidenote --top="30px;" text="use the WASD or arrow keys to fly around" />
+        <Sidenote --top="180px;" text="this game is inspired by a movie called 'wings of desire'" />
+        <Sidenote --top="60px;" text="the music is a track by 'wendy' called 'melody of life'" />
       </aside>
     </Row>
 
@@ -234,8 +219,8 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">we didn't make this</p>
-        <p class="Sidenote" style="margin-top: 30px;">youtube user lokirat made it</p>
+        <Sidenote --top="00px;" text="we didn't make this" />
+        <Sidenote --top="30px;" text="youtube user lokirat made it" />
       </aside>
     </Row>
 
@@ -246,11 +231,11 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 000px;">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</p>
-        <p class="Sidenote" style="margin-top: 030px;">all rats act the same</p>
-        <p class="Sidenote" style="margin-top: 050px;">you can perform it in person w/ yr friends & family</p>
-        <p class="Sidenote" style="margin-top: 090px;">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</p>
-        <p class="Sidenote" style="margin-top: 080px;">enjoy =)</p>
+        <Sidenote --top="000px;">we made a theater game (or maybe <Link href="https://nordiclarp.org/what-is-nordic-larp/" text="alarp" />)</Sidenote>
+        <Sidenote --top="030px;" text="all rats act the same" />
+        <Sidenote --top="050px;" text="you can perform it in person w/ yr friends & family" />
+        <Sidenote --top="090px;">this is an excerpt from its rules; for the full rules, click <Link href="https://apondlife.github.io/rats/arats/rules.pdf" text="this link" /> or the one at the bottom of the frame</Sidenote>
+        <Sidenote --top="080px;" text="enjoy =)" />
       </aside>
     </Row>
 
@@ -271,11 +256,11 @@
       </Loader>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click to start this certification training</p>
-        <p class="Sidenote" style="margin-top: 80px;">we didn't make this</p>
-        <p class="Sidenote" style="margin-top: 160px;">it's produced by the purdue agriculture gaskill lab</p>
-        <p class="Sidenote" style="margin-top: 30px;">we applied some css filters</p>
-        <p class="Sidenote" style="margin-top: 30px;">rats should be happy</p>
+        <Sidenote --top="000px;" text="click to start this certification training" />
+        <Sidenote --top="080px;" text="we didn't make this" />
+        <Sidenote --top="160px;" text="it's produced by the purdue agriculture gaskill lab" />
+        <Sidenote --top="030px;" text="we applied some css filters" />
+        <Sidenote --top="030px;" text="rats should be happy" />
       </aside>
     </Row>
 
@@ -293,11 +278,11 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">you can right click & hold to create new rats</p>
-        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
-        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
-        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
-        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
+        <Sidenote --top="00px;" text="you can right click & hold to create new rats" />
+        <Sidenote --top="30px;" text="a lot of new rats" />
+        <Sidenote --top="50px;" text="the yellow box also selects them" />
+        <Sidenote --top="90px;" text="left click drops a cheese, you remember the cheese" />
+        <Sidenote --top="120px;" text="the selected rats all act the same." />
       </aside>
     </Row>
 
@@ -338,10 +323,10 @@
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 000px;">click to run these drawing tools</p>
-        <p class="Sidenote" style="margin-top: 080px;">then click and drag to draw rats</p>
-        <p class="Sidenote" style="margin-top: 020px;">or draw with rats</p>
-        <p class="Sidenote" style="margin-top: 100px;">follow the form of the rat, or describe your own</p>
+        <Sidenote --top="000px;" text="click to run these drawing tools" />
+        <Sidenote --top="080px;" text="then click and drag to draw rats" />
+        <Sidenote --top="020px;" text="or draw with rats" />
+        <Sidenote --top="100px;" text="follow the form of the rat, or describe your own" />
       </aside>
     </Row>
 
