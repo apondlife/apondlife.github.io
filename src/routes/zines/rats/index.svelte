@@ -101,18 +101,18 @@
     <Row id="ratloving" --top="15vh" --bot="15vh">
       <div class="RatLoving Frame--fancy Frame">
         <Loader>
-          <div
-            slot="content">
+          <div slot="content">
             <iframe
               class="RatLoving-frame flex-frame"
               title="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
               src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
             />
+
             Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption
           </div>
 
           <img
-            slot="loader"
+            slot="thumb"
             class="RatLoving-frame"
             src="/zines/rats/games/princess-thumb.jpg"
             alt="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
@@ -147,7 +147,7 @@
           />
 
           <div
-            slot="loader"
+            slot="thumb"
             class="flex-frame"
           />
         </Loader>
@@ -183,7 +183,7 @@
           />
 
           <img
-            slot="loader"
+            slot="thumb"
             class="WingsOfRat-frame"
             src="/zines/rats/games/wings-of-rat-thumb.jpg"
             alt="a rat w/ wings on a new york street"
@@ -243,7 +243,7 @@
           />
         </div>
 
-        <div slot="loader" class="RatTickling--thumb Frame">
+        <div slot="thumb" class="RatTickling--thumb Frame">
           <img class="RatTickling-frame" src="/zines/rats/games/rat-tickling-thumb.jpg" alt="a rat" />
         </div>
       </Loader>
@@ -284,35 +284,42 @@
       <div class="Sketching">
         <div class="Portrat Frame--fancy Frame">
           <Loader>
-            <iframe
-              slot="content"
-              class="Portrat-game"
-              title="portrat"
-              src="https://apondlife.github.io/rats/portrat"
-            />
-
             <div
-              slot="loader"
-              class="Portrat-thumb Portrat-game"
+              slot="content"
+              class="Portrat-view"
+            >
+              <iframe
+                class="Portrat-game"
+                title="portrat"
+                src="https://apondlife.github.io/rats/portrat"
+              />
+            </div>
+
+            <img
+              slot="thumb"
+              class="Portrat-thumb Portrat-view"
+              src="/zines/rats/games/portrat-thumb.jpg"
+              alt="hand of rat facing right"
             />
           </Loader>
         </div>
 
         <div class="Ratist Frame--fancy Frame">
-          <iframe
-            class="flex-frame"
-            title="ratist"
-            src="https://apondlife.github.io/rats/ratle"
-          />
+          <div class="Ratist-view">
+            <iframe
+              class="Ratist-game"
+              title="ratist"
+              src="https://apondlife.github.io/rats/ratle"
+            />
+          </div>
         </div>
       </div>
 
       <aside slot="right">
-        <p class="Sidenote" style="margin-top: 00px;">click and drag to draw some rats</p>
-        <p class="Sidenote" style="margin-top: 30px;">a lot of new rats</p>
-        <p class="Sidenote" style="margin-top: 50px;">the yellow box also selects them</p>
-        <p class="Sidenote" style="margin-top: 90px;">left click drops a cheese, you remember the cheese</p>
-        <p class="Sidenote" style="margin-top: 120px;">the selected rats all act the same.</p>
+        <p class="Sidenote" style="margin-top: 000px;">click to run these drawing tools</p>
+        <p class="Sidenote" style="margin-top: 080px;">then click and drag to draw rats</p>
+        <p class="Sidenote" style="margin-top: 020px;">or draw with rats</p>
+        <p class="Sidenote" style="margin-top: 100px;">follow the form of the rat, or describe your own</p>
       </aside>
     </Row>
 
@@ -460,32 +467,42 @@
   .Sketching {
     display: flex;
     align-items: center;
+    gap: 30px;
+    overflow: hidden;
   }
 
-  .Ratist {
-    margin: 25px;
-    height: 600px;
-    width: 500px;
-    aspect-ratio: 4/4.4;
+  .Ratist-view {
+    width: 368px;
+    height: 466px;
   }
 
-  .Portrat {
-    margin: 25px;
-    width: 922px;
-    height: 400px;
+  .Ratist-game {
+    width: 728px;
+    height: 922px;
+    transform: scale(0.505);
+    transform-origin: top left;
   }
 
-  .Portrat-game {
-    flex: 1;
+  .Portrat-view {
+    width: 368px;
+    height: 230px;
   }
 
   .Portrat-thumb {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    mix-blend-mode: hard-light;
+    opacity: 0.15;
   }
 
-  /*.Ratjam-frame {
-    flex: 1;
-  }*/
+  .Portrat-game {
+    width: 920px;
+    height: 575px;
+    transform: scale(0.4);
+    transform-origin: top left;
+    filter: invert(93%);
+  }
 
   /* content is 16:9 */
   .WingsOfRat-frame {
@@ -495,7 +512,7 @@
 
   .RatLoving-frame {
     width: 512px;
-    height: 518px; 
+    height: 518px;
   }
 
   .RatTickling--page {
