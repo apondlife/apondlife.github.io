@@ -7,7 +7,7 @@
   -->p<!--
   --><Link text="on" href="/zines" class="Link--nav" /><!--
   -->d<!--
-  --><Link text="li" href="/devlog" class="Link--nav" /><!--
+  --><Link text="li" href="/write" class="Link--nav" /><!--
   -->f<!--
-  --><Link text="e" href="/gitg" class="Link--nav" />
+  --><Link text="e" href="/grass" class="Link--nav" />
 </template>

@@ -33,7 +33,7 @@
       <div class="LogEntry-body">
         <p>started tiktok</p>
         <p>submitted milestone evaluation</p>
-        <p>hosted <Link href="/gitg/events#gitg2" text="games in the grass 2 at fort greene!" /></p>
+        <p>hosted <Link href="/grass/events#gitg2" text="games in the grass 2 at fort greene!" /></p>
         <p>interviewed for <Link href="https://twitter.com/IndieCade/status/1451924371476418561?s=20" text="indiecade (on stream)" /></p>
         <p>checked in on room 205 progress</p>
       </div>
@@ -56,7 +56,7 @@
       <h1 class="Section-title">10/4</h1>
 
       <div class="LogEntry-body">
-        <p>hosted <Link href="/gitg/events#gitg1" text="willoughby event!" /></p>
+        <p>hosted <Link href="/grass/events#gitg1" text="willoughby event!" /></p>
         <p>attended meeting for NYU Prototyping Fund</p>
         <p>logo created!</p>
         <p>started twitter</p>
@@ -74,7 +74,7 @@
         <p>frogforg on a TV for playtest thursday</p>
         <p>fixed android issues for frogforg</p>
         <p>added godmode to frogforg</p>
-        <p>hosted <Link href="/gitg/events#gitg0" text="games in the grass at prospect park!" /></p>
+        <p>hosted <Link href="/grass/events#gitg0" text="games in the grass at prospect park!" /></p>
         <p>started website</p>
       </div>
     </article>

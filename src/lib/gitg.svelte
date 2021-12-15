@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <Link text="games" href="/gitg/games" />
-  <Link text="in" href="/gitg/events" />
+  <Link text="games" href="/grass/games" />
+  <Link text="in" href="/grass/events" />
   the grass
 </template>
