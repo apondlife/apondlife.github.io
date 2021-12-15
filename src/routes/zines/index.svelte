@@ -1,7 +1,7 @@
 <script>
-  import Header from "@lib/header.svelte"
-  import Link from "@lib/link.svelte"
-  import Pondlife from "@lib/pondlife.svelte"
+  import Header from "$lib/header.svelte"
+  import Link from "$lib/link.svelte"
+  import Pondlife from "$lib/pondlife.svelte"
 </script>
 
 <svelte:head>

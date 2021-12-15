@@ -58,7 +58,7 @@
       i left at around this point while the rest of pondlife kept working.
       </p>
       <p>
-      mut told me that at about the same time that i left, it was ali's turn on the computer. she opened some digital painting software and painted something. but then she didn't like it so she started covering it up with another painting. but when her time was up, mut painted over that, trying to recreate the original painting that ali didn't like. 
+      mut told me that at about the same time that i left, it was ali's turn on the computer. she opened some digital painting software and painted something. but then she didn't like it so she started covering it up with another painting. but when her time was up, mut painted over that, trying to recreate the original painting that ali didn't like.
     </p>
     <p>
     then he added this painting as the background
@@ -76,14 +76,12 @@
   }
 
   /* get back the normal spacings */
-  h1,
-  h2 {
+  h1 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   h1,
-  h2,
   p {
     margin-top: 16px;
     margin-bottom: 16px;

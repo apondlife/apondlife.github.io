@@ -1,7 +1,7 @@
 <script>
-  import Header from "@lib/header.svelte"
-  import Link from "@lib/link.svelte"
-  import Gitg from "@lib/gitg.svelte"
+  import Header from "$lib/header.svelte"
+  import Link from "$lib/link.svelte"
+  import Gitg from "$lib/gitg.svelte"
 </script>
 
 <svelte:head>

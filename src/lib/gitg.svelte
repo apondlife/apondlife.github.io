@@ -1,5 +1,5 @@
 <script>
-  import Link from "@lib/link.svelte"
+  import Link from "$lib/link.svelte"
 </script>
 
 <template>

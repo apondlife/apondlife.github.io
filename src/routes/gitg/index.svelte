@@ -1,7 +1,7 @@
 <script>
-  import Header from "@lib/header.svelte"
-  import Gitg from "@lib/gitg.svelte"
-  import Pondlife from "@lib/pondlife.svelte"
+  import Header from "$lib/header.svelte"
+  import Gitg from "$lib/gitg.svelte"
+  import Pondlife from "$lib/pondlife.svelte"
 </script>
 
 <svelte:head>
