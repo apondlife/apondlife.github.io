@@ -15,8 +15,8 @@ const config = {
       pages: "docs",
       assets: "docs"
     }),
-    // // make more static
-    // router: false,
+    // make more static
+    router: false,
   }
 }
 
