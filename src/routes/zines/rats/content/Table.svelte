@@ -13,7 +13,7 @@
       <li><Link href="#warning-2">warning 2</Link></li>
       <li><Link href="#poratry">poratry</Link></li>
       <li><Link href="#rats-in-bag">rats in bag</Link></li>
-      <li><Link href="#ratloving">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</Link></li>
+      <li><Link href="#ratloving">princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</Link></li>
       <li><Link href="#wings-of-rat">wings of rat</Link></li>
       <li><Link href="#rat-dnb">rat spins to dnb</Link></li>
       <li><Link href="#arats">all rats act the same</Link></li>
@@ -29,6 +29,7 @@
   .Table {
     display: flex;
     justify-content: center;
+    width: 960px;
     font-size: 1.3em;
   }
 
@@ -36,5 +37,10 @@
     display: inline-flex;
     flex-direction: column;
     list-style: decimal-leading-zero;
+  }
+
+  .Table-list li {
+    max-width: 100px;
+    white-space: nowrap;
   }
 </style>

@@ -21,7 +21,7 @@
   }
 
   .RatsHeader h1 {
-    margin-top: -0.3em;
+    margin-top: -0.5em;
     font-size: 16em;
     color: var(--fg-color-dark);
   }

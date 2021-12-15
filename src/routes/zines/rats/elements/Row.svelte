@@ -22,6 +22,7 @@
 <style>
   .Row {
     display: flex;
+    overflow: hidden;
     margin-top: var(--top);
     margin-bottom: var(--bot);
   }

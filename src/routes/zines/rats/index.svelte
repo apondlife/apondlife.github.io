@@ -438,22 +438,31 @@
 
   /* -- e/home */
   .Home {
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
     position: sticky;
-    top: 25px;
-    /* bottom: 25px; */
-    left: 50px;
+    width: 100px;
+    height: 146px; /* w * 1.46 */
+    margin-top: -130px;
+    top: 20px;
+    left: 25px;
     background-image: url("/zines/rats/homepage1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40" width="40"><text x="0" y="9" font-size="30" dominant-baseline="hanging">🐀</text></svg>'),
-      auto;
+    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40" width="40"><text x="0" y="9" font-size="30" dominant-baseline="hanging">🐀</text></svg>'), auto;
   }
 
   .Home:hover {
     background-image: url("/zines/rats/homepage2.png");
+  }
+
+  /* preload the hover image so there's no flicker */
+  /* https://stackoverflow.com/questions/1373142/preloading-css-images */
+  .Home::after {
+    content: url("/zines/rats/homepage2.png");
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
   }
 
   /* -- e/tail */

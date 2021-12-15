@@ -75,6 +75,7 @@
   /* copy some zine styles */
   .positioner {
     width: 80%;
+    margin-top: 41px;
     padding-left: 20px;
     padding-right: 20px;
   }

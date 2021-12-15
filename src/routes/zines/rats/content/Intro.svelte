@@ -27,7 +27,7 @@
     </p>
 
     <p>
-      p.s. (below you find the table of contents)
+      p.s. (you will find the table of contents below)
     </p>
   </article>
 </template>
