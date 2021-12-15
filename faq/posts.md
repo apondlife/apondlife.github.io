@@ -1,13 +1,13 @@
 # posts
 
-to add a post, create a file in [`src/routes/write/posts`](/src/routes/write/posts):
+to add a post, create a file in [`src/routes/write/posts`](/src/routes/write/posts).
 
 ## name
 
 the filename must be in this format, for now:
 
 ```sh
-<year>-<month>-<day>-<hour>-<minute>-<name>.svelte
+year-month-day-hour-minute-name.svelte
 # e.g.
 21-12-14-23-30-my-very-good-post.svelte
 ```
