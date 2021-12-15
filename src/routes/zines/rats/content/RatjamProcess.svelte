@@ -4,16 +4,6 @@
   <div class="positioner">
     <h1>how the rat gets made</h1>
 
-    <p>a variety of materials, tools, and processes were used to make this piece</p>
-    <p>the labor can be divided rougly into two parts: 1) making the painting, and 2) making the animation</p>
-    <p />
-
-    <h2>the painting</h2>
-
-    <p>TODO: ask mut and ali about the process</p>
-    <p />
-    <h2>the animation</h2>
-
     <p>
       on October 16, while waiting for a C train that took more than an hour to come, I (fran) recorded a few videos of rats in
       the station. I will include a couple of them here (compressed so that the website doesn't get too heavy)
@@ -65,8 +55,13 @@
       and animate the rat. and some code to make the rat follow the cursor, and eventually made the cursor a cheese emoji
     </p>
     <p>
-      i left at around this point while the rest of pondlife kept working. the next day i saw they'd added this painting as a
-      background
+      i left at around this point while the rest of pondlife kept working.
+      </p>
+      <p>
+      mut told me that at about the same time that i left, it was ali's turn on the computer. she opened some digital painting software and painted something. but then she didn't like it so she started covering it up with another painting. but when her time was up, mut painted over that, trying to recreate the original painting that ali didn't like. 
+    </p>
+    <p>
+    then he added this painting as the background
     </p>
   </div>
 </template>

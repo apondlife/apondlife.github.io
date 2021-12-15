@@ -4,6 +4,7 @@
   import Row from "./elements/Row.svelte"
   import Warning from "./elements/Warning.svelte"
   import Loader from "./elements/Loader.svelte"
+  import Placeholder from "./elements/Placeholder.svelte"
   import Sidenote from "./elements/Sidenote.svelte"
   import Intro from "./content/Intro.svelte"
   import Table from "./content/Table.svelte"
@@ -114,30 +115,23 @@
     </Row>
 
     <!-- rat loving -->
-    <Row id="ratloving" --top="30vh">
-      <div class="RatLoving Frame--fancy Frame" style="width:fit-content /* sorry for horrible css i don't know what i'm doing :( */">
-        <Loader>
-          <div
-            slot="content"
-            style="width:512px"
-          >
+    <Row id="ratloving" --top="15vh" --bot="15vh">
+      <div class="RatLoving Frame--fancy Frame">
+        <div class="RatLoving-frame">
+          <Loader>
             <iframe
               class="RatLoving-frame flex-frame"
+              slot="content"
               title="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
               src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
             />
 
-            <br>
-            <span style="font-size: 21px;">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</span>
-          </div>
-
-          <img
-            slot="thumb"
-            class="RatLoving-frame"
-            src="/zines/rats/games/princess-thumb.png"
-            alt="Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption"
-          />
-        </Loader>
+            <Placeholder 
+              slot="thumb"
+            />
+          </Loader>
+        </div>
+        <div style="padding-top: 10px; font-size: 21px;">Princess is visiting the place where they harvest ideas from rat culture and make them palatable for mass market consumption</div>
       </div>
 
       <aside slot="right">
@@ -198,21 +192,20 @@
     <!-- wings of rat -->
     <Row id="wings-of-rat" --top="30vh">
       <div class="WingsOfRat Frame--fancy Frame">
-        <Loader>
-          <iframe
-            slot="content"
-            class="WingsOfRat-frame flex-frame"
-            title="wings of rat"
-            src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"
-          />
+        <div class="WingsOfRat-frame">
+          <Loader>
+            <iframe
+              slot="content"
+              class="WingsOfRat-frame flex-frame"
+              title="wings of rat"
+              src="https://apondlife.github.io/rats/wings%20of%20rat/Build/rat/index.html"
+            />
 
-          <img
-            slot="thumb"
-            class="WingsOfRat-frame"
-            src="/zines/rats/games/wings-of-rat-thumb.jpg"
-            alt="a rat w/ wings on a new york street"
-          />
-        </Loader>
+            <Placeholder
+              slot="thumb"
+            />
+          </Loader>
+        </div>
       </div>
 
       <aside slot="right">
@@ -555,6 +548,10 @@
   .WingsOfRat-frame {
     width: 880px;
     height: 495px;
+  }
+
+  .RatLoving {
+    flex-direction: column;
   }
 
   .RatLoving-frame {
