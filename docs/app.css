@@ -187,3 +187,33 @@ a.Link--nav:nth-of-type(3) {
 .LogEntry-body {
   margin-top: 10px;
 }
+
+/* -- posts -- */
+.Post + .Post {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px dashed #00ff00;
+}
+
+.Post-header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.Post-name {
+  font-size: 1.5em;
+  margin-top: 5px;
+}
+
+.Post-date {
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+
+.PostBody {
+  margin-top: 20px;
+}
+
+.PostBody p + p {
+  margin-top: 10px;
+}
