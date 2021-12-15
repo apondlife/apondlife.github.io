@@ -1,12 +1,20 @@
 # posts
 
-to add a post, create a file in [`src/routes/write/posts`](/src/routes/write/posts) with a name like:
+to add a post, create a file in [`src/routes/write/posts`](/src/routes/write/posts):
 
-```
+## name
+
+the filename must be in this format, for now:
+
+```sh
+<year>-<month>-<day>-<hour>-<minute>-<name>.svelte
+# e.g.
 21-12-14-23-30-my-very-good-post.svelte
 ```
 
-that's the year (2 digits), the month, the day, the hour (24-hour time), the minute, and the name. the date is important, it must be exactly this format. the name is not important, it's just to help us identify the file.
+the year is 2 digits, the hour is in 24-hour time. the date format is important, it must be exactly this. the name is not important, it's only there to help us identify the file.
+
+## content
 
 inside the file, you can write a post using this structure (copy this snippet into the file if you want):
 
@@ -23,8 +31,8 @@ inside the file, you can write a post using this structure (copy this snippet in
 </Post>
 ```
 
-inside the `<Post>` tag, you can add any html or svelte stuff you want. the svelte `<style>` won't work, so don't use that. we can try and find a better css solution, but for now you can add styles to [app.css](/static/app.css) if you need custom styles for something.
+inside the `<Post>` tag, you can add any html or svelte things you'd like. the svelte `<style>` tag won't work, so don't use that. js probably won't either. we can try and find a better css/js solution, but for now you can add styles to [app.css](/static/app.css) or use the `style` property if you need custom styles for something.
 
 ## metadata
 
-except for `name`, every attribute on `Post` is collected into a metadata object, but none of it is used atm. feel free to add any other metadata attributes.
+except for `name`, every property on `Post` is collected into a metadata obj, but none of it is used atm. feel free to add any other metadata properties.
