@@ -5,7 +5,7 @@
     </p>
 
     <p>
-      in here, you will encounter <span class="Rats" /> & things about & things concerning
+      in here, you will encounter <span class="Rats" /> & things about rats & things concerning
       rats. we chose the theme "rats" somewhat arbitrarily: b/c we love <span class="Rats" />
       & b/c we wanted to make a bunch of small games (<span class="Arts" />) together & b/c
       we hoped it would allow us cohere our explorations of our divergent interests & b/c
