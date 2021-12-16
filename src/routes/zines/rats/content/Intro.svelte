@@ -8,7 +8,7 @@
       in here, you will encounter <span class="Rats" /> & things about & things concerning
       rats. we chose the theme "rats" somewhat arbitrarily: b/c we love <span class="Rats" />
       & b/c we wanted to make a bunch of small games (<span class="Arts" />) together & b/c
-      we hoped it would allow us cohere our exporlations of our divergent interests & b/c
+      we hoped it would allow us cohere our explorations of our divergent interests & b/c
       we're trying to figure how to make <span class="Arts" /> sustainably in every sense of
       the word.
     </p>
@@ -21,7 +21,7 @@
     </p>
 
     <p>
-      thanks for visitng,
+      thanks for visiting,
       <br>
       pondlife
     </p>
