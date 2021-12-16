@@ -32,16 +32,18 @@
 
     <!-- intro -->
     <Row --top="-15vh">
-      <svg class="Tail" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="
-          M 50 100
-          C 40 80, 60 75, 50 60
-          S 45 40, 50 30
-          S 45 15, 50 00
-          "
-        />
-      </svg>
+      <div class="Tail">
+        <svg class="Tail-graphic" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="
+            M 50 100
+            C 40 80, 60 75, 50 60
+            S 45 40, 50 30
+            S 45 15, 50 00
+            "
+          />
+        </svg>
+      </div>
     </Row>
 
     <Row id="introduction" --top="40px">
@@ -126,7 +128,7 @@
               src="https://apondlife.github.io/rats/ratloving/Build/princess/index.html"
             />
 
-            <Placeholder 
+            <Placeholder
               slot="thumb"
             />
           </Loader>
@@ -460,6 +462,12 @@
 
   /* -- e/tail */
   .Tail {
+    display: flex;
+    width: 960px;
+    justify-content: center;
+  }
+
+  .Tail-graphic {
     width: 480px;
     overflow: visible;
   }
