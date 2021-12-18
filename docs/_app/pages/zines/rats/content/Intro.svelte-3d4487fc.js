@@ -1,7 +1,7 @@
 import{S as V,i as W,s as X,e as n,t as a,k as P,c as l,a as c,g as r,d as i,n as x,b as p,f as Y,D as e,E as J}from"../../../../chunks/vendor-7a9cca15.js";function Z(U){let t,u,A,w,S,N,R,s,I,m,z,v,C,y,T,b,j,q,f,B,D,d,G,L,O,F,g,H;return{c(){t=n("article"),u=n("p"),A=a("welcome to our first webzine, "),w=n("strong"),S=a("rats"),N=a("."),R=P(),s=n("p"),I=a("in here, you will encounter "),m=n("span"),z=a(` & things about rats & things concerning
       rats. we chose the theme "rats" somewhat arbitrarily: b/c we love `),v=n("span"),C=a(`
       & b/c we wanted to make a bunch of small games (`),y=n("span"),T=a(`) together & b/c
-      we hoped it would allow us cohere our explorations of our divergent interests & b/c
+      we hoped it would allow us to cohere our explorations of our divergent interests & b/c
       we're trying to figure how to make `),b=n("span"),j=a(` sustainably in every sense of
       the word.`),q=P(),f=n("p"),B=a(`this is one long scrolling page. you can keep scrolling down to see more stuff. if you
       don't like the thing on screen, you might find something you do once you scroll down a
@@ -11,7 +11,7 @@ import{S as V,i as W,s as X,e as n,t as a,k as P,c as l,a as c,g as r,d as i,n a
       pondlife`),F=P(),g=n("p"),H=a("p.s. (you will find the table of contents below)"),this.h()},l(_){t=l(_,"ARTICLE",{class:!0});var o=c(t);u=l(o,"P",{class:!0});var k=c(u);A=r(k,"welcome to our first webzine, "),w=l(k,"STRONG",{});var K=c(w);S=r(K,"rats"),K.forEach(i),N=r(k,"."),k.forEach(i),R=x(o),s=l(o,"P",{class:!0});var h=c(s);I=r(h,"in here, you will encounter "),m=l(h,"SPAN",{class:!0}),c(m).forEach(i),z=r(h,` & things about rats & things concerning
       rats. we chose the theme "rats" somewhat arbitrarily: b/c we love `),v=l(h,"SPAN",{class:!0}),c(v).forEach(i),C=r(h,`
       & b/c we wanted to make a bunch of small games (`),y=l(h,"SPAN",{class:!0}),c(y).forEach(i),T=r(h,`) together & b/c
-      we hoped it would allow us cohere our explorations of our divergent interests & b/c
+      we hoped it would allow us to cohere our explorations of our divergent interests & b/c
       we're trying to figure how to make `),b=l(h,"SPAN",{class:!0}),c(b).forEach(i),j=r(h,` sustainably in every sense of
       the word.`),h.forEach(i),q=x(o),f=l(o,"P",{class:!0});var M=c(f);B=r(M,`this is one long scrolling page. you can keep scrolling down to see more stuff. if you
       don't like the thing on screen, you might find something you do once you scroll down a
