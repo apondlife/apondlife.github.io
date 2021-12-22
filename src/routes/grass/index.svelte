@@ -2,6 +2,10 @@
   import Header from "$lib/header.svelte"
   import Gitg from "$lib/gitg.svelte"
   import Pondlife from "$lib/pondlife.svelte"
+
+  // -- cfg --
+  // don't generate js
+  export const hydrate = false
 </script>
 
 <svelte:head>

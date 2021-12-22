@@ -3,6 +3,10 @@
   import Game from "$lib/game.svelte"
   import Link from "$lib/link.svelte"
   import Gitg from "$lib/gitg.svelte"
+
+  // -- cfg --
+  // don't generate js
+  export const hydrate = false
 </script>
 
 <svelte:head>

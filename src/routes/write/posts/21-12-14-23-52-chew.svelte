@@ -1,6 +1,10 @@
 <script>
   import Link from "$lib/link.svelte"
-  import Post from "./elements/Post.svelte"
+  import Post from "$lib/write/Post.svelte"
+
+  // -- cfg --
+  // don't generate js
+  export const hydrate = false
 </script>
 
 <Post
