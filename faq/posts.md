@@ -19,12 +19,12 @@ the year is 2 digits, the hour is in 24-hour time. the date format is important,
 inside the file, you can write a post using this structure (copy this snippet into the file if you want):
 
 ```html
+<script context="module">
+  export const hydrate = false
+</script>
+
 <script>
   import Post from "$lib/write/Post.svelte"
-
-  // -- cfg --
-  // don't generate js
-  export const hydrate = false
 </script>
 
 <Post

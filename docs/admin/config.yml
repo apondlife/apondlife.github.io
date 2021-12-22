@@ -1,0 +1,27 @@
+# connect cms to git
+backend:
+  name: git-gateway
+  repo: apondlife/apondlife.github.io
+  branch: main
+
+# where to save images & media
+media_folder: static/write
+
+# what the cms can cretate
+collections:
+  - name: "post"
+    label: "post"
+    folder: "src/routes/write/posts"
+    create: true
+    identifier_field: name
+    slug: "{{year}}-{{month}}-{{day}}-{{minute}}-{{second}}-{{slug}}"
+    fields:
+      - label: "name"
+        name: "name"
+        widget: "string"
+      - label: "author"
+        name: "author"
+        widget: "string"
+      - label: "body"
+        name: "body"
+        widget: "text"

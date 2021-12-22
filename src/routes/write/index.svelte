@@ -1,4 +1,8 @@
 <script context="module">
+  // -- cfg --
+  export const hydrate = false
+
+  // -- data --
   export async function load({ fetch }) {
     const json = await fetch("/write.json").then((r) => r.json())
 
@@ -12,10 +16,6 @@
 
 <script>
   import Header from "$lib/header.svelte"
-
-  // -- cfg --
-  // don't generate js
-  export const hydrate = false
 
   // -- props --
   // the list of posts

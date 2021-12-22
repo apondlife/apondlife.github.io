@@ -1,9 +1,9 @@
+<script context="module">
+  export const hydrate = false
+</script>
+
 <script>
   import Post from "$lib/write/Post.svelte"
-
-  // -- cfg --
-  // don't generate js
-  export const hydrate = false
 </script>
 
 <Post

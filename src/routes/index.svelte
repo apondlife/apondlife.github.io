@@ -1,11 +1,11 @@
+<script context="module">
+  export const hydrate = false
+</script>
+
 <script>
   import Header from "$lib/header.svelte"
   import Link from "$lib/link.svelte"
   import Pondlife from "$lib/pondlife.svelte"
-
-  // -- cfg --
-  // don't generate js
-  export const hydrate = false
 </script>
 
 <svelte:head>
