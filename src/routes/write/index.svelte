@@ -26,7 +26,7 @@
   const dfmt = new Intl.DateTimeFormat(undefined, {
     year: "2-digit",
     month: "2-digit",
-    day: "numeric",
+    day: "numeric"
   })
 
   const tfmt = new Intl.DateTimeFormat(undefined, {
@@ -56,6 +56,7 @@
       </header>
 
       {@html post.body}
+      <h2 class="Post-author">- {post.meta.author}</h2>
     </article>
   {/each}
 </template>
