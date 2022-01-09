@@ -197,7 +197,7 @@ a.Link--nav:nth-of-type(3) {
 
 .Post-header {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .Post-name {
@@ -208,6 +208,12 @@ a.Link--nav:nth-of-type(3) {
 .Post-date {
   font-size: 0.8em;
   text-transform: lowercase;
+}
+
+.Post-author {
+  font-size: 0.8em;
+  text-transform: lowercase;
+  text-align: right;
 }
 
 .PostBody {

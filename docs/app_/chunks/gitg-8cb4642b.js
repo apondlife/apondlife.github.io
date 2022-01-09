@@ -1,0 +1,3 @@
+import{S as x,i as k,s as v,j as m,k as j,t as w,m as o,n as y,g as G,o as f,f as p,E as L,x as $,u as l,v as g,d as u}from"./vendor-6fa2ee03.js";import{L as c}from"./link-96572ac3.js";function S(_){let e,s,n,a,r;return e=new c({props:{text:"games",href:"/gitg/games"}}),n=new c({props:{text:"in",href:"/gitg/events"}}),{c(){m(e.$$.fragment),s=j(),m(n.$$.fragment),a=w(`\r
+  the grass`)},l(t){o(e.$$.fragment,t),s=y(t),o(n.$$.fragment,t),a=G(t,`\r
+  the grass`)},m(t,i){f(e,t,i),p(t,s,i),f(n,t,i),p(t,a,i),r=!0},p:L,i(t){r||($(e.$$.fragment,t),$(n.$$.fragment,t),r=!0)},o(t){l(e.$$.fragment,t),l(n.$$.fragment,t),r=!1},d(t){g(e,t),t&&u(s),g(n,t),t&&u(a)}}}class q extends x{constructor(e){super();k(this,e,null,S,v,{})}}export{q as G};
