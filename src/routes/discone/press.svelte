@@ -41,6 +41,21 @@
   <div class="description">
     <h1>the videogame</h1>
 
+    <h3>short desctiption</h3>
+    <p>run & jump around</p>
+    <p>a giant imponderable world</p>
+    <p>with affecting characters</p>
+    <p>at first alone</p>
+    <p>in pondlife:</p>
+    <p>discóne</p>
+    <p>(a videogame)</p>
+    <!-- like in the platformers (ie: mario 64). the 2 main verbs in videogames
+its very big (rumours say its infinite). imponderable as a challenge, for you to try pondering
+they are silly and friendly. they affect you, but most importatly, you affect them
+this is just a funny way of saying that the game can be multiplayer
+our collective, pondlife. apparently british people use this phrase to describe a stupid group of people. but also also we like frogs.
+a promise that there might be a disctwo one day. also nostalgia for a time where there were disc -->
+
     <h3>long description</h3>
     <p>
       discone is an open-world move-em-up: it centers the expressiveness and feeling of moving a character in 3d space. it seeks
