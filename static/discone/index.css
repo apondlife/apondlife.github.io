@@ -1,0 +1,74 @@
+/* -- resets -- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* -- variables -- */
+:root {
+  /* -- v/colors */
+  --yellow: #FEC832;
+}
+
+/* -- styles -- */
+body {
+  height: 100%;
+  font-family: "Times New Roman", serif;
+}
+
+/* -- Game -- */
+body {
+  font-size: 16px;
+  background-image: linear-gradient(0deg, rgba(0, 255, 0, 0.4), rgba(255, 0, 255, 0.2)), url(images/flowers-in-a-rococo-vase-1963.jpg);
+  background-attachment: fixed;
+}
+
+.Game {
+  padding: 40px;
+  max-width: 800px;
+  min-height: 100%;
+}
+
+/* -- Title -- */
+.Title {
+  font-size: 2em;
+}
+
+.Title-discone {
+  color: transparent;
+  font-size: 6em;
+  background-image: url(images/sky.png);
+  background-size: 100px 30px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.GamePitch-title {
+  font-family: "CMU Typewriter Text";
+  background-color: var(--yellow);
+}
+
+/* -- fonts -- */
+@font-face {
+  font-family: "CMU Typewriter Text";
+  src: url("fonts/CMUTypewriter-BoldItalic.woff2") format("woff2"), url("fonts/CMUTypewriter-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mutletras";
+  src: url("fonts/Mutletras-Regular.woff2") format("woff2"), url("fonts/Mutletras-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
