@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 /* -- variables -- */
 :root {
   /* -- v/colors */
@@ -21,38 +25,106 @@ h1, h2, h3, h4, h5, h6 {
 body {
   height: 100%;
   font-family: "Times New Roman", serif;
-}
-
-/* -- Game -- */
-body {
   font-size: 16px;
+  line-height: 1.2;
   background-image: linear-gradient(0deg, rgba(0, 255, 0, 0.4), rgba(255, 0, 255, 0.2)), url(images/flowers-in-a-rococo-vase-1963.jpg);
   background-attachment: fixed;
 }
 
+/* -- Game -- */
 .Game {
-  padding: 40px;
-  max-width: 800px;
   min-height: 100%;
+  padding: 25px;
+}
+
+.Game-section {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 420px) {
+  .Game {
+    max-width: 800px;
+    padding: 40px;
+  }
+
+  .Game-section {
+    margin-top: 69px;
+  }
 }
 
 /* -- Title -- */
 .Title {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .Title-discone {
+  font-size: min(29vw, 5.9em);
+  line-height: 0.9;
   color: transparent;
-  font-size: 6em;
   background-image: url(images/sky.png);
-  background-size: 100px 30px;
+  background-size: 100vw 13vh;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.GamePitch-title {
+.Title-videogame {
+  text-align: right;
+}
+
+@media screen and (min-width: 420px) {
+  .Title-videogame {
+    padding-right: min(10vw, 40px);
+  }
+}
+
+/* -- GamePitch -- */
+.Pitch-title {
   font-family: "CMU Typewriter Text";
   background-color: var(--yellow);
+  padding: 10px;
+}
+
+.Pitch-body {
+  margin-top: 15px;
+  padding-left: 2px;
+}
+
+.Pitch-body details + details {
+  margin-top: 5px;
+}
+
+.Pitch-body summary {
+  margin-bottom: 5px;
+}
+
+.Pitch-body details[open] > p {
+  border-width: 0;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* -- Trailer -- */
+.Trailer-thumb {
+  display: block;
+  border: 1px solid black;
+  min-height: 56vw;
+}
+
+/* -- Screenshots -- */
+.Screenshots {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.Screenshot {
+  border: solid black ;
+  width: 50vmin;
+  height: 50vmin;
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
 
 /* -- fonts -- */

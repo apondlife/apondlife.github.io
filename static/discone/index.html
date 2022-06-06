@@ -1,7 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <!-- meta -->
   <title>discone</title>
+
+  <!-- assets -->
   <link rel="stylesheet" href="/discone/index.css">
+
+  <!-- mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <!--
@@ -13,80 +20,117 @@ dissolving header
 
 <body>
   <main class="Game">
-    <div class="Title">
-      pondlife:
-      <span class="Title-discone">discone</span>
-      (a videogame)
-    </div>
+    <header class="Title">
+      <p class="Title-pondlife">pondlife:</p>
+      <p class="Title-discone">discone</p>
+      <p class="Title-videogame">(a videogame)</p>
+    </header>
 
-    <section class="GamePitch">
-      <h1 class="GamePitch-title">
+    <section class="Pitch Game-section">
+      <h1 class="Pitch-title">
         what is it?
       </h1>
 
-      <details>
-        <summary>
-          jump around
-        </summary>
-        like in the platformers (ie: mario 64). the 2 main verbs in videogames
-      </details>
+      <div class="Pitch-body">
+        <details>
+          <summary>
+            jump around
+          </summary>
+          <p>
+            like in the platformers (e.g. mario 64). the 2 main verbs in videogames.
+          </p>
+        </details>
 
-      <details>
-        <summary>
-          a giant imponderable world
-        </summary>
-          its very big (rumours say its infinite). imponderable as a challenge, for you to try pondering
-      </details>
+        <details>
+          <summary>
+            a giant imponderable world
+          </summary>
+          <p>
+            it's very big (rumours say it's infinite). imponderable as a challenge, for you to try pondering
+          </p>
+        </details>
 
-      <details>
-        <summary>
-          with affecting characters
-        </summary>
-          they are silly and friendly. they affect you, but most importatly, you affect them
-      </details>
+        <details>
+          <summary>
+            with affecting characters
+          </summary>
+          <p>
+            they are silly and friendly. they affect you, but most importatly, you affect them
+          </p>
+        </details>
 
-      <details>
-        <summary>
-          at first alone
-        </summary>
-          this is just a funny way of saying that the game can be multiplayer
-      </details>
+        <details>
+          <summary>
+            at first alone
+          </summary>
+          <p>
+            this is just a funny way of saying that the game can be multiplayer
+          </p>
+        </details>
 
-      <details>
-        <summary>
-          in pondlife:
-        </summary>
-          our collective, pondlife. apparently british people use this phrase to describe a stupid group of people. but also also we like frogs.
-      </details>
+        <details>
+          <summary>
+            in pondlife:
+          </summary>
+          <p>
+            our collective, pondlife. (apparently, a pejorative used in the uk. but also, also, we like frogs).
+          </p>
+        </details>
 
-      <details>
-        <summary>
-          discóne (a videogame)
-        </summary>
-          a promise that there might be a disctwo one day. also nostalgia for a time where there were disc -->
-      </details>
+        <details>
+          <summary>
+            discóne (a videogame)
+          </summary>
+          <p>
+            a promise that there might be a disctwo one day. also nostalgia for a time where there were disc -->
+          </p>
+        </details>
+      </div>
     </section>
 
-    <section class="GameTrailer">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SVouLwpLKWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="Trailer Game-section">
+      <a href="https://www.youtube.com/embed/SVouLwpLKWw">
+        <img
+          class="Trailer-thumb"
+          src="images/trailer.png"
+          alt="a thumbnail from the pondlife trailer showing the open cd tray of a computer tower"
+        >
+      </a>
     </section>
 
-    <section class="Screenshots">
-      <img src="images/screenshots/frog.png" alt="close up of a cool looking frog with a cane">
-      <img src="images/screenshots/bridge.png" alt="a text says very long bride, there's a bridge that goes as far as the horizon">
-      <img src="images/screenshots/multiplayer.png" alt="many different characters are in the same spot, trying to climb a mountain">
+    <section class="Screenshots Game-section">
+      <img class="Screenshot" src="images/screenshots/frog.png" alt="close up of a cool looking frog with a cane">
+      <img class="Screenshot" src="images/screenshots/bridge.png" alt="a text says very long bride, there's a bridge that goes as far as the horizon">
+      <img class="Screenshot" src="images/screenshots/multiplayer.png" alt="many different characters are in the same spot, trying to climb a mountain">
     </section>
 
-    <section class="Social">
+    <section class="Social Game-section">
       <div class="Twitter"><a href="https://twitter.com/apondlifes">twitter</a></div>
     </section>
 
-    <section class="Newsletter">
+    <a href="https://github.com/apondlife/discone/wiki/characters">wiki</a>
+    <a href="press">presskit</a>
 
+    <section class="Newsletter Game-section">
     </section>
 
-    <section class="Itch">
-      <iframe src="https://itch.io/embed/1394290?bg_color=ffffff&amp;fg_color=000000&amp;link_color=e39a0e&amp;border_color=cccccc" width="552" height="167" frameborder="0"><a href="https://frogfrogforg.itch.io/discone">discone by frog</a></iframe>
+    <section class="Itch Game-section">
+      <iframe
+        src="https://itch.io/embed/1394290?bg_color=ffffff&amp;fg_color=000000&amp;link_color=e39a0e&amp;border_color=cccccc"
+        height="167"
+        frameborder="0"
+      >
+        <a href="https://frogfrogforg.itch.io/discone">discone by frog</a>
+      </iframe>
+    </section>
+
+    <section class="Jump">
+      <!-- idea: implement jump physics here, choose your character and it feels different -->
+      <div>Jump!</div>
+    </section>
+
+    <section class="Footer">
+      <div> <a href="https://pondlife.fun">pondlife</a> 2022 <div>
     </section>
   </main>
 </body>
