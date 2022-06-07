@@ -22,7 +22,6 @@ p {
 }
 
 /* -- styles -- */
-/* -- Page -- */
 body {
   height: 100%;
   font-family: "Times New Roman", serif;
@@ -30,12 +29,21 @@ body {
   line-height: 1.2;
   background-image: linear-gradient(0deg, rgba(0, 255, 0, 0.4), rgba(255, 0, 255, 0.2)), url(images/flowers-in-a-rococo-vase-1963.jpg);
   background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* -- Page -- */
+.Page {
+  position: relative;
+  height: 100vh;
 }
 
 /* -- Game -- */
 .Game {
+  position: absolute;
   display: flex;
   flex-direction: column-reverse;
+  bottom: 0;
   min-height: 100%;
   padding: 25px;
 }
@@ -112,12 +120,11 @@ body {
 .Trailer-thumb {
   display: block;
   border: 1px solid black;
-  min-height: 56vw;
+  min-height: 200px;
 }
 
 /* -- Screenshots -- */
 .Screenshots {
-  width: 100%;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -125,10 +132,24 @@ body {
 
 .Screenshot {
   border: solid black ;
-  width: 50vmin;
-  height: 50vmin;
+  width: 80%;
   scroll-snap-align: center;
   flex-shrink: 0;
+}
+
+/* -- Player -- */
+.Player {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+/* -- character -- */
+.Character {
+  display: block;
+  width: 20px;
+  height: 60px;
+  background-color: magenta;
 }
 
 /* -- fonts -- */
