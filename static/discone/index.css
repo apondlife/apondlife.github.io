@@ -22,6 +22,7 @@ p {
 }
 
 /* -- styles -- */
+/* -- Page -- */
 body {
   height: 100%;
   font-family: "Times New Roman", serif;
@@ -33,6 +34,8 @@ body {
 
 /* -- Game -- */
 .Game {
+  display: flex;
+  flex-direction: column-reverse;
   min-height: 100%;
   padding: 25px;
 }
@@ -119,6 +122,7 @@ body {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
+
 .Screenshot {
   border: solid black ;
   width: 50vmin;
@@ -143,4 +147,3 @@ body {
   font-style: normal;
   font-display: swap;
 }
-
