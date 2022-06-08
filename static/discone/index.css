@@ -67,8 +67,7 @@ body {
 /* -- Title -- */
 .Title {
   font-size: 2.5em;
-  margin-top: 69px;
-  margin-bottom: 69px;
+  margin-bottom: 169px;
 }
 
 .Title-discone {
@@ -95,6 +94,10 @@ body {
 }
 
 /* -- Pitch -- */
+.Pitch {
+  margin-bottom: 169px;
+}
+
 .Pitch-title {
   font-family: "MutLetras";
   padding: 10px;

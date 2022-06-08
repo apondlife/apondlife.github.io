@@ -73,6 +73,9 @@ class Game {
     const delta = time - m.time
     this.time = time
 
+    const scale = Math.min(Math.max(0, 1 - (m.jumpDown / 2000.0) * 0.7), 1)
+    m.character.style.transform = `scaleY(${scale})`
+
     // update y position
     if(!m.isGrounded) {
       m.jumpDown = -1;
@@ -126,7 +129,7 @@ class Game {
 
   OnJumpDown = (evt) => {
     evt.preventDefault()
-    this.jumpDown = performance.now()
+    this.jumpDown = performance.now()-this.time
   }
 }
 
