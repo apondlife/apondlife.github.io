@@ -67,6 +67,8 @@ body {
 /* -- Title -- */
 .Title {
   font-size: 2.5em;
+  margin-top: 69px;
+  margin-bottom: 69px;
 }
 
 .Title-discone {
@@ -92,29 +94,26 @@ body {
   }
 }
 
-/* -- GamePitch -- */
+/* -- Pitch -- */
 .Pitch-title {
   font-family: "MutLetras";
-  background-color: var(--yellow);
   padding: 10px;
+  padding-top: 14px;
+  background-color: var(--yellow);
 }
 
-
 .Pitch-body {
-  margin-top: 15px;
-  padding-left: 2px;
+  position: relative;
+  margin-top: 30px;
 }
 
 .Pitch-description {
-  position: relative;
-  font-family: "CMU Typewriter Text";
-  background-color: black;
-  color: white;
+  position: absolute;
   width: 50%;
-  margin-top:1em;
-  padding: 1em;
-  /* padding-top:1em; */
-  /* padding-bottom:1em; */
+  padding: 14px;
+  color: white;
+  background-color: black;
+  font-family: "CMU Typewriter Text";
 }
 
 .Pitch-description::after {
@@ -125,6 +124,15 @@ body {
   bottom: 8px;
 }
 
+.Pitch-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* -- pitch/old -- */
 .Pitch-body details + details {
   margin-top: 5px;
 }
@@ -182,6 +190,7 @@ body {
 .Character {
   position: absolute;
   overflow: hidden;
+  transform-origin: bottom;
   width: 42px;
   height: 84px;
   bottom: 20px;

@@ -5,6 +5,12 @@ const k_Debug = true
 /// the spacebar keycode
 const k_Space = 32
 
+/// the page height
+const k_PageHeight = 42069
+
+const kGravity = 0.01
+const slowGravity = 0.001
+
 // -- impls --
 class Game {
   // -- props --
@@ -14,6 +20,15 @@ class Game {
   /// the character image
   character = null
 
+  time = -16
+
+  jumpDown = -1
+  speed = 0
+  gravity = kGravity
+  isGrounded = true
+  pos = 0
+  ground = 0
+
   // -- init --
   Run() {
     const m = this
@@ -22,67 +37,96 @@ class Game {
     m.window = window
     m.character = document.getElementById("character")
 
-    // fix height of page wrapper to make it scrollable again
+    // fix height of page wrapper to make it scrollable again; the height
+    // could be calculated from #game height
     const page = document.getElementById("page")
-    const game = document.getElementById("game")
-    const height = game.getBoundingClientRect().height
+    const height = k_PageHeight
     page.style.height = `${height}px`
 
     // scroll container to bottom of page
     m.window.scrollTo(0, height)
 
     // bind events
-    m.window.addEventListener("keypress", m.OnKeyPress)
-    m.character.addEventListener("click", m.OnJump)
+    m.window.addEventListener("keydown", m.OnKeyDown)
+    m.window.addEventListener("keyup", m.OnKeyUp)
+    m.character.addEventListener("pointerdown", m.OnJumpDown)
+    m.character.addEventListener("pointerup", m.OnJumpUp)
 
+    // randomize dialog box positions
+    const descriptions = document.querySelectorAll(".Pitch-description");
+    const min = 0
+    const max = 50
 
+    for (const d of descriptions) {
+      const pos = Math.random() * (max-min) + min;
+      if (!d.style.left) {
+        d.style.left = `${pos}%`
+      }
+    }
 
-    // randomize dialog boxes positions
+    m.pos = height
+    this.Update(m.time)
+  }
+
+  Update(time) {
+    const m = this
+    const delta = time - m.time
+    this.time = time
+
+    // update y position
+    if(!m.isGrounded) {
+      m.jumpDown = -1;
+
+      m.pos -= m.speed * delta
+      m.speed -= m.gravity * delta
+
+      dbg(`[jump] pos ${m.pos} speed ${m.speed} ${delta}`)
+      m.window.scrollTo({ top: m.pos, left: 0, })
+
+      if (m.pos > m.ground && m.speed < 0) {
+        m.pos = m.ground
+        m.isGrounded = true;
+        dbg("[jump] end")
+      }
+    }
+
+    m.window.requestAnimationFrame(m.Update.bind(m))
   }
 
   // -- commands --
   Jump(initialSpeed = 4.0, gravity = 0.01) {
     const m = this
 
-    let initialPos = m.window.scrollY
-
-    let speed = initialSpeed
-    let pos = initialPos
-    let lastTime = performance.now() - 16.0
-
-    function doJump(time) {
-      const delta = time - lastTime
-      lastTime = time
-
-      pos -= speed * delta
-      speed -= gravity * delta
-
-      dbg(`[jump] pos ${pos} speed ${speed} ${delta}`)
-      m.window.scrollTo({ top: pos, left: 0, })
-
-      if (pos > initialPos) {
-        pos = initialPos
-        dbg("[jump] end")
-      } else {
-        m.window.requestAnimationFrame(doJump)
-      }
-    }
-
-    doJump(performance.now())
+    m.ground = m.window.scrollY
+    m.speed = initialSpeed
+    m.gravity = kGravity
+    m.isGrounded = false
+    return;
   }
 
   // -- events -
   /// when any key is pressed
-  OnKeyPress = (evt) => {
-    if (evt.charCode == k_Space) {
-      this.OnJump(evt)
+  OnKeyUp = (evt) => {
+    if (evt.keyCode == k_Space) {
+      this.OnJumpUp(evt)
+    }
+  }
+
+  OnKeyDown = (evt) => {
+    if (evt.keyCode == k_Space) {
+      this.OnJumpDown(evt)
     }
   }
 
   /// when a jump input fires
-  OnJump = (evt) => {
+  OnJumpUp = (evt) => {
     evt.preventDefault()
     this.Jump()
+  }
+
+  OnJumpDown = (evt) => {
+    evt.preventDefault()
+    this.jumpDown = performance.now()
   }
 }
 
