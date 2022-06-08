@@ -29,13 +29,13 @@ body {
   line-height: 1.2;
   background-image: linear-gradient(0deg, rgba(0, 255, 0, 0.4), rgba(255, 0, 255, 0.2)), url(images/flowers-in-a-rococo-vase-1963.jpg);
   background-attachment: fixed;
-  overflow-x: hidden;
 }
 
 /* -- Page -- */
 .Page {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* -- Game -- */
@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   bottom: 0;
+  max-width: 100%;
   min-height: 100%;
   padding: 25px;
 }
@@ -52,7 +53,7 @@ body {
   margin-top: 40px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 620px) {
   .Game {
     max-width: 800px;
     padding: 40px;
@@ -69,6 +70,9 @@ body {
 }
 
 .Title-discone {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
   font-size: min(29vw, 5.9em);
   line-height: 0.9;
   color: transparent;
@@ -90,14 +94,35 @@ body {
 
 /* -- GamePitch -- */
 .Pitch-title {
-  font-family: "CMU Typewriter Text";
+  font-family: "MutLetras";
   background-color: var(--yellow);
   padding: 10px;
 }
 
+
 .Pitch-body {
   margin-top: 15px;
   padding-left: 2px;
+}
+
+.Pitch-description {
+  position: relative;
+  font-family: "CMU Typewriter Text";
+  background-color: black;
+  color: white;
+  width: 50%;
+  margin-top:1em;
+  padding: 1em;
+  /* padding-top:1em; */
+  /* padding-bottom:1em; */
+}
+
+.Pitch-description::after {
+  content: "...";
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
 }
 
 .Pitch-body details + details {
@@ -139,17 +164,31 @@ body {
 
 /* -- Player -- */
 .Player {
-  position: absolute;
-  bottom: 0;
-  right: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 620px) {
+  .Player {
+    max-width: 800px;
+  }
 }
 
 /* -- character -- */
 .Character {
-  display: block;
-  width: 20px;
-  height: 60px;
+  position: absolute;
+  overflow: hidden;
+  width: 42px;
+  height: 84px;
+  bottom: 20px;
+  right: 20px;
   background-color: magenta;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 /* -- fonts -- */
