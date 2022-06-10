@@ -28,8 +28,11 @@ class Game {
   isGrounded = true
   pos = 0
   ground = 0
-
   grounds = []
+
+  minJumpSpeed = 0.5
+  maxJumpSpeed = 4.20
+  maxJumpHold = 1000
 
   // -- init --
   Start() {
@@ -38,6 +41,19 @@ class Game {
     // set props
     m.window = window
     m.character = document.getElementById("character")
+
+    // secret stuff
+    const pondlife = document.getElementById("title-pondlife")
+    const pondlifeInfo1 = document.getElementById("pondlife-info1")
+    const pondlifeInfo2 = document.getElementById("pondlife-info2")
+    pondlife.addEventListener("pointerdown", () => pondlifeInfo1.style.display = "block")
+    pondlifeInfo1.addEventListener("pointerdown", () => pondlifeInfo2.style.display = "block")
+
+    const discone = document.getElementById("title-discone")
+    const disconeInfo1 = document.getElementById("discone-info1")
+    const disconeInfo2 = document.getElementById("discone-info2")
+    discone.addEventListener("pointerdown", () => disconeInfo1.style.display = "block")
+    disconeInfo1.addEventListener("pointerdown", () => disconeInfo2.style.display = "block")
 
     // fix height of page wrapper to make it scrollable again the height
     // could be calculated from #game height
@@ -54,6 +70,7 @@ class Game {
 
     m.character.addEventListener("pointerdown", m.OnJumpDown)
     m.character.addEventListener("pointerup", m.OnJumpUp)
+    m.character.addEventListener("pointerout", m.OnJumpUp)
     m.character.addEventListener("touchstart", (e) => e.preventDefault())
     m.character.addEventListener("contextmenu", (e) => e.preventDefault())
 
@@ -135,13 +152,12 @@ class Game {
   // -- commands --
   Jump(initialSpeed = 4.0, gravity = 0.01) {
     const m = this
-    console.log("jump")
-
     m.ground = m.window.scrollY
     m.speed = initialSpeed
     m.gravity = kGravity
     m.isGrounded = false
-    return
+
+    console.log("[jump] start")
   }
 
   // -- events -
@@ -161,9 +177,17 @@ class Game {
 
   /// when a jump input fires
   OnJumpUp = (evt) => {
+    const m = this
     evt.preventDefault()
-    if(this.jumpDown < 0) return
-    this.Jump()
+    if(this.jumpDown < 0) {
+     return
+    }
+
+
+    const jumpTime = m.time - m.jumpDown
+    const jumpT = clamp(jumpTime/m.maxJumpHold)
+    const jumpSpeed = lerp(m.minJumpSpeed, m.maxJumpSpeed, jumpT)
+    m.Jump(jumpSpeed)
   }
 
   OnJumpDown = (evt) => {
@@ -196,7 +220,7 @@ function lerp(a, b, t) {
     return r
   }
 
-  return a + (a-b) * t
+  return a + (b-a) * t
 }
 
 function clamp(a, min=0, max=1) {
