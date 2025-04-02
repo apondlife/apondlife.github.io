@@ -1,3 +1,0 @@
-import{S as x,i as k,s as v,j as i,k as j,t as b,m as o,n as d,g as w,o as f,f as p,E as y,x as $,u as c,v as l,d as u}from"./vendor-c87c98e0.js";import{L as _}from"./link-c25dbb92.js";function G(g){let e,n,s,a,r;return e=new _({props:{text:"games",href:"/grass/games"}}),s=new _({props:{text:"in",href:"/grass/events"}}),{c(){i(e.$$.fragment),n=j(),i(s.$$.fragment),a=b(`\r
-  the grass`)},l(t){o(e.$$.fragment,t),n=d(t),o(s.$$.fragment,t),a=w(t,`\r
-  the grass`)},m(t,m){f(e,t,m),p(t,n,m),f(s,t,m),p(t,a,m),r=!0},p:y,i(t){r||($(e.$$.fragment,t),$(s.$$.fragment,t),r=!0)},o(t){c(e.$$.fragment,t),c(s.$$.fragment,t),r=!1},d(t){l(e,t),t&&u(n),l(s,t),t&&u(a)}}}class h extends x{constructor(e){super();k(this,e,null,G,v,{})}}export{h as G};
