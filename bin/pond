@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# run this script from the project root; a portable way of getting
+# a script's path is hard to come by, so we assume .env is in the cwd
+
+# -- includes --
+. bin/prelude
+
+# -- parsing --
+Usage() {
+  pc "[-h] <cmd> [<args>]"
+
+  pl ""
+  pl "the command runner for various discsite-related tools. please select"
+  pl "one of the subcommands listed below."
+
+  pl ""
+  pl "most commands have their own help. options must be passed before"
+  pl "positional args, and will otherwise be ignored."
+
+  pl ""
+  pt "arguments"
+  pl "<cmd>   the command name"
+  pl "<args>  the command args"
+
+  pl ""
+  pt "commands"
+  pl "init    initialize the dev env"
+  pl "build   build the site"
+  pl "run     run the dev server"
+
+  exit 255
+}
+
+while getopts ":h" option; do
+  case "${option}" in
+    h*) Usage ;;
+  esac
+done
+
+# -- commands --
+RunProgram() {
+  $program "$@"
+}
+
+# -- queries --
+FindProgram() {
+  program="./bin/$1"
+  if [ ! -f "$program" ]; then
+    pf 2 "$1 is not a valid command."
+  fi
+}
+
+# -- main --
+Main() {
+  # validate args
+  command="$1"
+  Require "$command"; shift
+
+  # find matching program
+  FindProgram "$command"
+
+  # run the program
+  RunProgram "$@"
+}
+
+# -- bootstrap --
+Main "$@"

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# -- includes --
+. bin/core/ui.sh
+. bin/core/parse.sh
+. bin/core/env.sh
+. bin/core/os.sh
+. bin/core/builds.sh

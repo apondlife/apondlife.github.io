@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# -- includes --
+. bin/prelude
+
+# -- parsing --
+Usage() {
+  pc "[-h]"
+
+  pl ""
+  pl "initialize the dev environment."
+
+  pl ""
+  pt "options"
+  pl "-h  show this help and exit"
+
+  exit 255
+}
+
+while getopts ":h" option; do
+  case "${option}" in
+    h*) Usage ;;
+  esac
+done
+
+# -- commands --
+Init() {
+  pi "installing dependencies"
+
+  case "$OS_NAME" in
+    mac) InstallDeps_Mac ;;
+    win) InstallDeps_Win ;;
+  esac
+
+  if [ -f .env ]; then
+    pi "already created .env, skipping"
+  else
+    MakeEnv
+    pi "created .env from .env.sample"
+  fi
+}
+
+InstallDeps_Mac() {
+  if ! command -v brew > /dev/null 2>&1; then
+  	pe "brew is not installed, please see:"
+    pi "- https://brew.sh/"
+    exit 1
+  fi
+
+  brew bundle -v --no-upgrade
+}
+
+InstallDeps_Win() {
+  . Wingetfile
+}
+
+# -- main --
+Main() {
+  FindOs
+  Init
+}
+
+Main "$@"

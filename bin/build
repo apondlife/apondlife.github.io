@@ -1,0 +1,61 @@
+#!/bin/sh
+
+# -- includes --
+. bin/prelude
+
+# -- props --
+# if this should clean the build folder
+SHOULD_CLEAN=""
+
+# if this uses the local version ofwww
+IS_LOCAL_WWW=""
+
+# -- parsing --
+Usage() {
+  pc "[-flh]"
+
+  pl ""
+  pl "build the site."
+
+  pl ""
+  pt "options"
+  pl "-f  if this should clean the build folder"
+  pl "-l  if this uses the local version of www"
+  pl "-h  show this help and exit"
+
+  exit 255
+}
+
+while getopts ":flh" option; do
+  case "${option}" in
+    f*) SHOULD_CLEAN="1" ;;
+    l*) IS_LOCAL_WWW="1" ;;
+    h*) Usage ;;
+  esac
+done
+
+# -- commands --
+Build() {
+  # clean the build folder
+  if [ -n "$SHOULD_CLEAN" ]; then
+    rm -rf "$DST_PATH"
+  fi
+
+  # use local or remote www
+  FindWww
+
+  # run the build
+  ${DENO} \
+    run ${DENO_OPTS} \
+    "$WWW" \
+    "$SRC_PATH" \
+    -o "$DST_PATH" \
+    --prod
+}
+
+# -- main --
+Main() {
+  Build
+}
+
+Main "$@"
