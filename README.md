@@ -5,9 +5,9 @@ the pondlife website.
 
 # [★](#click) index
 
-- [`◈` tools](#tools)
-- [`◩` setup](#setup)
-- [`◍` development](#development)
+- [`◈` tools](#-tools)
+- [`◩` setup](#-setup)
+- [`◍` development](#-development)
 
 # [◈](#on) tools
 
