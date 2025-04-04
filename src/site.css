@@ -1,0 +1,46 @@
+/* -- resets -- */
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul[class] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  appearance: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* -- globals -- */
+html {
+  font-size: 16px;
+}
+
+* {
+  font-weight: inherit;
+}
+
+/* -- Site -- */
+.Site {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.Site-nav {
+  order: 0;
+}
+
+.Site-content {
+  order: 1;
+}
+
+/* -- Home -- */
+.Home-title {
+  font-size: 10rem;
+}
