@@ -14,13 +14,13 @@ the pondlife website.
 any command you might need is (or will be) wrapped up by a cli, `pond`:
 
 ```sh
-$ ./bin/pond -h
+$ ./pond -h
 ```
 
 each subcommand also includes a help, which can be viewed similarly:
 
 ```sh
-$ ./bin/pond build -h
+$ ./pond build -h
 ```
 
 > if you install [`direnv`](https://github.com/direnv/direnv), you can access the cli without pathing or prefixing: `pond`.
@@ -34,7 +34,7 @@ this site uses a work-in-progress static site generator, [www](https://github.co
 to initialize the dev environment:
 
 ```sh
-$ ./bin/pond init
+$ ./pond init
 ```
 
 this will install any required dependencies, namely `deno`.
@@ -50,7 +50,7 @@ in addition to installing dependencies, this command will create a `.env` file t
 to access the dev site, run the dev server, and then [open the url](http://localhost:8888) in your browser:
 
 ```sh
-$ ./bin/pond run
+$ ./pond run
 ```
 
 the `run` command by default builds the non-prod configuration.
@@ -66,7 +66,7 @@ there is no hot-reloading or refreshing, refresh the browser yourself!
 to create a one-off build, run:
 
 ```sh
-$ ./bin/pond build
+$ ./pond build
 ```
 
 the `build` command by default builds the `prod` configuration.
@@ -74,5 +74,5 @@ the `build` command by default builds the `prod` configuration.
 this output will also go to `dst`, if you want to perform a clean build, run:
 
 ```sh
-$ ./bin/pond build -f
+$ ./pond build -f
 ```
