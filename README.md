@@ -3,13 +3,13 @@ pondsite
 
 the pondlife website.
 
-# index [★](#index)
+# [★](#click) index
 
-- [tools](#tools)
-- [setup](#setup)
-- [development](#setup)
+- [`◈` tools](#tools)
+- [`◩` setup](#setup)
+- [`◍` development](#development)
 
-# tools [↑](#index)
+# [◈](#on) tools
 
 any command you might need is (or will be) wrapped up by a cli, `pond`:
 
@@ -29,7 +29,7 @@ $ ./bin/pond build -h
 
 this site uses a work-in-progress static site generator, [www](https://github.com/tycobbb/www), which in turn depends on [`deno`](https://deno.com/).
 
-# setup [↑](#index)
+# [◩](#fun) setup
 
 to initialize the dev environment:
 
@@ -45,7 +45,7 @@ this will install any required dependencies, namely `deno`.
 
 in addition to installing dependencies, this command will create a `.env` file that contains machine or environment specific configuration. some commands may depend on this config, but they will let you know if so.
 
-# development [↑](#index)
+# [◍](#symbols) development
 
 to access the dev site, run the dev server, and then [open the url](http://localhost:8888) in your browser:
 
