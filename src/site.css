@@ -1,5 +1,9 @@
 /* -- resets -- */
-body, p, h1, h2, h3, h4, h5, h6 {
+* {
+  box-sizing: border-box;
+}
+
+body, p, pre, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -27,20 +31,90 @@ html {
 
 /* -- Site -- */
 .Site {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-
-.Site-nav {
-  order: 0;
+  height: 100%;
 }
 
 .Site-content {
-  order: 1;
+  height: 100%;
+}
+
+/* -- Loading -- */
+.Loading {
+  position: absolute;
 }
 
 /* -- Home -- */
-.Home-title {
-  font-size: 10rem;
+.Home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pond {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.En {
+  position: absolute;
+  font-family: sans-serif;
+}
+
+.Water {
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  color: #cbe8e7;
+  line-height: 1.5rem;
+}
+
+.Water r {
+  overflow: hidden;
+}
+
+.Bank {
+  display: inline-flex;
+  flex-direction: column;
+  color: #d8d69e;
+}
+
+.Bank r {
+  overflow: hidden;
+}
+
+.Lily {
+  color: #65d897;
+  font-size: 0.8rem;
+}
+
+.Life {
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+}
+
+.Protozoa {
+  --size: 2.2rem;
+  color: #f28afb;
+  font-size: 2rem;
+}
+
+.Stentor {
+  --size: 2.3rem;
+  color: #3a72ff;
+  font-size: 4rem;
+}
+
+.Ameoba {
+  --size: 1.8rem;
+  color: #f7e377;
+  font-size: 2rem;
+}
+
+.Daphnia {
+  --size: 2.1rem;
+  color: #ffcb9c;
+  font-size: 2rem;
 }

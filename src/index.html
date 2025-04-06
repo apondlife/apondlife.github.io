@@ -1,11 +1,25 @@
-<% layout("site.l.html") %>
+<html lang="en"><head>
+    <meta charset="utf-8">
 
-<w:head>
-  <title>with pondlife</title>
-</w:head>
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<w:template>
-  <main class="Home">
+    <!-- assets -->
+    <script type="module" src="/site.js"></script>
+    <link rel="stylesheet" href="/site.css">
+    <link rel="icon" type="image/png" href="/site.png">
+
+    <!-- display -->
+    <title>with pondlife</title>
+  </head>
+
+  <body id="site" class="Site">
+    <!-- the page body -->
+    <div id="page" class="Site-content">
+      
+
+
+<main class="Home">
     <article id="pond" class="Pond">
       <section>
         <p class="En Bank" style="top: 11%; left: 42%; width: 14%; transform: rotate(-9deg)">
@@ -58,5 +72,9 @@
         <p class="En Life Daphnia" style="top: 59%; left: 32%; transform: rotate(21deg);">◈</p>
       </section>
     </article>
-  </main>
-</w:template>
+  </main>    </div>
+
+    <!-- the loader -->
+    <div id="loading" class="Site-loading"></div>
+  
+</body></html>
