@@ -1,5 +1,0 @@
-#!/bin/sh
-# this is a pretend manifest, a la `Brewfile`, for installing deps via winget
-
-# for running the build tool (www)
-winget install DenoLand.Deno

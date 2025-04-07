@@ -1,0 +1,20 @@
+{
+  "name": "pondlife",
+  "version": "0.0.1",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^5.0.0",
+    "@shopify/prettier-plugin-liquid": "^1.5.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.35",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.4"
+  }
+}

@@ -1,2 +1,5 @@
 .env
 dst
+raw
+node_modules
+.cache

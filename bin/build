@@ -7,12 +7,12 @@
 # if this should clean the build folder
 SHOULD_CLEAN=""
 
-# if this uses the local version ofwww
-IS_LOCAL_WWW=""
+# if this is a debug build
+IS_DEBUG=""
 
 # -- parsing --
 Usage() {
-  pc "[-flh]"
+  pc "[-fdh]"
 
   pl ""
   pl "build the site."
@@ -20,7 +20,7 @@ Usage() {
   pl ""
   pt "options"
   pl "-f  if this should clean the build folder"
-  pl "-l  if this uses the local version of www"
+  pl "-d  if this should run a debug build"
   pl "-h  show this help and exit"
 
   exit 255
@@ -29,7 +29,7 @@ Usage() {
 while getopts ":flh" option; do
   case "${option}" in
     f*) SHOULD_CLEAN="1" ;;
-    l*) IS_LOCAL_WWW="1" ;;
+    d*) IS_DEBUG="1" ;;
     h*) Usage ;;
   esac
 done
@@ -41,16 +41,11 @@ Build() {
     rm -rf "$DST_PATH"
   fi
 
-  # use local or remote www
-  FindWww
+  # build the prod eleventy command
+  FindEleventy "prod"
 
   # run the build
-  ${DENO} \
-    run ${DENO_OPTS} \
-    "$WWW" \
-    "$SRC_PATH" \
-    -o "$DST_PATH" \
-    --prod
+  $ELEVENTY
 }
 
 # -- main --

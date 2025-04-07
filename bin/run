@@ -7,12 +7,9 @@
 # if this is in debug mode
 IS_DEBUG=""
 
-# if this uses the local version ofwww
-IS_LOCAL_WWW=""
-
 # -- parsing --
 Usage() {
-  pc "[-dlh]"
+  pc "[-dh]"
 
   pl ""
   pl "run the dev server."
@@ -20,20 +17,10 @@ Usage() {
   pl ""
   pt "options"
   pl "-d  if this is in debug mode"
-  pl "-l  if this uses the local version of www"
   pl "-h  show this help and exit"
 
   exit 255
 }
-
-# r/up:
-# 	$(ts-www) $(ds-src) --up -o $(ds-dst)
-# .PHONY: r/up
-
-# ## run the site in debug
-# r/debug:
-# 	$(ts-www) $(ds-src) --up -o $(ds-dst) --verbose
-# .PHONY: r/debug
 
 while getopts ":flh" option; do
   case "${option}" in
@@ -43,33 +30,17 @@ while getopts ":flh" option; do
 done
 
 # -- commands --
-Build() {
-  # use local or remote deno
-  FindWww
+Run() {
+  # find the dev eleventy command
+  FindEleventy "dev"
 
-  # if debug, use verbose logging
-  WWW_OPTS=""
-  if [ -n "$IS_DEBUG" ]; then
-    WWW_OPTS="$WWW_OPTS --verbose"
-  fi
-
-  # run the build
-  ${DENO} \
-    run ${DENO_OPTS} \
-    "$WWW" \
-    "$SRC_PATH" \
-    --up \
-    -o "$DST_PATH"
-    "$WWW_OPTS"
+  # run the build server
+  $ELEVENTY --serve
 }
 
 # -- main --
 Main() {
-  if [ -z "$IS_LOCAL_WWW" ]; then
-    LoadEnv
-  fi
-
-  Build
+  Run
 }
 
 Main "$@"

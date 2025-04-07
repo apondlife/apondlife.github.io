@@ -25,9 +25,9 @@ $ ./pond build -h
 
 > if you install [`direnv`](https://github.com/direnv/direnv), you can access the cli without pathing or prefixing: `pond`.
 
-## www
+## eleventy
 
-this site uses a work-in-progress static site generator, [www](https://github.com/tycobbb/www), which in turn depends on [`deno`](https://deno.com/).
+this site uses a the static site generator [eleventy](https://www.11ty.dev/), which in turn depends on [`nodejs`](https://nodejs.org/).
 
 # [◩](#fun) setup
 
@@ -37,7 +37,7 @@ to initialize the dev environment:
 $ ./pond init
 ```
 
-this will install any required dependencies, namely `deno`.
+this will check for and try to install any required dependencies, namely `node`.
 
 > `init` is idempotent and should be safe to run multiple times.
 
@@ -47,7 +47,7 @@ in addition to installing dependencies, this command will create a `.env` file t
 
 # [◍](#symbols) development
 
-to access the dev site, run the dev server, and then [open the url](http://localhost:8888) in your browser:
+to access the dev site, run the dev server, and then [open the url](http://localhost:8080) in your browser:
 
 ```sh
 $ ./pond run

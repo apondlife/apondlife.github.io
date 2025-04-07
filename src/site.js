@@ -1,1 +1,1 @@
-import "/os/os.js"
+import "/js/os.js"

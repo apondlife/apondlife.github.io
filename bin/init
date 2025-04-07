@@ -26,37 +26,36 @@ done
 # -- commands --
 Init() {
   pi "installing dependencies"
+  if command -v asdf > /dev/null 2>&1; then
+    asdf install nodejs
+  fi
 
-  case "$OS_NAME" in
-    mac) InstallDeps_Mac ;;
-    win) InstallDeps_Win ;;
-  esac
+  expected_node_version="v$(cat .node-version)"
+  if ! command -v asdf > /dev/null 2>&1; then
+  	pe "node is not installed. please install nodejs: ${bd}$expected_node_version${nc}"
+    pi "via asdf:      https://asdf-vm.com/guide/introduction.html"
+    pi "via installer: https://nodejs.org/en/download"
+    exit 1
+  fi
+
+  installed_node_version=$(node --version)
+  if [ "$expected_node_version" != "$installed_node_version" ]; then
+    pe "the installed node ($installed_node_version) does not match the specified version ($expected_node_version)"
+  fi
 
   if [ -f .env ]; then
-    pi "already created .env, skipping"
+    pi "config file (.env) exists, skipping"
   else
     MakeEnv
     pi "created .env from .env.sample"
   fi
-}
 
-InstallDeps_Mac() {
-  if ! command -v brew > /dev/null 2>&1; then
-  	pe "brew is not installed, please see:"
-    pi "- https://brew.sh/"
-    exit 1
-  fi
-
-  brew bundle -v --no-upgrade
-}
-
-InstallDeps_Win() {
-  . Wingetfile
+  pi "installing node packages"
+  npm install
 }
 
 # -- main --
 Main() {
-  FindOs
   Init
 }
 
