@@ -20,6 +20,11 @@ export default function (config) {
   config.addPlugin(SassPlugin)
   config.addPlugin(StringPlugin)
 
+  // -- dev server --
+  config.setServerOptions({
+    liveReload: false
+  })
+
   // -- output --
   return {
     dir: {
