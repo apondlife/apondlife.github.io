@@ -1,8 +1,8 @@
-/* -- resets -- */
+// -- resets --
 @use "_includes/core" as *;
 @use "_includes/home";
 
-/* -- globals -- */
+// -- globals --
 html {
   height: 100%;
   font-size: 16px;
@@ -12,7 +12,7 @@ html {
   font-weight: inherit;
 }
 
-/* -- Site -- */
+// -- Site --
 .Site {
   height: 100%;
 }
@@ -21,7 +21,7 @@ html {
   height: 100%;
 }
 
-/* -- Loading -- */
+// -- Loading --
 .Loading {
   position: absolute;
 }
